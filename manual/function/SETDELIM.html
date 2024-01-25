@@ -1,0 +1,240 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+
+<head profile="http://purl.org/net/ns/metaprof">
+ <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+ <meta http-equiv="content-style-type" content="text/css" />
+
+ <title>マニュアル/関数/SETDELIM - AYAYA/03</title>
+ <link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />
+ <link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />
+ <link rel="stylesheet" href="/svgd/table.css" type="text/css" />
+ <link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" /> 
+ <script type="text/javascript">
+ <!--
+ // -->
+ IMAGE_DIR = 'image/';
+ SKIN_DIR = 'skin/';
+ </script>
+<!-- <script type="text/javascript" src="skin/lang/.js"></script> -->
+<script type="text/javascript" src="skin/default.js"></script>
+<!-- <script type="text/javascript" src="skin/ajax/textloader.js"></script> -->
+<!-- <script type="text/javascript" src="skin/ajax/glossary.js"></script> -->
+ <script type="text/javascript" src="skin/tzCalculation_LocalTimeZone.js"></script>
+
+</head>
+
+<body>
+
+<div id="popUpContainer"></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="80">
+    <td width="170" nowrap><a href="index.php" alt="トップ" title="トップ"><img src="skin/title.png" width=170 height=80 border=0></a></td>
+    <td id="header1"><img src="skin/logo.png" width=350 height=40 border=0><br />
+    <div id="virtualdir" class="virtualdir">&nbsp;&nbsp;&nbsp;&nbsp;<a href="./?FrontPage"><span class="topicpath-top"><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">Top</a><span class="topicpath-slash">/</span></span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB">マニュアル</a><span class="topicpath-slash">/</span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0">関数</a><span class="topicpath-slash">/</span>SETDELIM</a></div></td>
+  </tr>
+  <tr>
+    <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="./?FrontPage">トップページへ</a>
+    <td id="headerbar">&nbsp;
+
+ [ <a href="index.php?cmd=list" rel="nofollow" >一覧</a>  | <a href="index.php?cmd=search" rel="nofollow" >検索</a> | <a href="index.php?RecentChanges" rel="nofollow" >最終更新</a> ]
+ &nbsp;
+ [
+ <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow" >差分</a>  | <a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow" >履歴</a>   | <a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow" >凍結</a>  ]
+ 
+
+	</td>
+  </tr>
+</table>
+
+<table border="0" style="width:100%" cellspacing=0 cellpadding=0>
+  <tr>
+  <td valign="top" id="menubar" width=170>
+   <div id="menubar">
+	<h5>ツール</h5>
+	<p>
+	
+		
+	<a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" />リロード<br /></a>	<a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" />ヘルプ<br /></a>	</p>
+	<p>
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" />新規<br /></a>	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" />編集<br /></a>	<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" />複製<br /></a>	 	  <a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" />添付<br /></a>	 	 
+		
+	</p>
+
+			
+<h5 id="content_2_0"><a href="./?cmd=edit&amp;page=MenuBar" title="Edit:MenuBar" rel="nofollow">Menu</a></h5>
+<ul class="list1 list-indent1"><li><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">トップページ</a>
+<br />
+<br /></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki" rel="nofollow">YAYA配布ページ</a>
+<ul class="list2 list-indent1"><li><a href="https://github.com/ponapalt/yaya-shiori/releases" rel="nofollow">ダウンロードページ</a></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki/ChangeLog" rel="nofollow">更新履歴</a></li>
+<li><a href="https://github.com/ponapalt/konnoyayame" rel="nofollow">紺野ややめ</a></li>
+<li><a href="https://github.com/nikolat/tama/releases" rel="nofollow">ツール「玉」</a></li>
+<li><a href="https://github.com/Taromati2/yaya-CI-check" rel="nofollow">CIツール</a>
+<br />
+<br /></li></ul></li>
+<li>スタートアップ
+<ul class="list2 list-indent1"><li><a href="index.php?StartUp" title="StartUp" class="link_page_passage" data-mtime="2014-01-04T13:48:55+09:00">YAYA、AYAって何？</a></li>
+<li><a href="index.php?StartUp/YAYA%E3%81%A7%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B" title="StartUp/YAYAでゴーストを作る" class="link_page_passage" data-mtime="2021-06-25T14:42:05+09:00">新規ゴースト作成</a></li>
+<li><a href="index.php?StartUp/AYA%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/AYAからの移行" class="link_page_passage" data-mtime="2023-01-24T18:46:45+09:00">AYAからの移行</a></li>
+<li><a href="index.php?StartUp/%E9%87%8C%E3%80%85%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/里々からの移行" class="link_page_passage" data-mtime="2014-01-08T18:54:43+09:00">里々からの移行</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" class="link_page_passage" data-mtime="2009-03-29T22:34:39+09:00">マニュアル</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC" title="マニュアル/基本" class="link_page_passage" data-mtime="2023-04-11T23:46:28+09:00">基本</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">文法</a></li>
+<li><a href="index.php?%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8" class="link_page_passage" data-mtime="2023-01-24T18:50:47+09:00">システム辞書</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" title="マニュアル/関数用途別一覧" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">用途別関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" title="マニュアル/関数" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">名前順関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0" title="マニュアル/エラー処理関数" class="link_page_passage" data-mtime="2022-03-06T21:24:19+09:00">エラー処理関数</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?Tips" class="link_page_passage" data-mtime="2008-04-03T19:38:32+09:00">Tips</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage" data-mtime="2016-11-27T21:03:00+09:00">困ったときの対処法</a></li>
+<li><a href="index.php?%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage" data-mtime="2012-10-28T13:15:25+09:00">トークべた書き支援ライブラリ</a></li>
+<li><a href="http://ukadev.shillest.net/" rel="nofollow">開発情報検索</a>
+<br />
+<br /></li></ul></li>
+<li>SHIORI以外のYAYA
+<ul class="list2 list-indent1"><li><a href="index.php?YAYA+as+SAORI" class="link_page_passage" data-mtime="2022-10-10T09:09:59+09:00">YAYA as SAORI</a></li>
+<li><a href="index.php?YAYA+as+MAKOTO" class="link_page_passage" data-mtime="2021-04-28T20:52:06+09:00">YAYA as MAKOTO</a></li>
+<li><a href="index.php?YAYA+as+PLUGIN" class="link_page_passage" data-mtime="2022-10-10T09:24:12+09:00">YAYA as PLUGIN</a>
+<br />
+<br /></li></ul></li>
+<li>連絡・掲示板
+<ul class="list2 list-indent1"><li><a href="http://ssp.shillest.net/bts/my_view_page.php" rel="nofollow">整備班BTS</a></li>
+<li><a href="index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage" data-mtime="2022-09-20T06:15:18+09:00">ここがわかんねえよログ</a></li>
+<li><a href="index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage" data-mtime="2023-04-11T23:40:59+09:00">wiki伝言板</a>
+<br />
+<br /></li></ul></li>
+<li>リンク
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2018-11-14T22:25:16+09:00">ゴースト関連リンク</a></li>
+<li><a href="index.php?%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2021-02-27T23:24:44+09:00">文ゴーストリンク</a>
+<br />
+<br /></li></ul></li>
+<li>ほか
+<ul class="list2 list-indent1"><li><a href="index.php?Help" title="Help" class="link_page_passage" data-mtime="2006-12-20T12:43:36+09:00">Wikiヘルプ</a></li></ul></li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">最近更新されたページ</h5>
+<h5>最新の10件</h5>
+<div><strong>2024-01-22</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">マニュアル/関数用途別一覧</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetUserDefFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:44:05+09:00">マニュアル/関数/LINT.GetUserDefFuncUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetGlobalVarUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:51+09:00">マニュアル/関数/LINT.GetGlobalVarUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:37+09:00">マニュアル/関数/LINT.GetFuncUsedBy</a></li>
+</ul>
+<strong>2023-12-30</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/IARRAY" class="link_page_passage" data-mtime="2023-12-30T14:54:28+09:00">マニュアル/関数/IARRAY</a></li>
+</ul>
+<strong>2023-04-11</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETSETTING" class="link_page_passage" data-mtime="2023-04-11T23:53:01+09:00">マニュアル/関数/GETSETTING</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETLASTERROR" class="link_page_passage" data-mtime="2023-04-11T23:52:37+09:00">マニュアル/関数/GETLASTERROR</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FSEEK" class="link_page_passage" data-mtime="2023-04-11T23:52:09+09:00">マニュアル/関数/FSEEK</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FOPEN" class="link_page_passage" data-mtime="2023-04-11T23:51:40+09:00">マニュアル/関数/FOPEN</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETTYPE" class="link_page_passage" data-mtime="2023-04-11T23:50:24+09:00">マニュアル/関数/GETTYPE</a></li>
+</ul>
+</div>
+		<br>
+   </div>
+   <img src="skin/dummy.gif" width=170 height=10 border=0>
+  </td>
+  <td id="body" valign="top">
+   <div id="body"><ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SAVEVAR" title="マニュアル/関数/SAVEVAR" class="link_page_passage" data-mtime="2008-04-08T22:37:12+09:00">Prev</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETGLOBALDEFINE" title="マニュアル/関数/SETGLOBALDEFINE" class="link_page_passage" data-mtime="2021-10-08T11:02:04+09:00">Next</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">マニュアル/関数</a></li>
+</ul>
+<hr class="full_hr" />
+<h2 id="content_1_0">SETDELIM<a class="anchor_super" id="x28ecefe" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#x28ecefe" title="x28ecefe" style="user-select:none;">&dagger;</a></h2>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">形式<a class="anchor_super" id="g5b85d8c" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#g5b85d8c" title="g5b85d8c" style="user-select:none;">&dagger;</a></h3>
+<blockquote><p class="quotation">SETDELIM( <em>array</em> , <em>delim</em> )</p></blockquote>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">機能<a class="anchor_super" id="mbd8de9b" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#mbd8de9b" title="mbd8de9b" style="user-select:none;">&dagger;</a></h3>
+<ul class="list1 list-indent1"><li>変数の標準のデリミタ（簡易配列の区切り文字）を設定します。</li>
+<li>デフォルトのデリミタはカンマです。</li></ul>
+<ul class="list1 list-indent1"><li>この関数への引数の与え方には以下の制限があります。注意してください。</li>
+<li>2つの引数は必ず直接与えねばなりません。
+<pre>	
+_i = (var, &quot;/&quot;)
+SETDELIM(_i)</pre></li></ul>
+<ul class="list1 list-indent1"><li>上の例は変数varのデリミタを&quot;/&quot;へ変更しようとしていますが、これは正常に動きません。</li>
+<li>下のように、第一引数に対象の変数、第二引数にデリミタを直接指定してください。
+<pre>	
+SETDELIM(var, &quot;/&quot;)</pre></li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">引数<a class="anchor_super" id="q42d11ab" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#q42d11ab" title="q42d11ab" style="user-select:none;">&dagger;</a></h3>
+<dl class="list1 list-indent1"><dt>array</dt>
+<dd>デリミタを設定したい簡易配列変数。</dd>
+<dt>delim</dt>
+<dd>デリミタ（文字列）</dd></dl>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">返り値<a class="anchor_super" id="l4debdcf" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#l4debdcf" title="l4debdcf" style="user-select:none;">&dagger;</a></h3>
+<ul class="list1 list-indent1"><li>戻値はありません。</li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">関連<a class="anchor_super" id="r4a80367" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#r4a80367" title="r4a80367" style="user-select:none;">&dagger;</a></h3>
+<ul class="list1 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETDELIM" class="link_page_passage" data-mtime="2008-04-08T22:09:48+09:00">マニュアル/関数/GETDELIM</a></li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">バージョン<a class="anchor_super" id="t285719a" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#t285719a" title="t285719a" style="user-select:none;">&dagger;</a></h3>
+<ul class="list1 list-indent1"><li>YAYA：初期から利用可能</li>
+<li>AYA5.8で利用可能</li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">例<a class="anchor_super" id="aa056cab" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM#aa056cab" title="aa056cab" style="user-select:none;">&dagger;</a></h3>
+<ul class="list1 list-indent1"><li>NOWPRINTING</li>
+<li>誰か記載してください！</li></ul>
+<hr class="full_hr" />
+<ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SAVEVAR" title="マニュアル/関数/SAVEVAR" class="link_page_passage" data-mtime="2008-04-08T22:37:12+09:00">Prev</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SAVEVAR" class="link_page_passage" data-mtime="2008-04-08T22:37:12+09:00">マニュアル/関数/SAVEVAR</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETGLOBALDEFINE" title="マニュアル/関数/SETGLOBALDEFINE" class="link_page_passage" data-mtime="2021-10-08T11:02:04+09:00">Next</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETGLOBALDEFINE" class="link_page_passage" data-mtime="2021-10-08T11:02:04+09:00">マニュアル/関数/SETGLOBALDEFINE</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" title="マニュアル/関数" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">Home</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" title="マニュアル/関数" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">Up</a></li>
+</ul>
+   
+   	 	
+	</div>
+  </td>
+ </tr>
+</table>
+
+
+
+
+<table cellspacing=0 width=100%>
+<tr><td id=footer>
+<div id="toolbar">
+
+ <a href="index.php" rel="nofollow"><img src="image/top.png" width="20" height="20" alt="トップ" title="トップ" /></a>
+ &nbsp;
+ 	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" /></a>			<a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/freeze.png" width="20" height="20" alt="凍結" title="凍結" /></a>	  <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/diff.png" width="20" height="20" alt="差分" title="差分" /></a>	<a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/backup.png" width="20" height="20" alt="履歴" title="履歴" /></a>			<a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" /></a>		<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" /></a>	<a href="index.php?plugin=rename&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/rename.png" width="20" height="20" alt="名前変更" title="名前変更" /></a> <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" /></a> &nbsp;
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETDELIM" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" /></a> <a href="index.php?cmd=list" rel="nofollow"><img src="image/list.png" width="20" height="20" alt="一覧" title="一覧" /></a> <a href="index.php?cmd=search" rel="nofollow"><img src="image/search.png" width="20" height="20" alt="検索" title="検索" /></a> <a href="index.php?RecentChanges" rel="nofollow"><img src="image/recentchanges.png" width="20" height="20" alt="最終更新" title="最終更新" /></a> &nbsp; <a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=1.0" rel="nofollow"><img src="image/rss.png" width="36" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=2.0" rel="nofollow"><img src="image/rss20.png" width="53" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a>
+</div>
+
+
+<div id="lastmodified">
+ 最終更新日: 2008-04-08 (火) 22:37:23<span class="page_passage" data-mtime="2008-04-08T22:37:23+09:00"></span></div>
+
+
+<div id="related">
+ 関連ページ: <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7">マニュアル/関数用途別一覧</a><span class="page_passage" data-mtime="2024-01-22T19:53:46+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETGLOBALDEFINE">マニュアル/関数/SETGLOBALDEFINE</a><span class="page_passage" data-mtime="2021-10-08T11:02:04+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0">マニュアル/関数</a><span class="page_passage" data-mtime="2008-06-01T22:50:24+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SAVEVAR">マニュアル/関数/SAVEVAR</a><span class="page_passage" data-mtime="2008-04-08T22:37:12+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETDELIM">マニュアル/関数/GETDELIM</a><span class="page_passage" data-mtime="2008-04-08T22:09:48+09:00"></span></div>
+
+
+</td></tr>
+</table>
+
+<div id="footer">
+ Powered by <strong><a href="http://pukiwiki.sourceforge.jp/">PukiWiki</a> 1.5.4</strong> / <strong><a href="http://pukiwiki.cafelounge.net/plus/">PukiWiki Plus!</a></strong>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+
+<head profile="http://purl.org/net/ns/metaprof">
+ <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+ <meta http-equiv="content-style-type" content="text/css" />
+
+ <title>マニュアル/文法/1.基礎設定 - AYAYA/03</title>
+ <link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />
+ <link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />
+ <link rel="stylesheet" href="/svgd/table.css" type="text/css" />
+ <link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" /> 
+ <script type="text/javascript">
+ <!--
+ // -->
+ IMAGE_DIR = 'image/';
+ SKIN_DIR = 'skin/';
+ </script>
+<!-- <script type="text/javascript" src="skin/lang/.js"></script> -->
+<script type="text/javascript" src="skin/default.js"></script>
+<!-- <script type="text/javascript" src="skin/ajax/textloader.js"></script> -->
+<!-- <script type="text/javascript" src="skin/ajax/glossary.js"></script> -->
+ <script type="text/javascript" src="skin/tzCalculation_LocalTimeZone.js"></script>
+
+</head>
+
+<body>
+
+<div id="popUpContainer"></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="80">
+    <td width="170" nowrap><a href="index.php" alt="トップ" title="トップ"><img src="skin/title.png" width=170 height=80 border=0></a></td>
+    <td id="header1"><img src="skin/logo.png" width=350 height=40 border=0><br />
+    <div id="virtualdir" class="virtualdir">&nbsp;&nbsp;&nbsp;&nbsp;<a href="./?FrontPage"><span class="topicpath-top"><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">Top</a><span class="topicpath-slash">/</span></span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB">マニュアル</a><span class="topicpath-slash">/</span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95">文法</a><span class="topicpath-slash">/</span>1.基礎設定</a></div></td>
+  </tr>
+  <tr>
+    <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="./?FrontPage">トップページへ</a>
+    <td id="headerbar">&nbsp;
+
+ [ <a href="index.php?cmd=list" rel="nofollow" >一覧</a>  | <a href="index.php?cmd=search" rel="nofollow" >検索</a> | <a href="index.php?RecentChanges" rel="nofollow" >最終更新</a> ]
+ &nbsp;
+ [
+ <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow" >差分</a>  | <a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow" >履歴</a>   | <a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow" >凍結</a>  ]
+ 
+
+	</td>
+  </tr>
+</table>
+
+<table border="0" style="width:100%" cellspacing=0 cellpadding=0>
+  <tr>
+  <td valign="top" id="menubar" width=170>
+   <div id="menubar">
+	<h5>ツール</h5>
+	<p>
+	
+		
+	<a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" />リロード<br /></a>	<a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" />ヘルプ<br /></a>	</p>
+	<p>
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" />新規<br /></a>	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" />編集<br /></a>	<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" />複製<br /></a>	 	  <a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" />添付<br /></a>	 	 
+		
+	</p>
+
+			
+<h5 id="content_2_0"><a href="./?cmd=edit&amp;page=MenuBar" title="Edit:MenuBar" rel="nofollow">Menu</a></h5>
+<ul class="list1 list-indent1"><li><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">トップページ</a>
+<br />
+<br /></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki" rel="nofollow">YAYA配布ページ</a>
+<ul class="list2 list-indent1"><li><a href="https://github.com/ponapalt/yaya-shiori/releases" rel="nofollow">ダウンロードページ</a></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki/ChangeLog" rel="nofollow">更新履歴</a></li>
+<li><a href="https://github.com/ponapalt/konnoyayame" rel="nofollow">紺野ややめ</a></li>
+<li><a href="https://github.com/nikolat/tama/releases" rel="nofollow">ツール「玉」</a></li>
+<li><a href="https://github.com/Taromati2/yaya-CI-check" rel="nofollow">CIツール</a>
+<br />
+<br /></li></ul></li>
+<li>スタートアップ
+<ul class="list2 list-indent1"><li><a href="index.php?StartUp" title="StartUp" class="link_page_passage" data-mtime="2014-01-04T13:48:55+09:00">YAYA、AYAって何？</a></li>
+<li><a href="index.php?StartUp/YAYA%E3%81%A7%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B" title="StartUp/YAYAでゴーストを作る" class="link_page_passage" data-mtime="2021-06-25T14:42:05+09:00">新規ゴースト作成</a></li>
+<li><a href="index.php?StartUp/AYA%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/AYAからの移行" class="link_page_passage" data-mtime="2023-01-24T18:46:45+09:00">AYAからの移行</a></li>
+<li><a href="index.php?StartUp/%E9%87%8C%E3%80%85%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/里々からの移行" class="link_page_passage" data-mtime="2014-01-08T18:54:43+09:00">里々からの移行</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" class="link_page_passage" data-mtime="2009-03-29T22:34:39+09:00">マニュアル</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC" title="マニュアル/基本" class="link_page_passage" data-mtime="2023-04-11T23:46:28+09:00">基本</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">文法</a></li>
+<li><a href="index.php?%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8" class="link_page_passage" data-mtime="2023-01-24T18:50:47+09:00">システム辞書</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" title="マニュアル/関数用途別一覧" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">用途別関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" title="マニュアル/関数" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">名前順関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0" title="マニュアル/エラー処理関数" class="link_page_passage" data-mtime="2022-03-06T21:24:19+09:00">エラー処理関数</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?Tips" class="link_page_passage" data-mtime="2008-04-03T19:38:32+09:00">Tips</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage" data-mtime="2016-11-27T21:03:00+09:00">困ったときの対処法</a></li>
+<li><a href="index.php?%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage" data-mtime="2012-10-28T13:15:25+09:00">トークべた書き支援ライブラリ</a></li>
+<li><a href="http://ukadev.shillest.net/" rel="nofollow">開発情報検索</a>
+<br />
+<br /></li></ul></li>
+<li>SHIORI以外のYAYA
+<ul class="list2 list-indent1"><li><a href="index.php?YAYA+as+SAORI" class="link_page_passage" data-mtime="2022-10-10T09:09:59+09:00">YAYA as SAORI</a></li>
+<li><a href="index.php?YAYA+as+MAKOTO" class="link_page_passage" data-mtime="2021-04-28T20:52:06+09:00">YAYA as MAKOTO</a></li>
+<li><a href="index.php?YAYA+as+PLUGIN" class="link_page_passage" data-mtime="2022-10-10T09:24:12+09:00">YAYA as PLUGIN</a>
+<br />
+<br /></li></ul></li>
+<li>連絡・掲示板
+<ul class="list2 list-indent1"><li><a href="http://ssp.shillest.net/bts/my_view_page.php" rel="nofollow">整備班BTS</a></li>
+<li><a href="index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage" data-mtime="2022-09-20T06:15:18+09:00">ここがわかんねえよログ</a></li>
+<li><a href="index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage" data-mtime="2023-04-11T23:40:59+09:00">wiki伝言板</a>
+<br />
+<br /></li></ul></li>
+<li>リンク
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2018-11-14T22:25:16+09:00">ゴースト関連リンク</a></li>
+<li><a href="index.php?%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2021-02-27T23:24:44+09:00">文ゴーストリンク</a>
+<br />
+<br /></li></ul></li>
+<li>ほか
+<ul class="list2 list-indent1"><li><a href="index.php?Help" title="Help" class="link_page_passage" data-mtime="2006-12-20T12:43:36+09:00">Wikiヘルプ</a></li></ul></li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">最近更新されたページ</h5>
+<h5>最新の10件</h5>
+<div><strong>2024-01-22</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">マニュアル/関数用途別一覧</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetUserDefFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:44:05+09:00">マニュアル/関数/LINT.GetUserDefFuncUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetGlobalVarUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:51+09:00">マニュアル/関数/LINT.GetGlobalVarUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:37+09:00">マニュアル/関数/LINT.GetFuncUsedBy</a></li>
+</ul>
+<strong>2023-12-30</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/IARRAY" class="link_page_passage" data-mtime="2023-12-30T14:54:28+09:00">マニュアル/関数/IARRAY</a></li>
+</ul>
+<strong>2023-04-11</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETSETTING" class="link_page_passage" data-mtime="2023-04-11T23:53:01+09:00">マニュアル/関数/GETSETTING</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETLASTERROR" class="link_page_passage" data-mtime="2023-04-11T23:52:37+09:00">マニュアル/関数/GETLASTERROR</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FSEEK" class="link_page_passage" data-mtime="2023-04-11T23:52:09+09:00">マニュアル/関数/FSEEK</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FOPEN" class="link_page_passage" data-mtime="2023-04-11T23:51:40+09:00">マニュアル/関数/FOPEN</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETTYPE" class="link_page_passage" data-mtime="2023-04-11T23:50:24+09:00">マニュアル/関数/GETTYPE</a></li>
+</ul>
+</div>
+		<br>
+   </div>
+   <img src="skin/dummy.gif" width=170 height=10 border=0>
+  </td>
+  <td id="body" valign="top">
+   <div id="body">
+<ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Prev</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0" title="マニュアル/文法/2.関数" class="link_page_passage" data-mtime="2021-12-09T16:08:57+09:00">Next</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">マニュアル/文法</a></li>
+</ul>
+<hr class="full_hr" />
+<div class="contents">
+<a id="contents_1"></a>
+<ul class="list1 list-indent1"><li><a href="#nc75848b">基礎設定</a></li>
+<li><a href="#nbdba21f">読み込み時に辞書エラーが起きた際の挙動</a></li>
+<li><a href="#yac5d4b4">設定項目</a>
+<ul class="list2 list-indent1"><li><a href="#lfff9e83">charset, name</a></li>
+<li><a href="#tbbef654">charset.dic</a></li>
+<li><a href="#m550f1ac">charset.setting</a></li>
+<li><a href="#hc2b130e">charset.output</a></li>
+<li><a href="#q8207e68">charset.log</a></li>
+<li><a href="#e88707bb">charset.file</a></li>
+<li><a href="#j8736700">charset.save</a></li>
+<li><a href="#p5e0a1ff">charset.save.old</a></li>
+<li><a href="#i3edf412">charset.extension</a></li>
+<li><a href="#rbfd65d8">dic, filename ( , charset )</a></li>
+<li><a href="#t076cdc2">dicif, filename ( , charset )</a></li>
+<li><a href="#h85cc54a">dicdir, dirname ( , charset )</a></li>
+<li><a href="#ba19005d">msglang, language</a></li>
+<li><a href="#gb2c4d80">messagetxt, filename ( , charset )</a></li>
+<li><a href="#s8d07a4a">basepath, directory</a></li>
+<li><a href="#ge3e7e6f">include, filename</a></li>
+<li><a href="#k068de51">includeEX, filename</a></li>
+<li><a href="#m583923d">log, logfilename</a></li>
+<li><a href="#pb05622c">iolog, [on|off]</a></li>
+<li><a href="#b95d1367">iolog.filter.keyword,[無視判定文字列]</a></li>
+<li><a href="#j0824d3d">iolog.filter.keyword.delete,[文字列]</a></li>
+<li><a href="#je060ec4">iolog.filter.keyword.regex,[無視判定文字列：正規表現]</a></li>
+<li><a href="#c2e843e1">iolog.filter.keyword.regex,delete,[文字列]</a></li>
+<li><a href="#p0f1090a">iolog.filter.mode,[モード]</a></li>
+<li><a href="#p6bb4967">fncdepth, [depth]</a></li>
+<li><a href="#w2afd51b">looplimit, [count]</a></li>
+<li><a href="#m40b8102">save.encode, [on|off]</a></li>
+<li><a href="#v12dd3d8">save.auto, [on|off]</a></li>
+<li><a href="#wd26f86a">maxlognum, [count]</a></li></ul></li></ul>
+</div>
+
+<h2 id="content_1_0">基礎設定<a class="anchor_super" id="nc75848b" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#nc75848b" title="nc75848b" style="user-select:none;">&dagger;</a></h2>
+<p>YAYAのデフォルトのDLLファイル名は「yaya.dll」です。<br />
+主ファイル名「yaya」は他の名前に自由に変更することができます。</p>
+<p>文を動作させるためには「基礎設定ファイル」と呼ばれるファイルが必ず必要となります。<br />
+基礎設定ファイルのファイル名は「主ファイル名.txt」です。すなわちデフォルトでは「yaya.txt」となります。もしあなたがDLLのファイル名を
+「hoge.dll」に変更したなら、基礎設定ファイルは「hoge.txt」です。
+基礎設定ファイルはテキストファイルで、実行されるOSのデフォルトの文字コードで解読されます。<br />
+もし国際化に関して考慮しなければならないなら、マルチバイト文字コードに関する問題を回避するため、基礎設定ファイルはASCIIコードのみで記述するべきです。
+以下に例を示します。</p>
+<pre class="aya">// dics
+dic, basis.dic
+dic, control./*doc*/ayc
+
+// option parameters
+charset, UTF-8
+charset.dic, Shift_JIS
+charset.setting, Shift_JIS
+charset.output, UTF-8
+charset.file, Shift_JIS
+charset.save, UTF-8
+charset.extension, Shift_JIS
+
+msglang, english
+log, executelog.txt
+iolog, off
+fncdepth, 16</pre>
+<p>設定はコマンドとパラメータをカンマで区切って指定します。<br />
+空行（改行のみの行）、&quot;//&quot;以降、および&quot;/*&quot;と&quot;*/&quot;で囲まれた領域はコメントと見なされます。
+コマンドとその意味は以下の通りです。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">読み込み時に辞書エラーが起きた際の挙動<a class="anchor_super" id="nbdba21f" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#nbdba21f" title="nbdba21f" style="user-select:none;">&dagger;</a></h2>
+<p>バージョンTc555-1より、読み込み時に辞書エラーが起きた時は、まず緊急時用の基礎設定ファイルで再度読み込みを試します。</p>
+<p>緊急時用の基礎設定ファイルのファイル名は「主ファイル名_emerg.txt」です。すなわちデフォルトでは「yaya_emerg.txt」となります。DLL名を変更した時の挙動も通常の基礎設定ファイルと同様です。</p>
+<p>それでもエラーになった場合は、request関数から何も返さない(NULL)状態になります。</p>
+<p>問題が起きた時のエラーログは <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETERRORLOG" class="link_page_passage" data-mtime="2021-12-14T09:21:40+09:00">マニュアル/関数/GETERRORLOG</a> で取得できます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">設定項目<a class="anchor_super" id="yac5d4b4" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#yac5d4b4" title="yac5d4b4" style="user-select:none;">&dagger;</a></h2>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">charset, name<a class="anchor_super" id="lfff9e83" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#lfff9e83" title="lfff9e83" style="user-select:none;">&dagger;</a></h3>
+<p>標準の文字コードを設定します。<br />
+以下の予約値からいずれかを指定します。指定が無い場合はShift_JISとして扱われます。</p>
+<ul class="list1 list-indent1"><li>Shift_JIS / ShiftJIS / SJIS<br />
+シフトJISコード。</li>
+<li>UTF-8<br />
+UTF-8。</li>
+<li>default<br />
+実行OSのデフォルト文字コード。</li></ul>
+<p>以下のcharset.ではじまるものは個別設定です。必ずcharsetでの全一括指定より後に書いてください。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">charset.dic<a class="anchor_super" id="tbbef654" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#tbbef654" title="tbbef654" style="user-select:none;">&dagger;</a></h3>
+<p>辞書の文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">charset.setting<a class="anchor_super" id="m550f1ac" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m550f1ac" title="m550f1ac" style="user-select:none;">&dagger;</a></h3>
+<p>基礎設定ファイルそのものの文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">charset.output<a class="anchor_super" id="hc2b130e" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#hc2b130e" title="hc2b130e" style="user-select:none;">&dagger;</a></h3>
+<p>request関数での入出力の文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">charset.log<a class="anchor_super" id="q8207e68" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#q8207e68" title="q8207e68" style="user-select:none;">&dagger;</a></h3>
+<p>ログファイルや玉の出力の文字コード。 (Tc569-15)</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">charset.file<a class="anchor_super" id="e88707bb" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#e88707bb" title="e88707bb" style="user-select:none;">&dagger;</a></h3>
+<p>ファイル入出力の文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_9">charset.save<a class="anchor_super" id="j8736700" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#j8736700" title="j8736700" style="user-select:none;">&dagger;</a></h3>
+<p>グローバル変数セーブファイル入出力の文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_10">charset.save.old<a class="anchor_super" id="p5e0a1ff" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p5e0a1ff" title="p5e0a1ff" style="user-select:none;">&dagger;</a></h3>
+<p>文字コード指定のない旧形式のセーブファイルの読み取りの文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_11">charset.extension<a class="anchor_super" id="i3edf412" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#i3edf412" title="i3edf412" style="user-select:none;">&dagger;</a></h3>
+<p>外部DLL(SAORI等)入出力の文字コード。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_12">dic, filename ( , charset )<a class="anchor_super" id="rbfd65d8" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#rbfd65d8" title="rbfd65d8" style="user-select:none;">&dagger;</a></h3>
+<p>辞書ファイルfilenameをロードします。<br />
+辞書ファイルは文スクリプトが記述されたプログラムソースファイルで、文はここのプログラムされた内容を元に動作します。<br />
+辞書ファイルはいくつでも指定し、読み込むことができます。
+filenameはloadで指定されたパス位置からの相対パスで指定します。
+標準の辞書ファイルはcharsetで指定した文字コードで記述されたプレーンテキストファイルです。この他に、一定の法則でスクランブルをかけた
+暗号化ファイルを読み込むことができます。</p>
+<p>ファイル名の後に、文字コードをカンマ区切りで追加すると、指定したファイルはその文字コードで読み込みます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">dicif, filename ( , charset )<a class="anchor_super" id="t076cdc2" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#t076cdc2" title="t076cdc2" style="user-select:none;">&dagger;</a></h3>
+<p>dicと同じですが、指定したファイルが存在しない時は無視します。 [Tc571-2]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">dicdir, dirname ( , charset )<a class="anchor_super" id="h85cc54a" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#h85cc54a" title="h85cc54a" style="user-select:none;">&dagger;</a></h3>
+<p>指定したディレクトリ以下のすべてのファイルを辞書として読み込みます。<br />
+ディレクトリ指定であること以外はdic定義と同じです。</p>
+<p>注意：ファイルを読む順序は決まっていません。<br />
+そのため、globaldefineなどを定義する際に、読み込み順序によって問題が発生する可能性があります。<br />
+globaldefineを定義する際は、必ず定義した辞書を最初のほうに読み込むようにしましょう。 [ここまでTc556-1]</p>
+<p>dicdir で指定したディレクトリの中に _loading_order_override.txt か _loading_order.txt という名前のファイルがある時は、 includeEX,(ディレクトリ)/_loading_order.txt と書いたのと同じ挙動になります。<br />
+_loading_order_override.txt -&gt; _loading_order.txt の順にファイルの存在をチェックし、先に見つかったほうのみincludeEXします。 [ここまでTc571-2]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_15">msglang, language<a class="anchor_super" id="ba19005d" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#ba19005d" title="ba19005d" style="user-select:none;">&dagger;</a></h3>
+<p>ログに記録されるエラーメッセージ類の言語を選択します。<br />
+以下の予約値からいずれかを指定します。指定が無い場合はjapaneseとして扱われます。<br />
+（注意）本設定は過去互換のために残されています。次のmessagetxtを使ってください。</p>
+<ul class="list1 list-indent1"><li>japanese<br />
+日本語。</li>
+<li>english<br />
+英語。</li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_16">messagetxt, filename ( , charset )<a class="anchor_super" id="gb2c4d80" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#gb2c4d80" title="gb2c4d80" style="user-select:none;">&dagger;</a></h3>
+<p>ログに記録されるエラーメッセージ類の言語ファイルを読み込みます。例えば下記のように書いてください。<br />
+charsetを省略した場合は、UTF-8(BOM付)になります。 [Tc557]</p>
+<pre>messagetxt,messagetxt/japanese.txt
+messagetxt,messagetxt/english.txt
+messagetxt,messagetxt/chinese-simplified.txt
+messagetxt,messagetxt/chinese-traditional.txt</pre>
+<p>言語ファイル名は <a href="https://github.com/ponapalt/yaya-shiori/tree/500/messagetxt" rel="nofollow">https://github.com/ponapalt/yaya-shiori/tree/500/messagetxt</a> で確認できます。</p>
+<p>Tc570-1より、Windows上では言語ファイルをDLLに埋め込むようになったので、言語ファイル本体を配布する必要はありませんが、messagetxtにファイル名を書く仕様はWindows以外の環境向けにそのままにしています。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">basepath, directory<a class="anchor_super" id="s8d07a4a" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#s8d07a4a" title="s8d07a4a" style="user-select:none;">&dagger;</a></h3>
+<p>辞書等を読み込む基準点となるディレクトリを任意の場所に再設定します。<br />
+設定しない場合、通常はyaya.dllと同じディレクトリになります。 [Tc557]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_18">include, filename<a class="anchor_super" id="ge3e7e6f" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#ge3e7e6f" title="ge3e7e6f" style="user-select:none;">&dagger;</a></h3>
+<p>基礎設定ファイルの内容を別ファイルから読み込みます。<br />
+指定したファイルの中身も有効な基礎設定として扱われます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_19">includeEX, filename<a class="anchor_super" id="k068de51" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#k068de51" title="k068de51" style="user-select:none;">&dagger;</a></h3>
+<p>includeと基本的には同じ処理ですが、filenameに指定したファイル名がディレクトリ名を含む文字列だった場合に、そのディレクトリ内にカレントディレクトリを一時的に切り替えてからinclude処理を行います。 [Tc559]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_20">log, logfilename<a class="anchor_super" id="m583923d" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m583923d" title="m583923d" style="user-select:none;">&dagger;</a></h3>
+<p>実行ログをファイルlogfilenameに記録します。<br />
+charset.logで指定した文字コードで書き込まれます。
+logfilenameはloadで指定されたパス位置からの相対パスで指定します。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_21">iolog, [on|off]<a class="anchor_super" id="pb05622c" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#pb05622c" title="pb05622c" style="user-select:none;">&dagger;</a></h3>
+<p>load、unload、request実行時の入出力文字列と処理時間をログに記録するかを設定します。<br />
+onで記録します。デフォルトではonになっていますので、不要の場合にoffとしてください。<br />
+off指定としても、玉にドラッグ＆ドロップして起動する使い方をした場合は強制的にonになります。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_22">iolog.filter.keyword,[無視判定文字列]<a class="anchor_super" id="b95d1367" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#b95d1367" title="b95d1367" style="user-select:none;">&dagger;</a></h3>
+<p>requestの文字列中に指定した無視判定文字列が含まれていた場合、そのrequestのI/Oをログに記録しない（玉への出力もしない）ようにします。複数指定可能です。</p>
+<p>旧定義名：ignoreiolog</p>
+<p>例：OnSecondChangeとOnMouse系のイベントを記録しない</p>
+<pre>ignoreiolog, ID: OnSecondChange //OnSecondChange無視
+iolog.filter.keyword, OnMouse        //OnMouse系無視</pre>
+<p>（注意）基礎設定ファイルの書式上、無視判定文字列の前後の空白、およびコメント // 以降は無視されます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_23">iolog.filter.keyword.delete,[文字列]<a class="anchor_super" id="j0824d3d" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#j0824d3d" title="j0824d3d" style="user-select:none;">&dagger;</a></h3>
+<p>上記を削除します。 <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETSETTING" class="link_page_passage" data-mtime="2021-08-31T09:33:23+09:00">マニュアル/関数/SETSETTING</a> 向けの書き方で、定義ファイルに直接書いてもあまり意味はありません。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_24">iolog.filter.keyword.regex,[無視判定文字列：正規表現]<a class="anchor_super" id="je060ec4" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#je060ec4" title="je060ec4" style="user-select:none;">&dagger;</a></h3>
+<p>iolog.filter.keywordの正規表現版です。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_25">iolog.filter.keyword.regex,delete,[文字列]<a class="anchor_super" id="c2e843e1" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#c2e843e1" title="c2e843e1" style="user-select:none;">&dagger;</a></h3>
+<p>上記を削除します。 <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETSETTING" class="link_page_passage" data-mtime="2021-08-31T09:33:23+09:00">マニュアル/関数/SETSETTING</a> 向けの書き方で、定義ファイルに直接書いてもあまり意味はありません。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_26">iolog.filter.mode,[モード]<a class="anchor_super" id="p0f1090a" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p0f1090a" title="p0f1090a" style="user-select:none;">&dagger;</a></h3>
+<p>上記のiolog.filter.keyword～ の判定条件について、「条件に合致したものを出力しない」か「条件に合致したものだけを出力する」かを切り替えます。</p>
+<p>定義しない場合は「条件に合致したものを出力しない」モードになります。</p>
+<pre>iolog.filter.mode,allowlist
+iolog.filter.mode,whitelist</pre>
+<p>↑条件に合致したものだけを出力するモードに切り替えます。</p>
+<pre>iolog.filter.mode,denylist
+iolog.filter.mode,blacklist</pre>
+<p>↑条件に合致したものを出力しないモードに切り替えます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_27">fncdepth, [depth]<a class="anchor_super" id="p6bb4967" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p6bb4967" title="p6bb4967" style="user-select:none;">&dagger;</a></h3>
+<p>関数呼び出しの深さ上限を数値で指定します。<br />
+デフォルト値は32です。最低値は2で、これより小さな値や不正な値を指定した場合も2として扱われます。<br />
+0にすると上限チェックをしませんが、呼び出しが深すぎると容赦なくベースウェアごと落ちます。 [Tc556-1]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_28">looplimit, [count]<a class="anchor_super" id="w2afd51b" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#w2afd51b" title="w2afd51b" style="user-select:none;">&dagger;</a></h3>
+<p>ループの回数上限を数値で指定します。<br />
+デフォルト値は10000です。<br />
+0にすると上限チェックをしませんが、延々と実行を続けてフリーズします。<br />
+foreachには効果がありません。 [Tc564-1]</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_29">save.encode, [on|off]<a class="anchor_super" id="m40b8102" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m40b8102" title="m40b8102" style="user-select:none;">&dagger;</a></h3>
+<p>セーブファイルを暗号化します。「暗号化」といってもたいしたものではありませんので、せいぜい多少わかりにくくする程度とお考えください。<br />
+一度onにするとセーブファイルを削除するまで暗号化されたままになります。設定を変える際は十分注意してください。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_30">save.auto, [on|off]<a class="anchor_super" id="v12dd3d8" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#v12dd3d8" title="v12dd3d8" style="user-select:none;">&dagger;</a></h3>
+<p>セーブファイル自動保存機能をON/OFFします。ONの場合、一定時間ごとのバックアップと終了時の変数自動保存が行われます。OFFの場合は保存関数を明示的に呼ばない限り保存されません。標準はONです。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_31">maxlognum, [count]<a class="anchor_super" id="wd26f86a" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#wd26f86a" title="wd26f86a" style="user-select:none;">&dagger;</a></h3>
+<p>GETERRORLOG関数で取得できるログの最大値を設定します。<br />
+デフォルト値は256要素です。</p>
+<hr class="full_hr" />
+<ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Prev</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">マニュアル/文法</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0" title="マニュアル/文法/2.関数" class="link_page_passage" data-mtime="2021-12-09T16:08:57+09:00">Next</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0" class="link_page_passage" data-mtime="2021-12-09T16:08:57+09:00">マニュアル/文法/2.関数</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Home</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Up</a></li>
+</ul>
+   
+   	 	
+	</div>
+  </td>
+ </tr>
+</table>
+
+
+
+
+<table cellspacing=0 width=100%>
+<tr><td id=footer>
+<div id="toolbar">
+
+ <a href="index.php" rel="nofollow"><img src="image/top.png" width="20" height="20" alt="トップ" title="トップ" /></a>
+ &nbsp;
+ 	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" /></a>			<a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/freeze.png" width="20" height="20" alt="凍結" title="凍結" /></a>	  <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/diff.png" width="20" height="20" alt="差分" title="差分" /></a>	<a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/backup.png" width="20" height="20" alt="履歴" title="履歴" /></a>			<a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" /></a>		<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" /></a>	<a href="index.php?plugin=rename&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/rename.png" width="20" height="20" alt="名前変更" title="名前変更" /></a> <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" /></a> &nbsp;
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" /></a> <a href="index.php?cmd=list" rel="nofollow"><img src="image/list.png" width="20" height="20" alt="一覧" title="一覧" /></a> <a href="index.php?cmd=search" rel="nofollow"><img src="image/search.png" width="20" height="20" alt="検索" title="検索" /></a> <a href="index.php?RecentChanges" rel="nofollow"><img src="image/recentchanges.png" width="20" height="20" alt="最終更新" title="最終更新" /></a> &nbsp; <a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=1.0" rel="nofollow"><img src="image/rss.png" width="36" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=2.0" rel="nofollow"><img src="image/rss20.png" width="53" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a>
+</div>
+
+
+<div id="lastmodified">
+ 最終更新日: 2022-06-18 (土) 09:14:15<span class="page_passage" data-mtime="2022-06-18T09:14:15+09:00"></span></div>
+
+
+<div id="related">
+ 関連ページ: <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETSETTING">マニュアル/関数/GETSETTING</a><span class="page_passage" data-mtime="2023-04-11T23:53:01+09:00"></span>
+ <a href="index.php?%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8">システム辞書</a><span class="page_passage" data-mtime="2023-01-24T18:50:47+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/CLEARERRORLOG">マニュアル/関数/CLEARERRORLOG</a><span class="page_passage" data-mtime="2021-12-14T09:21:46+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETERRORLOG">マニュアル/関数/GETERRORLOG</a><span class="page_passage" data-mtime="2021-12-14T09:21:40+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0">マニュアル/文法/2.関数</a><span class="page_passage" data-mtime="2021-12-09T16:08:57+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC/%E9%96%A2%E6%95%B0">マニュアル/基本/関数</a><span class="page_passage" data-mtime="2021-11-23T15:59:55+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/7.%E3%83%95%E3%83%AD%E3%83%BC%E5%88%B6%E5%BE%A1">マニュアル/文法/7.フロー制御</a><span class="page_passage" data-mtime="2021-11-21T04:59:43+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/SETSETTING">マニュアル/関数/SETSETTING</a><span class="page_passage" data-mtime="2021-08-31T09:33:23+09:00"></span>
+ <a href="index.php?Tips/%E7%89%B9%E6%AE%8A%E6%96%87%E5%AD%97%E3%82%92%E6%89%B1%E3%81%84%E3%81%9F%E3%81%84">Tips/特殊文字を扱いたい</a><span class="page_passage" data-mtime="2009-03-22T07:08:26+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95">マニュアル/文法</a><span class="page_passage" data-mtime="2008-03-23T17:03:02+09:00"></span></div>
+
+
+</td></tr>
+</table>
+
+<div id="footer">
+ Powered by <strong><a href="http://pukiwiki.sourceforge.jp/">PukiWiki</a> 1.5.4</strong> / <strong><a href="http://pukiwiki.cafelounge.net/plus/">PukiWiki Plus!</a></strong>
+</div>
+
+</body>
+</html>

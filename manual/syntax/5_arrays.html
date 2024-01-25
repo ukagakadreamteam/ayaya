@@ -1,0 +1,499 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+
+
+<head profile="http://purl.org/net/ns/metaprof">
+ <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+ <meta http-equiv="content-style-type" content="text/css" />
+
+ <title>マニュアル/文法/5.配列 - AYAYA/03</title>
+ <link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />
+ <link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />
+ <link rel="stylesheet" href="/svgd/table.css" type="text/css" />
+ <link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" /> 
+ <script type="text/javascript">
+ <!--
+ // -->
+ IMAGE_DIR = 'image/';
+ SKIN_DIR = 'skin/';
+ </script>
+<!-- <script type="text/javascript" src="skin/lang/.js"></script> -->
+<script type="text/javascript" src="skin/default.js"></script>
+<!-- <script type="text/javascript" src="skin/ajax/textloader.js"></script> -->
+<!-- <script type="text/javascript" src="skin/ajax/glossary.js"></script> -->
+ <script type="text/javascript" src="skin/tzCalculation_LocalTimeZone.js"></script>
+
+</head>
+
+<body>
+
+<div id="popUpContainer"></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr height="80">
+    <td width="170" nowrap><a href="index.php" alt="トップ" title="トップ"><img src="skin/title.png" width=170 height=80 border=0></a></td>
+    <td id="header1"><img src="skin/logo.png" width=350 height=40 border=0><br />
+    <div id="virtualdir" class="virtualdir">&nbsp;&nbsp;&nbsp;&nbsp;<a href="./?FrontPage"><span class="topicpath-top"><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">Top</a><span class="topicpath-slash">/</span></span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB">マニュアル</a><span class="topicpath-slash">/</span><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95">文法</a><span class="topicpath-slash">/</span>5.配列</a></div></td>
+  </tr>
+  <tr>
+    <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="./?FrontPage">トップページへ</a>
+    <td id="headerbar">&nbsp;
+
+ [ <a href="index.php?cmd=list" rel="nofollow" >一覧</a>  | <a href="index.php?cmd=search" rel="nofollow" >検索</a> | <a href="index.php?RecentChanges" rel="nofollow" >最終更新</a> ]
+ &nbsp;
+ [
+ <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow" >差分</a>  | <a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow" >履歴</a>   | <a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow" >凍結</a>  ]
+ 
+
+	</td>
+  </tr>
+</table>
+
+<table border="0" style="width:100%" cellspacing=0 cellpadding=0>
+  <tr>
+  <td valign="top" id="menubar" width=170>
+   <div id="menubar">
+	<h5>ツール</h5>
+	<p>
+	
+		
+	<a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" />リロード<br /></a>	<a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" />ヘルプ<br /></a>	</p>
+	<p>
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" />新規<br /></a>	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" />編集<br /></a>	<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" />複製<br /></a>	 	  <a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" />添付<br /></a>	 	 
+		
+	</p>
+
+			
+<h5 id="content_2_0"><a href="./?cmd=edit&amp;page=MenuBar" title="Edit:MenuBar" rel="nofollow">Menu</a></h5>
+<ul class="list1 list-indent1"><li><a href="index.php" title="FrontPage" class="link_page_passage" data-mtime="2021-05-30T19:48:11+09:00">トップページ</a>
+<br />
+<br /></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki" rel="nofollow">YAYA配布ページ</a>
+<ul class="list2 list-indent1"><li><a href="https://github.com/ponapalt/yaya-shiori/releases" rel="nofollow">ダウンロードページ</a></li>
+<li><a href="https://github.com/ponapalt/yaya-shiori/wiki/ChangeLog" rel="nofollow">更新履歴</a></li>
+<li><a href="https://github.com/ponapalt/konnoyayame" rel="nofollow">紺野ややめ</a></li>
+<li><a href="https://github.com/nikolat/tama/releases" rel="nofollow">ツール「玉」</a></li>
+<li><a href="https://github.com/Taromati2/yaya-CI-check" rel="nofollow">CIツール</a>
+<br />
+<br /></li></ul></li>
+<li>スタートアップ
+<ul class="list2 list-indent1"><li><a href="index.php?StartUp" title="StartUp" class="link_page_passage" data-mtime="2014-01-04T13:48:55+09:00">YAYA、AYAって何？</a></li>
+<li><a href="index.php?StartUp/YAYA%E3%81%A7%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B" title="StartUp/YAYAでゴーストを作る" class="link_page_passage" data-mtime="2021-06-25T14:42:05+09:00">新規ゴースト作成</a></li>
+<li><a href="index.php?StartUp/AYA%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/AYAからの移行" class="link_page_passage" data-mtime="2023-01-24T18:46:45+09:00">AYAからの移行</a></li>
+<li><a href="index.php?StartUp/%E9%87%8C%E3%80%85%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C" title="StartUp/里々からの移行" class="link_page_passage" data-mtime="2014-01-08T18:54:43+09:00">里々からの移行</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" class="link_page_passage" data-mtime="2009-03-29T22:34:39+09:00">マニュアル</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC" title="マニュアル/基本" class="link_page_passage" data-mtime="2023-04-11T23:46:28+09:00">基本</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">文法</a></li>
+<li><a href="index.php?%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8" class="link_page_passage" data-mtime="2023-01-24T18:50:47+09:00">システム辞書</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" title="マニュアル/関数用途別一覧" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">用途別関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0" title="マニュアル/関数" class="link_page_passage" data-mtime="2008-06-01T22:50:24+09:00">名前順関数一覧</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0" title="マニュアル/エラー処理関数" class="link_page_passage" data-mtime="2022-03-06T21:24:19+09:00">エラー処理関数</a>
+<br />
+<br /></li></ul></li>
+<li><a href="index.php?Tips" class="link_page_passage" data-mtime="2008-04-03T19:38:32+09:00">Tips</a>
+<ul class="list2 list-indent1"><li><a href="index.php?%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage" data-mtime="2016-11-27T21:03:00+09:00">困ったときの対処法</a></li>
+<li><a href="index.php?%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage" data-mtime="2012-10-28T13:15:25+09:00">トークべた書き支援ライブラリ</a></li>
+<li><a href="http://ukadev.shillest.net/" rel="nofollow">開発情報検索</a>
+<br />
+<br /></li></ul></li>
+<li>SHIORI以外のYAYA
+<ul class="list2 list-indent1"><li><a href="index.php?YAYA+as+SAORI" class="link_page_passage" data-mtime="2022-10-10T09:09:59+09:00">YAYA as SAORI</a></li>
+<li><a href="index.php?YAYA+as+MAKOTO" class="link_page_passage" data-mtime="2021-04-28T20:52:06+09:00">YAYA as MAKOTO</a></li>
+<li><a href="index.php?YAYA+as+PLUGIN" class="link_page_passage" data-mtime="2022-10-10T09:24:12+09:00">YAYA as PLUGIN</a>
+<br />
+<br /></li></ul></li>
+<li>連絡・掲示板
+<ul class="list2 list-indent1"><li><a href="http://ssp.shillest.net/bts/my_view_page.php" rel="nofollow">整備班BTS</a></li>
+<li><a href="index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage" data-mtime="2022-09-20T06:15:18+09:00">ここがわかんねえよログ</a></li>
+<li><a href="index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage" data-mtime="2023-04-11T23:40:59+09:00">wiki伝言板</a>
+<br />
+<br /></li></ul></li>
+<li>リンク
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2018-11-14T22:25:16+09:00">ゴースト関連リンク</a></li>
+<li><a href="index.php?%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage" data-mtime="2021-02-27T23:24:44+09:00">文ゴーストリンク</a>
+<br />
+<br /></li></ul></li>
+<li>ほか
+<ul class="list2 list-indent1"><li><a href="index.php?Help" title="Help" class="link_page_passage" data-mtime="2006-12-20T12:43:36+09:00">Wikiヘルプ</a></li></ul></li></ul>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">最近更新されたページ</h5>
+<h5>最新の10件</h5>
+<div><strong>2024-01-22</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0%E7%94%A8%E9%80%94%E5%88%A5%E4%B8%80%E8%A6%A7" class="link_page_passage" data-mtime="2024-01-22T19:53:46+09:00">マニュアル/関数用途別一覧</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetUserDefFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:44:05+09:00">マニュアル/関数/LINT.GetUserDefFuncUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetGlobalVarUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:51+09:00">マニュアル/関数/LINT.GetGlobalVarUsedBy</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/LINT.GetFuncUsedBy" class="link_page_passage" data-mtime="2024-01-22T19:43:37+09:00">マニュアル/関数/LINT.GetFuncUsedBy</a></li>
+</ul>
+<strong>2023-12-30</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/IARRAY" class="link_page_passage" data-mtime="2023-12-30T14:54:28+09:00">マニュアル/関数/IARRAY</a></li>
+</ul>
+<strong>2023-04-11</strong>
+<ul class="recent_list">
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETSETTING" class="link_page_passage" data-mtime="2023-04-11T23:53:01+09:00">マニュアル/関数/GETSETTING</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETLASTERROR" class="link_page_passage" data-mtime="2023-04-11T23:52:37+09:00">マニュアル/関数/GETLASTERROR</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FSEEK" class="link_page_passage" data-mtime="2023-04-11T23:52:09+09:00">マニュアル/関数/FSEEK</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/FOPEN" class="link_page_passage" data-mtime="2023-04-11T23:51:40+09:00">マニュアル/関数/FOPEN</a></li>
+ <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E9%96%A2%E6%95%B0/GETTYPE" class="link_page_passage" data-mtime="2023-04-11T23:50:24+09:00">マニュアル/関数/GETTYPE</a></li>
+</ul>
+</div>
+		<br>
+   </div>
+   <img src="skin/dummy.gif" width=170 height=10 border=0>
+  </td>
+  <td id="body" valign="top">
+   <div id="body"><ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97" title="マニュアル/文法/4.演算" class="link_page_passage" data-mtime="2008-03-23T17:14:24+09:00">Prev</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/6.%E6%96%87%E5%AD%97%E5%88%97%E5%86%85%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E8%A6%81%E7%B4%A0%E3%81%AE%E5%B1%95%E9%96%8B" title="マニュアル/文法/6.文字列内埋め込み要素の展開" class="link_page_passage" data-mtime="2021-08-31T12:30:15+09:00">Next</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">マニュアル/文法</a></li>
+</ul>
+<hr class="full_hr" />
+<div class="contents">
+<a id="contents_1"></a>
+<ul class="list1 list-indent1"><li><a href="#g4feb8c1">配列</a>
+<ul class="list2 list-indent1"><li><a href="#u1e86766">簡易配列</a>
+<ul class="list3 list-indent1"><li><a href="#o88f53af">簡易配列と汎用配列を利用した多次元配列</a></li></ul></li>
+<li><a href="#r1f9d606">汎用配列</a>
+<ul class="list3 list-indent1"><li><a href="#z1cfbf85">初期化</a></li>
+<li><a href="#ua3a26fe">要素追加</a></li>
+<li><a href="#f152b05f">要素削除</a></li>
+<li><a href="#n6fd0d08">値の更新</a></li>
+<li><a href="#u9fd841d">値の取り出し</a></li>
+<li><a href="#e6240c23">多次元化はできない</a></li>
+<li><a href="#z99403e7">演算</a></li>
+<li><a href="#se6e58da">関数の引数</a></li>
+<li><a href="#o22fa826">デリミタ/取得数指定</a></li></ul></li>
+<li><a href="#rce6669c">範囲指定</a></li>
+<li><a href="#j8feade9">汎用配列のパラレル出力</a></li></ul></li></ul>
+</div>
+
+<h2 id="content_1_0">配列<a class="anchor_super" id="g4feb8c1" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#g4feb8c1" title="g4feb8c1" style="user-select:none;">&dagger;</a></h2>
+<p>演算子[ ]は配列要素にアクセスするための演算子です。
+配列には文字列スプリットを擬似的に配列と見なす「簡易配列」と、カンマ区切りで列挙された要素を扱う「汎用配列」の2種類があります。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">簡易配列<a class="anchor_super" id="u1e86766" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#u1e86766" title="u1e86766" style="user-select:none;">&dagger;</a></h3>
+<p>文字列に含まれるカンマをデリミタ（区切り文字）と解釈して、配列のように扱う機能です。</p>
+<pre class="aya">request
+{
+    _a = &quot;this,is,a,pen&quot;
+    _a[1]
+}</pre>
+<p>requestは&quot;is&quot;を出力します。
+[ ]演算子が処理する対象は変数である必要はありません。即値でも関数の返値でもいいです。<br />
+上の例は以下のように書いても同じです。</p>
+<pre class="aya">request
+{
+    &quot;this,is,a,pen&quot;[1]
+}</pre>
+<p>序数の後ろにカンマ区切りでデリミタを指定することにより、カンマでなく他の文字列で簡易配列要素を区切ることができます。<br /></p>
+<pre class="aya">request
+{
+    &quot;This is a island.&quot;[2,&quot;is&quot;]
+}</pre>
+<p>&quot;is&quot;で区切るわけですから、文字列は以下のように分解されます。<br /></p>
+<pre>[0]　&quot;Th&quot;~
+[1]　&quot; &quot;~
+[2]　&quot; a &quot;~
+[3]　&quot;land.&quot;~</pre>
+<p>したがってrequestは&quot; a &quot;を返します。
+デリミタ指定をうまく使うと、多次元配列風に値を取り出すことが出来ます。</p>
+<pre class="aya">request
+{
+    _ar = &quot;taro|male,ayame|female,hotaru|female&quot;
+	
+    _ar[2][1,&quot;|&quot;]
+}</pre>
+<p>_ar[2]は&quot;hotaru|female&quot;です。さらに&quot;|&quot;を区切り文字として解釈して[1]を取り出しますので、結果は&quot;female&quot;となります。
+このように、階層毎にユニークなデリミタを適用することによって、任意の位置の値を簡単に抜き出すことができるようになります。
+範囲外の序数を指定した場合の出力は、存在しない変数の値を取り出そうとした場合と同様、空の文字列となります。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">簡易配列と汎用配列を利用した多次元配列<a class="anchor_super" id="o88f53af" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#o88f53af" title="o88f53af" style="user-select:none;">&dagger;</a></h4>
+<p>もっと直接的に多次元配列を扱いたいなら</p>
+<pre>Food = &quot;うどん,ラーメン,おにぎり&quot;
+Color = &quot;赤,青,黄&quot;</pre>
+<p>と簡易配列を宣言し、汎用配列で</p>
+<pre>Word = (Food, Color)</pre>
+<p>とすれば
+Word[0][0]でうどん、Word[1][2]で黄となる</p>
+<p>___________________________________________</p>
+<p>ここからは変数限定の機能を解説します。
+要素に代入が可能です。</p>
+<pre class="aya">request
+{
+    _a = &quot;this,is,a,pen&quot;
+    _a[3] = &quot;eraser&quot;
+    _a
+}</pre>
+<p>&quot;pen&quot;を&quot;eraser&quot;に書き換えています。requestの実行結果は&quot;this,is,a,eraser&quot;となります。
+デリミタ指定しても正しく機能します。</p>
+<pre class="aya">request
+{
+    _s = &quot;This is a island.&quot;
+    _s[2,&quot;is&quot;] = &quot; beautiful &quot;
+    _s
+}</pre>
+<p>requestは&quot;This is beautiful island.&quot;を出力します。
+多次元配列風に[ ]演算子を連結して使用している場合、代入はできません。</p>
+<pre class="aya">request
+{
+    _ar = &quot;taro|male,ayame|female,hotaru|female&quot;
+	
+    _ar[1][1,&quot;|&quot;] = &quot;male&quot;
+}</pre>
+<p>ayameの性別をmaleに書き換えようとしていますが、この操作はエラーとなります。代入が可能なのは一次元の場合のみです。
+現在の要素数を越える位置へも問題なく代入できます。デリミタが自動的に追加され、要素数が拡張されます。</p>
+<pre class="aya">request
+{
+    _m = &quot;fuji/asama/tanigawa&quot;
+    _m[5,&quot;/&quot;] = &quot;daisen&quot;
+    _m
+}</pre>
+<p>requestは&quot;fuji/asama/tanigawa///daisen&quot;を出力します。
+SETDELIMという関数を使用すると、「デフォルトのデリミタ」をカンマから別の文字列へ変更できます。<br />
+先に示した例をSETDELIMを使用して書き換えたものを以下に示します。</p>
+<pre class="aya">request
+{
+    _m = &quot;fuji/asama/tanigawa&quot;
+    SETDELIM(_m, &quot;/&quot;)
+    _m[5] = &quot;daisen&quot;
+    _m
+}</pre>
+<p>SETDELIMすることにより、単純に_m[5]と書くことができるようになります。
+多次元配列風に[ ]演算子を連結して使用している場合、SETDELIMは最初の（一次元目の）[ ]のみで有効です。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">汎用配列<a class="anchor_super" id="r1f9d606" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#r1f9d606" title="r1f9d606" style="user-select:none;">&dagger;</a></h3>
+<p>汎用配列はさまざまな型の値を混在して格納できる配列構造です。<br />
+一般的なアクセスでは簡易配列より高速に動作します。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">初期化<a class="anchor_super" id="z1cfbf85" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#z1cfbf85" title="z1cfbf85" style="user-select:none;">&dagger;</a></h4>
+<pre class="aya">i = (100,&quot;test&quot;,-1.5)</pre>
+<p>要素をカンマで列挙して記述します。<br />
+代入する場合は上のように要素の集合を( )で囲んでください。カンマの演算優先度は代入よりも低いため、ブラケットが無いと</p>
+<pre class="aya">(i = 100),&quot;test&quot;,-1.5</pre>
+<p>このように解釈されてしまいます。
+配列を空の状態で初期化するには、IARRAYという関数を使用します。IARRAYは「空の汎用配列」を返す関数です。</p>
+<pre class="aya">i = IARRAY</pre>
+<p>初期化時に要素をひとつだけ代入したい場合は工夫が要ります。たとえば単に i = 100 としたのでは、配列ではなくただの数値の代入になってしまうからです。<br />
+以下のように記述します。</p>
+<pre class="aya">i = (IARRAY,100)</pre>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">要素追加<a class="anchor_super" id="ua3a26fe" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#ua3a26fe" title="ua3a26fe" style="user-select:none;">&dagger;</a></h4>
+<pre class="aya">i = (i,&quot;add&quot;)</pre>
+<p>とすると配列の後端に&quot;add&quot;が追加されます。
+配列を追加することもできます。<br /></p>
+<pre class="aya">i = (i,(&quot;add&quot;,123,0.0))</pre>
+<p>a = a + 1 を a += 1と略せるように、上の例は下のようにも書くことができます。</p>
+<pre class="aya">i ,= (&quot;add&quot;,123,0.0)</pre>
+<p>先頭への挿入も同じ書式で可能です。</p>
+<pre class="aya">i = (&quot;first&quot;,i)</pre>
+<p>中途への挿入もできます。</p>
+<pre class="aya">i = (100,200,300,400,500,600)
+i[2] ,= &quot;insertion&quot;</pre>
+<p>iは(100,200,300,&quot;insertion&quot;,400,500,600)となります。<br />
+挿入対象は[2]でなく[3]に入ることに注意してください。
+i[2]へ挿入したい場合は</p>
+<pre class="aya">i[2] = (&quot;insertion&quot;,i[2])</pre>
+<p>とします。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">要素削除<a class="anchor_super" id="f152b05f" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#f152b05f" title="f152b05f" style="user-select:none;">&dagger;</a></h4>
+<p>削除したい要素へIARRAYを代入します。</p>
+<pre class="aya">i = (100,200,300,400,500,600)
+i[2] = IARRAY</pre>
+<p>300が削除され、iは(100,200,400,500,600)となります。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_7">値の更新<a class="anchor_super" id="n6fd0d08" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#n6fd0d08" title="n6fd0d08" style="user-select:none;">&dagger;</a></h4>
+<p>単純に要素へ代入できます。
+現在の要素数を越える位置へも問題なく代入できます。必要な数だけ要素数が拡張されます。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_8">値の取り出し<a class="anchor_super" id="u9fd841d" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#u9fd841d" title="u9fd841d" style="user-select:none;">&dagger;</a></h4>
+<p>通常の変数と同様、序数を指定して記述すればそのまま出力されます。
+範囲外の序数を指定した場合の出力は、存在しない変数の値を取り出そうとした場合と同様、空の文字列となります。</p>
+<pre class="aya">i = (100,200,300,400,500,600)
+i[4]</pre>
+<p>500が出力されます。
+[ ]演算子が処理する対象は変数である必要はありません。即値でも関数の返値でもいいです。<br /></p>
+<pre class="aya">(100,200,300,400,500,600)[4]</pre>
+<p>500が出力されます。
+汎用配列をそのまま関数の出力にできます。</p>
+<pre class="aya">request
+{
+    river[2]
+}
+
+river
+{
+    (&quot;tenryu&quot;,&quot;bandou-tarou&quot;,&quot;ishikari&quot;,&quot;shimanto&quot;)
+}</pre>
+<p>requestは&quot;ishikari&quot;を出力します。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_9">多次元化はできない<a class="anchor_super" id="e6240c23" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#e6240c23" title="e6240c23" style="user-select:none;">&dagger;</a></h4>
+<p>汎用配列は多次元配列を構成できません。</p>
+<pre class="aya">(100,200,(300,400),500,600)</pre>
+<p>このように書いても、内包されたブラケット部分が副次的な配列と認識されることはありません。<br />
+結局以下のように単純に結合されてしまいます。</p>
+<pre class="aya">(100,200,300,400,500,600)</pre>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_10">演算<a class="anchor_super" id="z99403e7" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#z99403e7" title="z99403e7" style="user-select:none;">&dagger;</a></h4>
+<p>要素単位の演算は通常に行うことが出来ます。</p>
+<p>汎用配列と単項値との演算は、「全要素へ単項値が演算される」という独特の動作となります。</p>
+<pre class="aya">pref = (&quot;gunnma&quot;,&quot;ohsaka&quot;,&quot;hokkaido&quot;)
+    pref += &quot;-ken&quot;</pre>
+<p>prefは &quot;gunnma-ken&quot;,&quot;ohsaka-ken&quot;,&quot;hokkaido-ken&quot; となります。</p>
+<pre class="aya">answer = (2*(1,2,3))[1]</pre>
+<p>answerには4が代入されます。<br />
+2*(1,2,3)の計算結果が(2,4,6)となるからです。</p>
+<p>汎用配列どうしの演算は、演算可能なすべての組み合わせを出力します。</p>
+<pre class="aya">pref1 = (&quot;gunma&quot;,&quot;osaka&quot;,&quot;hokkai&quot;)
+    pref2 = (&quot;-ken&quot;,&quot;-fu&quot;,&quot;-do&quot;)
+    pref3 = pref1 + pref2</pre>
+<p>pref3は &quot;gunma-ken&quot;,&quot;gunma-fu&quot;,&quot;gunma-do&quot;,&quot;osaka-ken&quot;,&quot;osaka-fu&quot;,&quot;osaka-do&quot;,&quot;hokkai-ken&quot;,&quot;hokkai-fu&quot;,&quot;hokkai-do&quot; になります。<br />
+配列に数値（整数、実数）が入っている場合は、引き算・割り算・掛け算など他の演算も有効です。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_11">関数の引数<a class="anchor_super" id="se6e58da" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#se6e58da" title="se6e58da" style="user-select:none;">&dagger;</a></h4>
+<p>文において関数の引数は汎用配列です。_argvの内容は、呼び出し側引数がそのまま代入された汎用配列となっています。
+つまり</p>
+<pre class="aya">func(1, 2, &quot;test&quot;)</pre>
+<p>という関数の呼び出しは、</p>
+<pre class="aya">_i = (1,2,&quot;test&quot;)
+func(_i)</pre>
+<p>とも書けます。非常にトリッキーな表記ですが、これで意図どおりに動作します。<br />
+注意してください。書き直したスクリプトにおいても、引数の数は決して1個ではありません。3個です！
+この構造をうまく利用すると、可変長の引数を他の関数へ簡単に渡すことが出来ます。</p>
+<pre class="aya">request
+{
+    total(1,2,3,4,5,6)
+}
+
+total
+{
+    calc_total(_argv)
+}
+
+calc_total
+{
+    _answer = 0;
+    foreach _argv; _val { _answer += _val }
+    _answer
+}</pre>
+<p>totalは自分では何もせず、すべての引数をそのままcalc_totalへ引き渡しています。<br />
+この例では単純に引き渡していますが、もちろん必要に応じて加工してから渡すことも可能です。
+引数の指定方法が複雑になっている場合は注意すべきです。</p>
+<pre class="aya">_i = (1,2,&quot;test&quot;)
+func(&quot;sky&quot;, _i, &quot;sun&quot;)</pre>
+<p>上の呼び出しは以下と等価です。汎用配列は多次元化できないことを思い出してください。</p>
+<pre class="aya">func(&quot;sky&quot;, 1, 2, &quot;test&quot;, &quot;sun&quot;)</pre>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_12">デリミタ/取得数指定<a class="anchor_super" id="o22fa826" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#o22fa826" title="o22fa826" style="user-select:none;">&dagger;</a></h4>
+<pre class="aya">_i = (2,&quot;is&quot;)
+&quot;This is a island.&quot;[_i]</pre>
+<p>簡易配列のデリミタ指定の部分も汎用配列です。したがって上のようなことも出来ます。これは下の記述と等価です。</p>
+<pre class="aya">&quot;This is a island.&quot;[2,&quot;is&quot;]</pre>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">範囲指定<a class="anchor_super" id="rce6669c" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#rce6669c" title="rce6669c" style="user-select:none;">&dagger;</a></h3>
+<p>簡易配列/汎用配列とも、序数を範囲で指定できます。取得、代入とも可能です。
+範囲は汎用配列で指定します。たとえば i[a,b] は「iの要素a～b」を表します。</p>
+<pre class="aya">name = (&quot;さくら&quot;,&quot;せりこ&quot;,&quot;奈留&quot;,&quot;まゆら&quot;,&quot;毒子&quot;,&quot;美耳&quot;)
+i = name[1,3]
+name[3,4] = &quot;奎子&quot;
+j = name
+name[0,2] = IARRAY
+k = name</pre>
+<p>iには (&quot;せりこ&quot;,&quot;奈留&quot;,&quot;まゆら&quot;) が格納されます。<br />
+jは (&quot;さくら&quot;,&quot;せりこ&quot;,&quot;奈留&quot;,&quot;奎子&quot;,&quot;美耳&quot;) 、<br />
+kは (&quot;奎子&quot;,&quot;美耳&quot;)  となります。</p>
+<p>範囲外は無視されます。</p>
+<pre class="aya">n = (1,2,3,4)
+n[-2,1] *= 5</pre>
+<p>nは (5,10,3,4) です。
+対象が簡易配列の場合でも書式は同じです。</p>
+<pre class="aya">name = &quot;さくら,せりこ,奈留,まゆら,毒子,美耳&quot;
+i = name[1,3]
+name[3,4] = &quot;奎子&quot;
+j = name</pre>
+<p>iは &quot;せりこ,奈留,まゆら&quot; 、jは &quot;さくら,せりこ,奈留,奎子,美耳&quot; です。
+デリミタ指定も可能です。範囲指定のすぐ後ろに続けて指定します。</p>
+<pre class="aya">animal = &quot;くま！うさぎ！ねこ！いぬ！わに&quot;
+i = animal[0,2,&quot;！&quot;]
+animal[2,4,&quot;！&quot;] = &quot;ぶた&quot;
+j = animal</pre>
+<p>iは &quot;くま！うさぎ！ねこ&quot; 、jは &quot;くま！うさぎ！ぶた&quot; です。</p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">汎用配列のパラレル出力<a class="anchor_super" id="j8feade9" href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97#j8feade9" title="j8feade9" style="user-select:none;">&dagger;</a></h3>
+<p>すべての式/値の前に「parallel」を書くことができます。<br />
+parallelは出力候補値が汎用配列だった場合、
+要素のそれぞれを出力候補値にする機能を持っています。</p>
+<pre class="aya">foo0
+{
+　　(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;)
+　　&quot;地球&quot;
+}
+
+foo1
+{
+　　parallel (&quot;A&quot;,&quot;B&quot;,&quot;C&quot;)
+　　&quot;地球&quot;
+}</pre>
+<p>foo0の出力は、(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;) もしくは &quot;地球&quot;。<br />
+foo1の出力は、&quot;A&quot;、&quot;B&quot;、&quot;C&quot;、&quot;地球&quot; のいずれかとなります。
+汎用配列以外にparallelを使っても意味がなく、書かないのと同じです。たとえば下の2つの記述は等価です。</p>
+<pre class="aya">parallel STRLEN(&quot;earth&quot;)
+STRLEN(&quot;earth&quot;)</pre>
+<p>択一メソッドarrayとparallelを利用することにより、関数の出力候補と汎用配列を相互に変換することができます。<br />
+さまざまな応用が考えられます。たとえば以下の非常に簡潔な関数cyclicは、汎用配列から記述順に要素値を取り出します。</p>
+<pre class="aya">cyclic : sequential
+{
+　　parallel _argv
+}</pre>
+<p>逆に、すべての式/値の前に「void」と書くことで、計算結果を破棄し、出力候補にしないこともできます。</p>
+<hr class="full_hr" />
+<ul class="navi">
+ <li class="navi_left"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97" title="マニュアル/文法/4.演算" class="link_page_passage" data-mtime="2008-03-23T17:14:24+09:00">Prev</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97" class="link_page_passage" data-mtime="2008-03-23T17:14:24+09:00">マニュアル/文法/4.演算</a></li>
+ <li class="navi_right"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/6.%E6%96%87%E5%AD%97%E5%88%97%E5%86%85%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E8%A6%81%E7%B4%A0%E3%81%AE%E5%B1%95%E9%96%8B" title="マニュアル/文法/6.文字列内埋め込み要素の展開" class="link_page_passage" data-mtime="2021-08-31T12:30:15+09:00">Next</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/6.%E6%96%87%E5%AD%97%E5%88%97%E5%86%85%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E8%A6%81%E7%B4%A0%E3%81%AE%E5%B1%95%E9%96%8B" class="link_page_passage" data-mtime="2021-08-31T12:30:15+09:00">マニュアル/文法/6.文字列内埋め込み要素の展開</a></li>
+ <li class="navi_none"><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Home</a><br /><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage" data-mtime="2008-03-23T17:03:02+09:00">Up</a></li>
+</ul>
+   
+   	 	
+	</div>
+  </td>
+ </tr>
+</table>
+
+
+
+
+<table cellspacing=0 width=100%>
+<tr><td id=footer>
+<div id="toolbar">
+
+ <a href="index.php" rel="nofollow"><img src="image/top.png" width="20" height="20" alt="トップ" title="トップ" /></a>
+ &nbsp;
+ 	<a href="index.php?cmd=edit&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/edit.png" width="20" height="20" alt="編集" title="編集" /></a>			<a href="index.php?cmd=freeze&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/freeze.png" width="20" height="20" alt="凍結" title="凍結" /></a>	  <a href="index.php?cmd=diff&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/diff.png" width="20" height="20" alt="差分" title="差分" /></a>	<a href="index.php?cmd=backup&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/backup.png" width="20" height="20" alt="履歴" title="履歴" /></a>			<a href="index.php?plugin=attach&amp;pcmd=upload&amp;page=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/file.png" width="20" height="20" alt="添付" title="添付" /></a>		<a href="index.php?plugin=template&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/copy.png" width="20" height="20" alt="複製" title="複製" /></a>	<a href="index.php?plugin=rename&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/rename.png" width="20" height="20" alt="名前変更" title="名前変更" /></a> <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/reload.png" width="20" height="20" alt="リロード" title="リロード" /></a> &nbsp;
+	<a href="index.php?plugin=newpage&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97" rel="nofollow"><img src="image/new.png" width="20" height="20" alt="新規" title="新規" /></a> <a href="index.php?cmd=list" rel="nofollow"><img src="image/list.png" width="20" height="20" alt="一覧" title="一覧" /></a> <a href="index.php?cmd=search" rel="nofollow"><img src="image/search.png" width="20" height="20" alt="検索" title="検索" /></a> <a href="index.php?RecentChanges" rel="nofollow"><img src="image/recentchanges.png" width="20" height="20" alt="最終更新" title="最終更新" /></a> &nbsp; <a href="index.php?Help" rel="nofollow"><img src="image/help.png" width="20" height="20" alt="ヘルプ" title="ヘルプ" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=1.0" rel="nofollow"><img src="image/rss.png" width="36" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a> &nbsp; <a href="index.php?cmd=mixirss&amp;ver=2.0" rel="nofollow"><img src="image/rss20.png" width="53" height="14" alt="最終更新のRSS" title="最終更新のRSS" /></a>
+</div>
+
+
+<div id="lastmodified">
+ 最終更新日: 2016-11-25 (金) 23:03:01<span class="page_passage" data-mtime="2016-11-25T23:03:01+09:00"></span></div>
+
+
+<div id="related">
+ 関連ページ: <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0">マニュアル/文法/2.関数</a><span class="page_passage" data-mtime="2021-12-09T16:08:57+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/6.%E6%96%87%E5%AD%97%E5%88%97%E5%86%85%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E8%A6%81%E7%B4%A0%E3%81%AE%E5%B1%95%E9%96%8B">マニュアル/文法/6.文字列内埋め込み要素の展開</a><span class="page_passage" data-mtime="2021-08-31T12:30:15+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97">マニュアル/文法/4.演算</a><span class="page_passage" data-mtime="2008-03-23T17:14:24+09:00"></span>
+ <a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95">マニュアル/文法</a><span class="page_passage" data-mtime="2008-03-23T17:03:02+09:00"></span></div>
+
+
+</td></tr>
+</table>
+
+<div id="footer">
+ Powered by <strong><a href="http://pukiwiki.sourceforge.jp/">PukiWiki</a> 1.5.4</strong> / <strong><a href="http://pukiwiki.cafelounge.net/plus/">PukiWiki Plus!</a></strong>
+</div>
+
+</body>
+</html>
