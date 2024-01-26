@@ -147,10 +147,10 @@
    <img src="skin/dummy.gif" width=170 height=10 border=0>
   </td>
   <td id="body" valign="top">
-   <div id="body"><h2 id="content_1_0">ゴーストの起動と終了に確実に何かする<a class="anchor_super" id="zfcbef62" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#zfcbef62" title="zfcbef62" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">ゴーストの起動と終了に確実に何かする<a class="anchor_super" id="zfcbef62" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#zfcbef62" style="user-select:none;">&dagger;</a></h2>
 <p>常駐型SAORIの読み込み、変数の初期化など、確実にゴーストの読み込み時と終了時になにかするための方法です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">とりあえず……<a class="anchor_super" id="g4ee828f" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#g4ee828f" title="g4ee828f" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">とりあえず……<a class="anchor_super" id="g4ee828f" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#g4ee828f" style="user-select:none;">&dagger;</a></h3>
 <p>やり方は単純。適当な辞書に</p>
 <pre>OnGhostLoad
 {
@@ -165,7 +165,7 @@ OnGhostUnload
 <p>なお、<strong>ここでスクリプトを書いても何もおきませんので注意してください。</strong><br />
 あくまでも基本的な初期化処理だけです。喋りはOnBootなどにきちんと書いてください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">さらに確実に<a class="anchor_super" id="v1151208" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#v1151208" title="v1151208" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">さらに確実に<a class="anchor_super" id="v1151208" href="index.php?Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B#v1151208" style="user-select:none;">&dagger;</a></h3>
 <p>SSPではゴーストキャッシュ機構といって、一度読み込んだゴーストの再読み込みに備えてメモリ上に保持しておく機能があります。<br />
 どうしても確実にゴーストを開いた／閉じた時に何かやりたい場合は、上に加えて</p>
 <pre>OnCacheSuspend

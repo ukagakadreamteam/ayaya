@@ -148,12 +148,12 @@
   </td>
   <td id="body" valign="top">
    <div id="body">
-<h2 id="content_1_0">About_SAORI<a class="anchor_super" id="yd2c7947" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#yd2c7947" title="yd2c7947" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">About_SAORI<a class="anchor_super" id="yd2c7947" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#yd2c7947" style="user-select:none;">&dagger;</a></h2>
 <p>基本的に伺かのゴーストを作成するときは里々やYAYAなどのSHIORI及びさくらスクリプトを用いて処理を書く。
 しかし伺かにはSHIORI以外の汎用言語(例えばCなど)で書かれた処理を実装する機能が存在する。これを「SAORI」サブシステムと呼び、これを利用することでより高度な処理の実装が可能になる。
 またSAORIにはSAORI-basicとSAORI-universalと呼ばれる2種類の規格が存在しており、前者はexe形式、後者はdll形式による実装である。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">SAORI-basic<a class="anchor_super" id="z795d73d" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#z795d73d" title="z795d73d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">SAORI-basic<a class="anchor_super" id="z795d73d" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#z795d73d" style="user-select:none;">&dagger;</a></h2>
 <p>SAORI-basicはコマンドライン引数(main関数がとる引数)を引数とし、標準出力を返す.exeのことを指す。 例えばC++で次のような入力を受け取って返すプログラムを考える:</p>
 <pre class="c">#include &lt;iostream&gt;
 using namespace std;
@@ -164,7 +164,7 @@ int main(int argc,char *argv[]){
 <p>これを.exeとしてコンパイルすれば(コンパイル時には依存環境を切るため静的ビルドを推奨(例えばMinGW(gcc)なら-staticオプションを付けるなど))、これだけでSAORI-basicとして使うことができる。
 但し伺かの標準的な文字コードがUTF-8ではなくShift-JISである点に注意。(YAYAであればUnicodeに対応しているが里々ではShift-JISしか扱えない)</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">YAYAにおける使い方<a class="anchor_super" id="x656c16d" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#x656c16d" title="x656c16d" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">YAYAにおける使い方<a class="anchor_super" id="x656c16d" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#x656c16d" style="user-select:none;">&dagger;</a></h3>
 <p>YAYAでSAORI-basicを使うにはFUNCTIONEX関数とproxy_ex.dll(配布元は <a href="https://github.com/ponapalt/csaori/releases/" rel="nofollow">https://github.com/ponapalt/csaori/releases/</a> )を利用する。これはパイプとしてSHIORI(YAYA)とSAORIの間を繋ぐプログラムである。</p>
 <pre class="c">Sample_1_1{
   _result = FUNCTIONEX('SAORI/proxy_ex.dll', 'sample1_1.exe', &quot;はろーわーるど&quot;)
@@ -173,7 +173,7 @@ int main(int argc,char *argv[]){
 <p>\end{lstlisting}
 FUNCTIONEXの第一引数はyaya.dllからproxy_ex.dllへの相対パス、第二引数はproxy_ex.dllからSAORI-basic本体への相対パスを指定する。また第三引数以降はSAORI-basicに渡す引数である。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">出力を配列として扱う方法<a class="anchor_super" id="ce473a0c" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#ce473a0c" title="ce473a0c" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">出力を配列として扱う方法<a class="anchor_super" id="ce473a0c" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#ce473a0c" style="user-select:none;">&dagger;</a></h3>
 <p>SAORI-basicの返り値は標準出力であるため、普通は一つの文字列しか返すことができない。しかしYAYAの機能である「デリミタ(区切り文字)による簡易配列」やSPLIT関数を用いることで返り値を配列として扱うことができる。</p>
 <p>例えば</p>
 <pre class="c">_test = &quot;こんにちは;;Hello;;Hallo;;Saluton&quot;</pre>
@@ -186,12 +186,12 @@ FUNCTIONEXの第一引数はyaya.dllからproxy_ex.dllへの相対パス、第�
 &quot;配列のサイズは%(ARRAYSIZE(_test))で中身は%(_test[0])とか%(_test[1])とか&quot;</pre>
 <p>以上の方法を用いれば、SAORI作成時にデリミタを使って文字列を出力するようにすることで出力を配列として扱うことが可能になる。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">SAORI-universal<a class="anchor_super" id="d15e6940" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#d15e6940" title="d15e6940" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">SAORI-universal<a class="anchor_super" id="d15e6940" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#d15e6940" style="user-select:none;">&dagger;</a></h2>
 <p>.dll形式のSAORIであり、SAORI-basicと比べると作成にSSTP\footnote{Sakura Script Transfer Protocol. Secure Socket Tunneling Protocolではない}の知識が必要である。
 またSAORI-basicとは異なり2種類の返り値(ResultとValue0,Value1...)を持つ。
 (仕様についての詳細は <a href="http://www.boreas.dti.ne.jp/~sdn/saori.html" rel="nofollow">http://www.boreas.dti.ne.jp/~sdn/saori.html</a> を参照のこと。またCにおけるSAORI-universalの作成は <a href="https://github.com/ponapalt/csaori" rel="nofollow">https://github.com/ponapalt/csaori</a> で公開しているライブラリを用いると容易である)</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">YAYAにおける使い方<a class="anchor_super" id="p8b2fd55" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#p8b2fd55" title="p8b2fd55" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">YAYAにおける使い方<a class="anchor_super" id="p8b2fd55" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#p8b2fd55" style="user-select:none;">&dagger;</a></h3>
 <p>FUNCTIONEX関数を用いる点は同じだが、SAORI-basicとは異なりproxy_ex.dllを介する必要はない(実際のところproxy_ex.dllがパイプを使って標準出力をSHIORIに渡すSAORI-universalであり、里々ではsatori.dllにその機能が組み込まれているのである)
 FUNCTIONEX自身の返り値はResultで、FUNCTIONEX実行後にValue0,Value1...はグローバルな配列であるvalueex[0],valueex[1]...に格納される。
 サンプル:</p>
@@ -206,7 +206,7 @@ FUNCTIONEX自身の返り値はResultで、FUNCTIONEX実行後にValue0,Value1..
 }</pre>
 <p>これはsaori.dllという名前のSAORI-universalを呼び出している例である。FUNCTIONEXの第一引数「'SAORI/saori.dll'」はyaya.dllからsaori.dllへの相対パス、以降のArgumentはsaori.dllに渡す引数である。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">PythonコードのSAORI化<a class="anchor_super" id="qeff0221" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#qeff0221" title="qeff0221" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">PythonコードのSAORI化<a class="anchor_super" id="qeff0221" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#qeff0221" style="user-select:none;">&dagger;</a></h2>
 <p>Pythonには科学計算やニューラルネットワークなどに関するライブラリが豊富に存在する。しかしインタプリタ型言語であるため実行するにはPC本体にPython環境が必要となり、これはゴーストの処理を実装する観点としてはユーザ側に環境構築を要請してしまうためそのまま配布するのには向いていない。
 しかし.pyを依存するdllなどを含めて.exeにコンパイルすれば単体で実行可能なプログラムとして配布できる。そこで本節ではpythonで書かれたプログラムをSAORI-basicとして実装する方法を解説する。</p>
 <p>例えば次のような入力を受け取って返す処理を考える:</p>
@@ -219,7 +219,7 @@ input = sys.argv[1]
 print(&quot;Your input is &quot;+input)</pre>
 <p>このままではPython環境があるPC上でないと実行出来ない。しかし後述するPyInstallerを用いればこれをimportしたパッケージも含めて配布可能な.exeにすることができる。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7"><span class="noexists"><a href="index.php?cmd=edit&amp;page=PyInstaller&amp;refer=SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">PyInstaller</a></span><a class="anchor_super" id="l1358430" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#l1358430" title="l1358430" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7"><span class="noexists"><a href="index.php?cmd=edit&amp;page=PyInstaller&amp;refer=SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">PyInstaller</a></span><a class="anchor_super" id="l1358430" href="index.php?SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#l1358430" style="user-select:none;">&dagger;</a></h3>
 <p>.pyを.exeにコンパイルするプログラムはいくつか存在(cx_freeze, py2exeなど)するが、Python3.x系列に対応していて現在もアップデートが行われているのはPyInstallerのみである。このプログラムはPython環境があればシェル上で</p>
 <pre> pip install PyInstaller</pre>
 <p>でインストール可能である。</p>

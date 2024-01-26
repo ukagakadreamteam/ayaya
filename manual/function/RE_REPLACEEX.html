@@ -153,18 +153,18 @@
  <li class="navi_none"><a href="index.php?manual/function" class="link_page_passage">Manual/Function</a></li>
 </ul>
 <hr class="full_hr" />
-<h2 id="content_1_0">RE_REPLACEEX<a class="anchor_super" id="af057cbd" href="index.php?manual/function/RE_REPLACEEX#af057cbd" title="af057cbd" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">RE_REPLACEEX<a class="anchor_super" id="af057cbd" href="index.php?manual/function/RE_REPLACEEX#af057cbd" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="k12fa734" href="index.php?manual/function/RE_REPLACEEX#k12fa734" title="k12fa734" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="k12fa734" href="index.php?manual/function/RE_REPLACEEX#k12fa734" style="user-select:none;">&dagger;</a></h3>
 <blockquote><p class="quotation">RE_REPLACEEX ( <em>string</em> , <em>regexp</em> , <em>replace_ex</em>  [ , <em>count</em> ] )</p></blockquote>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="p3197e91" href="index.php?manual/function/RE_REPLACEEX#p3197e91" title="p3197e91" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="p3197e91" href="index.php?manual/function/RE_REPLACEEX#p3197e91" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>処理対象文字列の正規表現とマッチする部分を全て置き換えます。
 <ul class="list2 list-indent1"><li>RE_REPLACEとの違いは、置き換え対象文字列として、$0、$1といったperl風のメタ文字を利用可能なことです。</li></ul></li>
 <li>結果の詳細は RE_GETSTR , RE_GETPOS , RE_GETLEN で取得します。
 <ul class="list2 list-indent1"><li>RE_REPLACEEXを使用した場合、上記３つの関数は、マッチしたｎ番目の( )の内容ではなく、対象文字列において正規表現全体にマッチしたｎ番目の内容を表します。</li></ul></li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="u9befa2a" href="index.php?manual/function/RE_REPLACEEX#u9befa2a" title="u9befa2a" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="u9befa2a" href="index.php?manual/function/RE_REPLACEEX#u9befa2a" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>string</dt>
 <dd>対象の文字列。（ここに数値型になる可能性のある変数を入れる場合、TOSTRで文字列型変数にするのを推奨）</dd>
 <dt>regexp</dt>
@@ -174,22 +174,22 @@
 <dt>count</dt>
 <dd>置き換える回数(省略可)。ゼロ未満の値か省略で全て置き換え。</dd></dl>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="jf768ad8" href="index.php?manual/function/RE_REPLACEEX#jf768ad8" title="jf768ad8" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="jf768ad8" href="index.php?manual/function/RE_REPLACEEX#jf768ad8" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>成功した場合、置き換えを行った後の文字列。</li>
 <li>それ以外の場合、stringがそのまま返ります。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="j6dd45d1" href="index.php?manual/function/RE_REPLACEEX#j6dd45d1" title="j6dd45d1" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="j6dd45d1" href="index.php?manual/function/RE_REPLACEEX#j6dd45d1" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="index.php?manual/function/REPLACE" class="link_page_passage">Manual/Function/REPLACE</a></li>
 <li><a href="index.php?manual/function/RE_REPLACE" class="link_page_passage">Manual/Function/RE_REPLACE</a></li></ul>
 <ul class="list1 list-indent1"><li><a href="index.php?manual/function/RE_GETSTR" class="link_page_passage">Manual/Function/RE_GETSTR</a></li>
 <li><a href="index.php?manual/function/RE_GETPOS" class="link_page_passage">Manual/Function/RE_GETPOS</a></li>
 <li><a href="index.php?manual/function/RE_GETLEN" class="link_page_passage">Manual/Function/RE_GETLEN</a></li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="nf7ad37b" href="index.php?manual/function/RE_REPLACEEX#nf7ad37b" title="nf7ad37b" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="nf7ad37b" href="index.php?manual/function/RE_REPLACEEX#nf7ad37b" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>YAYA：初期から利用可能
 <ul class="list2 list-indent1"><li>countパラメータは Tc548-1から</li></ul></li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="k4dce486" href="index.php?manual/function/RE_REPLACEEX#k4dce486" title="k4dce486" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="k4dce486" href="index.php?manual/function/RE_REPLACEEX#k4dce486" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>No example yet.</li>
 <li>Someone please provide one!</li></ul>
 <hr class="full_hr" />
