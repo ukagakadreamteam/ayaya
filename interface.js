@@ -149,14 +149,14 @@ document.getElementById('interface_header').outerHTML = `
 <br />
 <br /></li></ul></li>
 <li>Getting started
-<ul class="list2 list-indent1"><li><a href="StartUp" title="StartUp" class="link_page_passage">What is AYA/YAYA?</a></li>
+<ul class="list2 list-indent1"><li><a href="${localpath}startup.html" title="StartUp" class="link_page_passage">What is AYA/YAYA?</a></li>
 <li><a href="${localpath}startup/making_ghosts_with_yaya.html" title="StartUp/Making ghosts with YAYA" class="link_page_passage">Making ghosts with YAYA</a></li>
 <li><a href="${localpath}startup/migrate_from_aya.html" title="StartUp/Migrate from AYA" class="link_page_passage">Migrate from AYA</a></li>
 <li><a href="${localpath}startup/migrate_from_satori.html" title="StartUp/Migrate from Satori" class="link_page_passage">Migrate from Satori</a>
 <br />
 <br /></li></ul></li>
 <li><a href="${localpath}manual.html" class="link_page_passage">Manual</a>
-<ul class="list2 list-indent1"><li><a href="manual/basic.html" class="link_page_passage">Basic</a></li>
+<ul class="list2 list-indent1"><li><a href="${localpath}manual/basic.html" class="link_page_passage">Basic</a></li>
 <li><a href="${localpath}manual/syntax.html"class="link_page_passage">Syntax</a></li>
 <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
 <li><a href="${localpath}manual/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by purpose</a></li>
