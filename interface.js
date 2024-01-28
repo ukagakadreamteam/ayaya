@@ -1,3 +1,108 @@
+//Be warned, my js is really really bad!! If you can improve this, please do, and then teach me how you did it <3 -Zi
+
+let islocal = location.protocol != "https:";
+let ishomepage = 1;
+if (!(location.pathname.endsWith("AYAYA/index.html") || location.pathname.endsWith("AYAYA/") || location.pathname == "/" || location.pathname == ""))
+{
+	ishomepage = 0;
+}
+
+let localpath = "";
+
+//There's probably a much better way to do this, but what can I say, I don't actually know JavaScript lol
+//Get how many subfolders deep we are
+function findDeepness()
+{
+	let deepness = 0;
+	let path = location.pathname;
+	if (ishomepage)
+	{
+		deepness = 0;
+	}
+	else
+	{
+		if (islocal)
+		{
+			path = path.split("AYAYA/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!! I guess maybe it was because it doesn't translate to other sites? It's kinda dirty
+			path = path[1];
+		}
+		else
+		{
+			
+		}
+		path = path.split("/");
+		deepness = path.length - 1;
+	}
+	
+	for (let i = 0; i < deepness; i++)
+	{
+		localpath += "../";
+	}
+}
+
+findDeepness();
+
+let pathdisplay = ``;
+
+function makePathDisplay()
+{
+	let output = ``;
+	
+	output += `
+	<div id="virtualdir" class="virtualdir">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="${localpath}index.html">`;
+	
+	if (ishomepage)
+	{
+		output += `Top (Front page)`;
+	}
+	else
+	{
+		output += `
+		<span class="topicpath-top">
+			<a href="${localpath}index.html" title="FrontPage" class="link_page_passage">
+				Top
+			</a>
+			<span class="topicpath-slash">/</span>
+		</span>`;
+		
+		let path = location.pathname;
+		if (islocal)
+		{
+			path = path.split("AYAYA/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!!
+			path = path[1];
+		}
+		console.log(path);
+		path = path.split("/");
+		console.log(path);
+		
+		
+		
+		let currentpath = "";
+		for (piece of path.slice(0,-1))
+		{
+			output += `
+			<a href="${localpath}${currentpath}${piece}.html">
+				${piece.toString().replace('.html','')}
+			</a>
+			<span class="topicpath-slash">/</span>
+			`
+			currentpath += piece + "/";
+		}
+		
+		output += `${path.slice(-1).toString().replace('.html','')}`;
+	}
+
+	
+	output += `
+		</a>
+	</div>`;
+	pathdisplay = output;
+}
+makePathDisplay();
+
+
 let page_content = document.getElementById('interface_content').innerHTML;
 
 document.getElementById('interface_content').innerHTML = "";
@@ -10,12 +115,12 @@ document.getElementById('interface_header').outerHTML = `
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr height="80">
-    <td width="170" nowrap><a href="index.php" alt="トップ" title="トップ"><img src="skin/title.png" width=170 height=80 border=0></a></td>
-    <td id="header1"><img src="skin/logo.png" width=350 height=40 border=0><br />
-    <div id="virtualdir" class="virtualdir">&nbsp;&nbsp;&nbsp;&nbsp;<a href="./?FrontPage"><span class="topicpath-top"><a href="index.php" title="FrontPage" class="link_page_passage">Top</a><span class="topicpath-slash">/</span></span><a href="%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB">マニュアル</a><span class="topicpath-slash">/</span><a href="manual/function">関数</a><span class="topicpath-slash">/</span>TOINT</a></div></td>
+    <td width="170" nowrap><a href="${localpath}index.html" alt="Top" title="Top"><img src="${localpath}skin/title.png" width=170 height=80 border=0></a></td>
+    <td id="header1"><img src="${localpath}skin/logo.png" width=350 height=40 border=0><br />
+    ${pathdisplay}</td>
   </tr>
   <tr>
-    <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="./?FrontPage">トップページへ</a>
+    <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="${localpath}index.html">Top page</a>
     <td id="headerbar">&nbsp;
 
  [ <a href="cmd=list" rel="nofollow" >List of pages</a> | <a href="RecentChanges" rel="nofollow" >Recent changes</a> ]
@@ -33,10 +138,8 @@ document.getElementById('interface_header').outerHTML = `
    <div id="menubar">
 
 			
-<h5 id="content_2_0"><a href="./?cmd=edit&amp;page=MenuBar" title="Edit:MenuBar" rel="nofollow">Menu</a></h5>
-<ul class="list1 list-indent1"><li><a href="index.php" title="FrontPage" class="link_page_passage">Top page</a>
-<br />
-<br /></li>
+<h5 id="content_2_0">Menu</h5>
+<ul class="list1 list-indent1">
 <li><a href="https://github.com/ponapalt/yaya-shiori/wiki" rel="nofollow">YAYA distribution page</a>
 <ul class="list2 list-indent1"><li><a href="https://github.com/ponapalt/yaya-shiori/releases" rel="nofollow">Download page</a></li>
 <li><a href="https://github.com/ponapalt/yaya-shiori/wiki/ChangeLog" rel="nofollow">Update history</a></li>
@@ -134,3 +237,26 @@ document.getElementById('interface_footer').innerHTML = `
 
 
 `;
+
+
+
+
+
+
+//From my website. What can I say, I like to be able to browse the files locally too, to make sure they're working properly.
+function fixLocalLinks()
+{
+	let a_links = document.getElementsByTagName("a");
+	for (let a_link of a_links)
+	{
+		if (a_link.href.startsWith("https://ukagakadreamteam.github.io/AYAYA/"))
+		{
+			a_link.href = a_link.href.replace(".html","");
+		}
+	}
+}
+
+if (!islocal)
+{
+	fixLocalLinks();
+}
