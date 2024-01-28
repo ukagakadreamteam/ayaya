@@ -33,9 +33,9 @@
 
 <div id="interface_content">
    <div id="body"><ul class="navi">
- <li class="navi_left"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Prev</a></li>
- <li class="navi_right"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" title="マニュアル/文法/5.配列" class="link_page_passage">Next</a></li>
- <li class="navi_none"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95.html" class="link_page_passage">マニュアル/文法</a></li>
+ <li class="navi_left"><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Prev</a></li>
+ <li class="navi_right"><a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" title="マニュアル/文法/5.配列" class="link_page_passage">Next</a></li>
+ <li class="navi_none"><a href="../../manual/syntax.html" class="link_page_passage">マニュアル/文法</a></li>
 </ul>
 <hr class="full_hr" />
 <div class="contents">
@@ -46,9 +46,9 @@
 <li><a href="#a2371f18">フィードバック演算子&amp;</a></li></ul></li></ul>
 </div>
 
-<h2 id="content_1_0">演算<a class="anchor_super" id="q3ea1bb9" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#q3ea1bb9.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">演算<a class="anchor_super" id="q3ea1bb9" href="../../manual/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#q3ea1bb9.html" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">基本<a class="anchor_super" id="v84b1e7f" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#v84b1e7f.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">基本<a class="anchor_super" id="v84b1e7f" href="../../manual/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#v84b1e7f.html" style="user-select:none;">&dagger;</a></h3>
 <p>C言語と同様の書式で四則演算、比較演算、代入、その他が可能です。<br />
 演算の順序は演算子毎に重み付けされた演算優先度に基づいて決定されます。また、ブラケット( )で囲まれた部分は最優先で演算されます。
 演算子の種類と演算優先度は以下の通りです。</p>
@@ -117,7 +117,7 @@ _in_と!_in_は文字列の包含チェックに使用する演算子です。</
 <pre class="aya">&quot;10+2は&quot; + (10+2) + &quot;です。&quot;</pre>
 <p>最初に10+2が整数として計算され、結果12が得られます。残りはすべて文字列との加算ですから、12は文字列に変換され、文字列として結合されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">ブラケット( )による演算順序制御<a class="anchor_super" id="q7b01c6f" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#q7b01c6f.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">ブラケット( )による演算順序制御<a class="anchor_super" id="q7b01c6f" href="../../manual/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#q7b01c6f.html" style="user-select:none;">&dagger;</a></h3>
 <p>ブラケット( )で囲んだ部分は演算順序が最優先扱いになります。<br />
 ( ) はいくつでも重ねて指定可能で、深くなるほど優先度が上がります。
 平たく言えば「かっこで囲んだところを先に計算する」ということです。これは当たり前の規則なのでいまさら大きく扱うまでもないのですが、
@@ -134,7 +134,7 @@ answerには文字列の&quot;10&quot;が入ります。決して整数50では�
 <p>これで代入部分の優先度が一気に引き上げられました。今度は正しい結果が入るはずです。
 なお、代入部分を囲むブラケットは2段で十分ではないかと思われるかも知れませんが、それも誤りです。ブラケット2段は_i + 10と同じ深さとなりますが、=と+では優先度が+のほうが高いのです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">フィードバック演算子&amp;<a class="anchor_super" id="a2371f18" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#a2371f18.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">フィードバック演算子&amp;<a class="anchor_super" id="a2371f18" href="../../manual/%E6%96%87%E6%B3%95/4.%E6%BC%94%E7%AE%97#a2371f18.html" style="user-select:none;">&dagger;</a></h3>
 <p>フィードバック演算子&amp;は、他の演算子とは使い方がまったく異なる独特の演算子です。</p>
 <pre class="aya">request
 {
@@ -166,9 +166,9 @@ foo
 当然のことですが、フィードバック演算子は変数にしか付けられません。</p>
 <hr class="full_hr" />
 <ul class="navi">
- <li class="navi_left"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Prev</a><br /><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" class="link_page_passage">マニュアル/文法/3.値と変数</a></li>
- <li class="navi_right"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" title="マニュアル/文法/5.配列" class="link_page_passage">Next</a><br /><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" class="link_page_passage">マニュアル/文法/5.配列</a></li>
- <li class="navi_none"><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95.html" title="マニュアル/文法" class="link_page_passage">Home</a><br /><a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95.html" title="マニュアル/文法" class="link_page_passage">Up</a></li>
+ <li class="navi_left"><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Prev</a><br /><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" class="link_page_passage">マニュアル/文法/3.値と変数</a></li>
+ <li class="navi_right"><a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" title="マニュアル/文法/5.配列" class="link_page_passage">Next</a><br /><a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html" class="link_page_passage">マニュアル/文法/5.配列</a></li>
+ <li class="navi_none"><a href="../../manual/syntax.html" title="マニュアル/文法" class="link_page_passage">Home</a><br /><a href="../../manual/syntax.html" title="マニュアル/文法" class="link_page_passage">Up</a></li>
 </ul>
    
    	 	
@@ -187,9 +187,9 @@ foo
 
 
 <div id="related">
- Related pages: <a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html">マニュアル/文法/3.値と変数</a><span class="page_passage"></span>
- <a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html">マニュアル/文法/5.配列</a><span class="page_passage"></span>
- <a href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95.html">マニュアル/文法</a><span class="page_passage"></span></div>
+ Related pages: <a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html">マニュアル/文法/3.値と変数</a><span class="page_passage"></span>
+ <a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html">マニュアル/文法/5.配列</a><span class="page_passage"></span>
+ <a href="../../manual/syntax.html">マニュアル/文法</a><span class="page_passage"></span></div>
 
 
 </td></tr>

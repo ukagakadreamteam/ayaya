@@ -150,41 +150,41 @@ document.getElementById('interface_header').outerHTML = `
 <br /></li></ul></li>
 <li>Getting started
 <ul class="list2 list-indent1"><li><a href="StartUp" title="StartUp" class="link_page_passage">What is AYA/YAYA?</a></li>
-<li><a href="startup/making_ghosts_with_yaya.html" title="StartUp/Making ghosts with YAYA" class="link_page_passage">Making ghosts with YAYA</a></li>
-<li><a href="startup/migrate_from_aya.html" title="StartUp/Migrate from AYA" class="link_page_passage">Migrate from AYA</a></li>
-<li><a href="startup/migrate_from_satori.html" title="StartUp/Migrate from Satori" class="link_page_passage">Migrate from Satori</a>
+<li><a href="${localpath}startup/making_ghosts_with_yaya.html" title="StartUp/Making ghosts with YAYA" class="link_page_passage">Making ghosts with YAYA</a></li>
+<li><a href="${localpath}startup/migrate_from_aya.html" title="StartUp/Migrate from AYA" class="link_page_passage">Migrate from AYA</a></li>
+<li><a href="${localpath}startup/migrate_from_satori.html" title="StartUp/Migrate from Satori" class="link_page_passage">Migrate from Satori</a>
 <br />
 <br /></li></ul></li>
-<li><a href="%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" class="link_page_passage">Manual</a>
-<ul class="list2 list-indent1"><li><a href="%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC"class="link_page_passage">Basic</a></li>
-<li><a href="%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95"class="link_page_passage">Grammar</a></li>
-<li><a href="%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8" class="link_page_passage">System dictionary</a></li>
-<li><a href="manual/function/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by application</a></li>
-<li><a href="manual/function" title="Manual/Function" class="link_page_passage">List of functions by name</a></li>
-<li><a href="manual/error_handling_function.html" title="Manual/Error Handling Function" class="link_page_passage">Error-handling functions</a>
+<li><a href="${localpath}manual.html" class="link_page_passage">Manual</a>
+<ul class="list2 list-indent1"><li><a href="manual/basic.html" class="link_page_passage">Basic</a></li>
+<li><a href="${localpath}manual/syntax.html"class="link_page_passage">Syntax</a></li>
+<li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
+<li><a href="${localpath}manual/function/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by purpose</a></li>
+<li><a href="${localpath}manual/function.html" title="Manual/Function" class="link_page_passage">List of functions by name</a></li>
+<li><a href="${localpath}manual/error_handling_function.html" title="Manual/Error Handling Function" class="link_page_passage">Error handling function</a>
 <br />
 <br /></li></ul></li>
-<li><a href="Tips" class="link_page_passage">Tips</a>
-<ul class="list2 list-indent1"><li><a href="%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage">What to do when you need help</a></li>
-<li><a href="%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage">Bare talk writing support library</a></li>
+<li><a href="${localpath}tips.html" class="link_page_passage">Tips</a>
+<ul class="list2 list-indent1"><li><a href="${localpath}%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage">What to do when you need help</a></li>
+<li><a href="${localpath}%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage">Bare talk writing support library</a></li>
 <li><a href="http://ukadev.shillest.net/" rel="nofollow">Development information search</a>
 <br />
 <br /></li></ul></li>
 <li>YAYA for other than SHIORI
-<ul class="list2 list-indent1"><li><a href="YAYA+as+SAORI" class="link_page_passage">YAYA as SAORI</a></li>
-<li><a href="YAYA+as+MAKOTO" class="link_page_passage">YAYA as MAKOTO</a></li>
-<li><a href="YAYA+as+PLUGIN" class="link_page_passage">YAYA as PLUGIN</a>
+<ul class="list2 list-indent1"><li><a href="${localpath}YAYA+as+SAORI" class="link_page_passage">YAYA as SAORI</a></li>
+<li><a href="${localpath}YAYA+as+MAKOTO" class="link_page_passage">YAYA as MAKOTO</a></li>
+<li><a href="${localpath}YAYA+as+PLUGIN" class="link_page_passage">YAYA as PLUGIN</a>
 <br />
 <br /></li></ul></li>
 <li>Contact & Bulletin board
 <ul class="list2 list-indent1"><li><a href="http://ssp.shillest.net/bts/my_view_page.php" rel="nofollow">Maintenance Team BTS</a></li>
-<li><a href="%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
-<li><a href="wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage">Wiki message board</a>
+<li><a href="${localpath}%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
+<li><a href="${localpath}wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage">Wiki message board</a>
 <br />
 <br /></li></ul></li>
 <li>Links
-<ul class="list2 list-indent1"><li><a href="%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">Ghost-related links</a></li>
-<li><a href="%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">AYA ghost link</a>
+<ul class="list2 list-indent1"><li><a href="${localpath}%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">Ghost-related links</a></li>
+<li><a href="${localpath}%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">AYA ghost link</a>
 <br />
 <br /></li></ul></li>
 <li>Others
@@ -194,16 +194,16 @@ document.getElementById('interface_header').outerHTML = `
 <h5>10 most recent</h5>
 <div><strong>2023-04-11</strong>
 <ul class="recent_list">
- <li><a href="manual/function/GETSETTING" class="link_page_passage">Manual/Function/GETSETTING</a></li>
- <li><a href="manual/function/GETLASTERROR" class="link_page_passage">Manual/Function/GETLASTERROR</a></li>
- <li><a href="manual/function/FSEEK" class="link_page_passage">Manual/Function/FSEEK</a></li>
- <li><a href="manual/function/FOPEN" class="link_page_passage">Manual/Function/FOPEN</a></li>
- <li><a href="manual/function/GETTYPE" class="link_page_passage">Manual/Function/GETTYPE</a></li>
- <li><a href="manual/function/GETTYPEEX" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
- <li><a href="%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC" class="link_page_passage">マニュアル/基本</a></li>
- <li><a href="wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" class="link_page_passage">wikiについての伝言板</a></li>
- <li><a href="manual/function/list_of_functions_by_purpose.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
- <li><a href="manual/function/HAN2ZEN" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
+ <li><a href="${localpath}manual/function/GETSETTING.html" class="link_page_passage">Manual/Function/GETSETTING</a></li>
+ <li><a href="${localpath}manual/function/GETLASTERROR.html" class="link_page_passage">Manual/Function/GETLASTERROR</a></li>
+ <li><a href="${localpath}manual/function/FSEEK.html" class="link_page_passage">Manual/Function/FSEEK</a></li>
+ <li><a href="${localpath}manual/function/FOPEN.html" class="link_page_passage">Manual/Function/FOPEN</a></li>
+ <li><a href="${localpath}manual/function/GETTYPE.html" class="link_page_passage">Manual/Function/GETTYPE</a></li>
+ <li><a href="${localpath}manual/function/GETTYPEEX.html" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
+ <li><a href="${localpath}manual/basic.html.html" class="link_page_passage">Manual/Basic</a></li>
+ <li><a href="${localpath}wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF.html" class="link_page_passage">wikiについての伝言板</a></li>
+ <li><a href="${localpath}manual/function/list_of_functions_by_purpose.html.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
+ <li><a href="${localpath}manual/function/HAN2ZEN.html" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
 </ul>
 </div>
 		<br>
