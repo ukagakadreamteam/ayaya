@@ -75,7 +75,7 @@
 <li><a href="#wd26f86a">maxlognum, [count]</a></li></ul></li></ul>
 </div>
 
-<h2 id="content_1_0">基礎設定<a class="anchor_super" id="nc75848b" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#nc75848b.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">基礎設定<a class="anchor_super" id="nc75848b" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#nc75848b" style="user-select:none;">&dagger;</a></h2>
 <p>YAYAのデフォルトのDLLファイル名は「yaya.dll」です。<br />
 主ファイル名「yaya」は他の名前に自由に変更することができます。</p>
 <p>文を動作させるためには「基礎設定ファイル」と呼ばれるファイルが必ず必要となります。<br />
@@ -105,15 +105,15 @@ fncdepth, 16</pre>
 空行（改行のみの行）、&quot;//&quot;以降、および&quot;/*&quot;と&quot;*/&quot;で囲まれた領域はコメントと見なされます。
 コマンドとその意味は以下の通りです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">読み込み時に辞書エラーが起きた際の挙動<a class="anchor_super" id="nbdba21f" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#nbdba21f.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">読み込み時に辞書エラーが起きた際の挙動<a class="anchor_super" id="nbdba21f" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#nbdba21f" style="user-select:none;">&dagger;</a></h2>
 <p>バージョンTc555-1より、読み込み時に辞書エラーが起きた時は、まず緊急時用の基礎設定ファイルで再度読み込みを試します。</p>
 <p>緊急時用の基礎設定ファイルのファイル名は「主ファイル名_emerg.txt」です。すなわちデフォルトでは「yaya_emerg.txt」となります。DLL名を変更した時の挙動も通常の基礎設定ファイルと同様です。</p>
 <p>それでもエラーになった場合は、request関数から何も返さない(NULL)状態になります。</p>
 <p>問題が起きた時のエラーログは <a href="../../manual/function/GETERRORLOG.html" class="link_page_passage">Manual/Function/GETERRORLOG</a> で取得できます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">設定項目<a class="anchor_super" id="yac5d4b4" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#yac5d4b4.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">設定項目<a class="anchor_super" id="yac5d4b4" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#yac5d4b4" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">charset, name<a class="anchor_super" id="lfff9e83" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#lfff9e83.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">charset, name<a class="anchor_super" id="lfff9e83" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#lfff9e83" style="user-select:none;">&dagger;</a></h3>
 <p>標準の文字コードを設定します。<br />
 以下の予約値からいずれかを指定します。指定が無い場合はShift_JISとして扱われます。</p>
 <ul class="list1 list-indent1"><li>Shift_JIS / ShiftJIS / SJIS<br />
@@ -124,31 +124,31 @@ UTF-8。</li>
 実行OSのデフォルト文字コード。</li></ul>
 <p>以下のcharset.ではじまるものは個別設定です。必ずcharsetでの全一括指定より後に書いてください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">charset.dic<a class="anchor_super" id="tbbef654" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#tbbef654.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">charset.dic<a class="anchor_super" id="tbbef654" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#tbbef654" style="user-select:none;">&dagger;</a></h3>
 <p>辞書の文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">charset.setting<a class="anchor_super" id="m550f1ac" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m550f1ac.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">charset.setting<a class="anchor_super" id="m550f1ac" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#m550f1ac" style="user-select:none;">&dagger;</a></h3>
 <p>基礎設定ファイルそのものの文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">charset.output<a class="anchor_super" id="hc2b130e" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#hc2b130e.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">charset.output<a class="anchor_super" id="hc2b130e" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#hc2b130e" style="user-select:none;">&dagger;</a></h3>
 <p>request関数での入出力の文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">charset.log<a class="anchor_super" id="q8207e68" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#q8207e68.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">charset.log<a class="anchor_super" id="q8207e68" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#q8207e68" style="user-select:none;">&dagger;</a></h3>
 <p>ログファイルや玉の出力の文字コード。 (Tc569-15)</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">charset.file<a class="anchor_super" id="e88707bb" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#e88707bb.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">charset.file<a class="anchor_super" id="e88707bb" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#e88707bb" style="user-select:none;">&dagger;</a></h3>
 <p>ファイル入出力の文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_9">charset.save<a class="anchor_super" id="j8736700" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#j8736700.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_9">charset.save<a class="anchor_super" id="j8736700" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#j8736700" style="user-select:none;">&dagger;</a></h3>
 <p>グローバル変数セーブファイル入出力の文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_10">charset.save.old<a class="anchor_super" id="p5e0a1ff" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p5e0a1ff.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_10">charset.save.old<a class="anchor_super" id="p5e0a1ff" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#p5e0a1ff" style="user-select:none;">&dagger;</a></h3>
 <p>文字コード指定のない旧形式のセーブファイルの読み取りの文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_11">charset.extension<a class="anchor_super" id="i3edf412" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#i3edf412.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_11">charset.extension<a class="anchor_super" id="i3edf412" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#i3edf412" style="user-select:none;">&dagger;</a></h3>
 <p>外部DLL(SAORI等)入出力の文字コード。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_12">dic, filename ( , charset )<a class="anchor_super" id="rbfd65d8" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#rbfd65d8.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_12">dic, filename ( , charset )<a class="anchor_super" id="rbfd65d8" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#rbfd65d8" style="user-select:none;">&dagger;</a></h3>
 <p>辞書ファイルfilenameをロードします。<br />
 辞書ファイルは文スクリプトが記述されたプログラムソースファイルで、文はここのプログラムされた内容を元に動作します。<br />
 辞書ファイルはいくつでも指定し、読み込むことができます。
@@ -157,10 +157,10 @@ filenameはloadで指定されたパス位置からの相対パスで指定し�
 暗号化ファイルを読み込むことができます。</p>
 <p>ファイル名の後に、文字コードをカンマ区切りで追加すると、指定したファイルはその文字コードで読み込みます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">dicif, filename ( , charset )<a class="anchor_super" id="t076cdc2" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#t076cdc2.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">dicif, filename ( , charset )<a class="anchor_super" id="t076cdc2" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#t076cdc2" style="user-select:none;">&dagger;</a></h3>
 <p>dicと同じですが、指定したファイルが存在しない時は無視します。 [Tc571-2]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">dicdir, dirname ( , charset )<a class="anchor_super" id="h85cc54a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#h85cc54a.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">dicdir, dirname ( , charset )<a class="anchor_super" id="h85cc54a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#h85cc54a" style="user-select:none;">&dagger;</a></h3>
 <p>指定したディレクトリ以下のすべてのファイルを辞書として読み込みます。<br />
 ディレクトリ指定であること以外はdic定義と同じです。</p>
 <p>注意：ファイルを読む順序は決まっていません。<br />
@@ -169,7 +169,7 @@ globaldefineを定義する際は、必ず定義した辞書を最初のほう�
 <p>dicdir で指定したディレクトリの中に _loading_order_override.txt か _loading_order.txt という名前のファイルがある時は、 includeEX,(ディレクトリ)/_loading_order.txt と書いたのと同じ挙動になります。<br />
 _loading_order_override.txt -&gt; _loading_order.txt の順にファイルの存在をチェックし、先に見つかったほうのみincludeEXします。 [ここまでTc571-2]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_15">msglang, language<a class="anchor_super" id="ba19005d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#ba19005d.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_15">msglang, language<a class="anchor_super" id="ba19005d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#ba19005d" style="user-select:none;">&dagger;</a></h3>
 <p>ログに記録されるエラーメッセージ類の言語を選択します。<br />
 以下の予約値からいずれかを指定します。指定が無い場合はjapaneseとして扱われます。<br />
 （注意）本設定は過去互換のために残されています。次のmessagetxtを使ってください。</p>
@@ -178,7 +178,7 @@ _loading_order_override.txt -&gt; _loading_order.txt の順にファイルの存
 <li>english<br />
 英語。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_16">messagetxt, filename ( , charset )<a class="anchor_super" id="gb2c4d80" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#gb2c4d80.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_16">messagetxt, filename ( , charset )<a class="anchor_super" id="gb2c4d80" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#gb2c4d80" style="user-select:none;">&dagger;</a></h3>
 <p>ログに記録されるエラーメッセージ類の言語ファイルを読み込みます。例えば下記のように書いてください。<br />
 charsetを省略した場合は、UTF-8(BOM付)になります。 [Tc557]</p>
 <pre>messagetxt,messagetxt/japanese.txt
@@ -188,28 +188,28 @@ messagetxt,messagetxt/chinese-traditional.txt</pre>
 <p>言語ファイル名は <a href="https://github.com/ponapalt/yaya-shiori/tree/500/messagetxt" rel="nofollow">https://github.com/ponapalt/yaya-shiori/tree/500/messagetxt</a> で確認できます。</p>
 <p>Tc570-1より、Windows上では言語ファイルをDLLに埋め込むようになったので、言語ファイル本体を配布する必要はありませんが、messagetxtにファイル名を書く仕様はWindows以外の環境向けにそのままにしています。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">basepath, directory<a class="anchor_super" id="s8d07a4a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#s8d07a4a.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">basepath, directory<a class="anchor_super" id="s8d07a4a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#s8d07a4a" style="user-select:none;">&dagger;</a></h3>
 <p>辞書等を読み込む基準点となるディレクトリを任意の場所に再設定します。<br />
 設定しない場合、通常はyaya.dllと同じディレクトリになります。 [Tc557]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_18">include, filename<a class="anchor_super" id="ge3e7e6f" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#ge3e7e6f.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_18">include, filename<a class="anchor_super" id="ge3e7e6f" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#ge3e7e6f" style="user-select:none;">&dagger;</a></h3>
 <p>基礎設定ファイルの内容を別ファイルから読み込みます。<br />
 指定したファイルの中身も有効な基礎設定として扱われます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_19">includeEX, filename<a class="anchor_super" id="k068de51" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#k068de51.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_19">includeEX, filename<a class="anchor_super" id="k068de51" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#k068de51" style="user-select:none;">&dagger;</a></h3>
 <p>includeと基本的には同じ処理ですが、filenameに指定したファイル名がディレクトリ名を含む文字列だった場合に、そのディレクトリ内にカレントディレクトリを一時的に切り替えてからinclude処理を行います。 [Tc559]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_20">log, logfilename<a class="anchor_super" id="m583923d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m583923d.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_20">log, logfilename<a class="anchor_super" id="m583923d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#m583923d" style="user-select:none;">&dagger;</a></h3>
 <p>実行ログをファイルlogfilenameに記録します。<br />
 charset.logで指定した文字コードで書き込まれます。
 logfilenameはloadで指定されたパス位置からの相対パスで指定します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_21">iolog, [on|off]<a class="anchor_super" id="pb05622c" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#pb05622c.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_21">iolog, [on|off]<a class="anchor_super" id="pb05622c" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#pb05622c" style="user-select:none;">&dagger;</a></h3>
 <p>load、unload、request実行時の入出力文字列と処理時間をログに記録するかを設定します。<br />
 onで記録します。デフォルトではonになっていますので、不要の場合にoffとしてください。<br />
 off指定としても、玉にドラッグ＆ドロップして起動する使い方をした場合は強制的にonになります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_22">iolog.filter.keyword,[無視判定文字列]<a class="anchor_super" id="b95d1367" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#b95d1367.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_22">iolog.filter.keyword,[無視判定文字列]<a class="anchor_super" id="b95d1367" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#b95d1367" style="user-select:none;">&dagger;</a></h3>
 <p>requestの文字列中に指定した無視判定文字列が含まれていた場合、そのrequestのI/Oをログに記録しない（玉への出力もしない）ようにします。複数指定可能です。</p>
 <p>旧定義名：ignoreiolog</p>
 <p>例：OnSecondChangeとOnMouse系のイベントを記録しない</p>
@@ -217,16 +217,16 @@ off指定としても、玉にドラッグ＆ドロップして起動する使�
 iolog.filter.keyword, OnMouse        //OnMouse系無視</pre>
 <p>（注意）基礎設定ファイルの書式上、無視判定文字列の前後の空白、およびコメント // 以降は無視されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_23">iolog.filter.keyword.delete,[文字列]<a class="anchor_super" id="j0824d3d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#j0824d3d.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_23">iolog.filter.keyword.delete,[文字列]<a class="anchor_super" id="j0824d3d" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#j0824d3d" style="user-select:none;">&dagger;</a></h3>
 <p>上記を削除します。 <a href="../../manual/function/SETSETTING.html" class="link_page_passage">Manual/Function/SETSETTING</a> 向けの書き方で、定義ファイルに直接書いてもあまり意味はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_24">iolog.filter.keyword.regex,[無視判定文字列：正規表現]<a class="anchor_super" id="je060ec4" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#je060ec4.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_24">iolog.filter.keyword.regex,[無視判定文字列：正規表現]<a class="anchor_super" id="je060ec4" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#je060ec4" style="user-select:none;">&dagger;</a></h3>
 <p>iolog.filter.keywordの正規表現版です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_25">iolog.filter.keyword.regex,delete,[文字列]<a class="anchor_super" id="c2e843e1" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#c2e843e1.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_25">iolog.filter.keyword.regex,delete,[文字列]<a class="anchor_super" id="c2e843e1" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#c2e843e1" style="user-select:none;">&dagger;</a></h3>
 <p>上記を削除します。 <a href="../../manual/function/SETSETTING.html" class="link_page_passage">Manual/Function/SETSETTING</a> 向けの書き方で、定義ファイルに直接書いてもあまり意味はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_26">iolog.filter.mode,[モード]<a class="anchor_super" id="p0f1090a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p0f1090a.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_26">iolog.filter.mode,[モード]<a class="anchor_super" id="p0f1090a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#p0f1090a" style="user-select:none;">&dagger;</a></h3>
 <p>上記のiolog.filter.keyword～ の判定条件について、「条件に合致したものを出力しない」か「条件に合致したものだけを出力する」かを切り替えます。</p>
 <p>定義しない場合は「条件に合致したものを出力しない」モードになります。</p>
 <pre>iolog.filter.mode,allowlist
@@ -236,25 +236,25 @@ iolog.filter.mode,whitelist</pre>
 iolog.filter.mode,blacklist</pre>
 <p>↑条件に合致したものを出力しないモードに切り替えます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_27">fncdepth, [depth]<a class="anchor_super" id="p6bb4967" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#p6bb4967.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_27">fncdepth, [depth]<a class="anchor_super" id="p6bb4967" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#p6bb4967" style="user-select:none;">&dagger;</a></h3>
 <p>関数呼び出しの深さ上限を数値で指定します。<br />
 デフォルト値は32です。最低値は2で、これより小さな値や不正な値を指定した場合も2として扱われます。<br />
 0にすると上限チェックをしませんが、呼び出しが深すぎると容赦なくベースウェアごと落ちます。 [Tc556-1]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_28">looplimit, [count]<a class="anchor_super" id="w2afd51b" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#w2afd51b.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_28">looplimit, [count]<a class="anchor_super" id="w2afd51b" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#w2afd51b" style="user-select:none;">&dagger;</a></h3>
 <p>ループの回数上限を数値で指定します。<br />
 デフォルト値は10000です。<br />
 0にすると上限チェックをしませんが、延々と実行を続けてフリーズします。<br />
 foreachには効果がありません。 [Tc564-1]</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_29">save.encode, [on|off]<a class="anchor_super" id="m40b8102" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#m40b8102.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_29">save.encode, [on|off]<a class="anchor_super" id="m40b8102" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#m40b8102" style="user-select:none;">&dagger;</a></h3>
 <p>セーブファイルを暗号化します。「暗号化」といってもたいしたものではありませんので、せいぜい多少わかりにくくする程度とお考えください。<br />
 一度onにするとセーブファイルを削除するまで暗号化されたままになります。設定を変える際は十分注意してください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_30">save.auto, [on|off]<a class="anchor_super" id="v12dd3d8" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#v12dd3d8.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_30">save.auto, [on|off]<a class="anchor_super" id="v12dd3d8" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#v12dd3d8" style="user-select:none;">&dagger;</a></h3>
 <p>セーブファイル自動保存機能をON/OFFします。ONの場合、一定時間ごとのバックアップと終了時の変数自動保存が行われます。OFFの場合は保存関数を明示的に呼ばない限り保存されません。標準はONです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_31">maxlognum, [count]<a class="anchor_super" id="wd26f86a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A#wd26f86a.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_31">maxlognum, [count]<a class="anchor_super" id="wd26f86a" href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html#wd26f86a" style="user-select:none;">&dagger;</a></h3>
 <p>GETERRORLOG関数で取得できるログの最大値を設定します。<br />
 デフォルト値は256要素です。</p>
 <hr class="full_hr" />

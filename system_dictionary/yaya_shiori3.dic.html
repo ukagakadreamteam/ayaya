@@ -64,7 +64,7 @@
 </div>
 
 <p><br /></p>
-<h2 id="content_1_0">SHIORIイベントの入出力<a class="anchor_super" id="w97a4fb9" href="../system_dictionary/yaya_shiori3.dic#w97a4fb9.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">SHIORIイベントの入出力<a class="anchor_super" id="w97a4fb9" href="../system_dictionary/yaya_shiori3.dic.html#w97a4fb9" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>ベースウェアから渡されるSHIORIイベントは、例えば以下のような文字列です。</li></ul>
 <pre>GET SHIORI/3.0
 Sender: SSP
@@ -98,17 +98,17 @@ Reference0: Emily</pre>
 </tbody></table></div>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">ランダムトーク<a class="anchor_super" id="f8d1f793" href="../system_dictionary/yaya_shiori3.dic#f8d1f793.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">ランダムトーク<a class="anchor_super" id="f8d1f793" href="../system_dictionary/yaya_shiori3.dic.html#f8d1f793" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>ランダムトークを簡単に行えるようにするために、「<span class="noexists"><a href="../cmd=edit&amp;page=OnAiTalk&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">OnAiTalk</a></span>」関数を「aitalkinterval」秒毎に呼び出す機能を持ちます。<a id="notetext_3" href="#notefoot_3" class="note_super" title="本来OnAiTalkはベースウェアには存在しない機能であり、yaya_shiori3.dicがその機能を追加しています">*3</a></li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">内部トランスレート<a class="anchor_super" id="w081d044" href="../system_dictionary/yaya_shiori3.dic#w081d044.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">内部トランスレート<a class="anchor_super" id="w081d044" href="../system_dictionary/yaya_shiori3.dic.html#w081d044" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>全てのイベントの処理後、「<span class="noexists"><a href="../cmd=edit&amp;page=OnTranslateInternal&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">OnTranslateInternal</a></span>」関数を呼び出す機能を持ちます。その際の引数（_argv[0]）はベースウェアに出力しようとしているトーク内容になります。</li>
 <li>この関数で返した内容が、実際にベースウェアに出力されるトークになります。</li>
 <li>したがって、「<span class="noexists"><a href="../cmd=edit&amp;page=OnTranslateInternal&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">OnTranslateInternal</a></span>」内で_argv[0]を適当に加工し返すことにより、全てのトークに一律変換を行う、等の処理が可能となります。</li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">チェイントーク<a class="anchor_super" id="d219aea5" href="../system_dictionary/yaya_shiori3.dic#d219aea5.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">チェイントーク<a class="anchor_super" id="d219aea5" href="../system_dictionary/yaya_shiori3.dic.html#d219aea5" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>チェイントークとは、「あるトークを契機として、一連のトークを指定した順序で行う」機能です。これもyaya_shiroi3.dicで実装されています。</li>
 <li>トークの「\e」の後に「:chain=○○」と書くことで、チェイントークが発動します。<a id="notetext_4" href="#notefoot_4" class="note_super" title="○○はチェイントークを区別するための識別子で、「end」以外ならどんな文字列でも構いません">*4</a></li>
 <li>チェイントークが発動した場合、OnAiTalkではランダムトークではなく上で書いた○○関数（チェイン関数）が呼び出されます<a id="notetext_5" href="#notefoot_5" class="note_super" title="この機能はyaya_shiori3.dicではなくゴーストテンプレート側で記載されています">*5</a>。</li>
@@ -123,39 +123,39 @@ Reference0: Emily</pre>
 <li>「\e」の後に「:chain=end」と書くことで、チェイントークを停止できます。</li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">遅延EVAL<a class="anchor_super" id="n1ff2b9d" href="../system_dictionary/yaya_shiori3.dic#n1ff2b9d.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">遅延EVAL<a class="anchor_super" id="n1ff2b9d" href="../system_dictionary/yaya_shiori3.dic.html#n1ff2b9d" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>「\e」の後に「:eval=式」と書くことで、その「式」を実行（実際には「EVAL(式)」と書くのと同じ）することができます。
 <ul class="list2 list-indent1"><li>セキュリティ上の理由からこの機能はデフォルトで無効化されています。<br />
 有効化したい場合はセキュリティ上のリスクをよく理解した上で、config.dic内のSHIORI3FW.ENABLE_DELAYED_EVALを1に設定してください。</li></ul></li>
 <li>例えば「&quot;\0\s[0]はじめまして。\e:eval=aisatu=1&quot;」などと書くことで、「あるトークを喋ることを契機としたフラグ処理」のようなものを簡単に行うことができます。</li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">インストール済みゴーストリスト<a class="anchor_super" id="tb78a077" href="../system_dictionary/yaya_shiori3.dic#tb78a077.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">インストール済みゴーストリスト<a class="anchor_super" id="tb78a077" href="../system_dictionary/yaya_shiori3.dic.html#tb78a077" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>ID: installedghostlist を解釈し、グローバル変数「installedghostname」（ゴースト名の汎用配列）を作成します。</li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">SAORI呼び出し（FUNCTIONEX）<a class="anchor_super" id="kf524be0" href="../system_dictionary/yaya_shiori3.dic#kf524be0.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">SAORI呼び出し（FUNCTIONEX）<a class="anchor_super" id="kf524be0" href="../system_dictionary/yaya_shiori3.dic.html#kf524be0" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>SAORI呼び出しを簡単に行えるよう、yaya_shiori3.dicで「FUNCTIONEX」関数を提供しています。</li>
 <li>SAORIのロード、アンロードもFUNCTIONEXを利用した際、自動的に行われます。</li>
 <li>「SAORI」でも実行可。一段下駄が入る分FUNCTIONEXより低速になりますが、気にするほどではありません。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">形式<a class="anchor_super" id="r3add039" href="../system_dictionary/yaya_shiori3.dic#r3add039.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">形式<a class="anchor_super" id="r3add039" href="../system_dictionary/yaya_shiori3.dic.html#r3add039" style="user-select:none;">&dagger;</a></h3>
 <blockquote><p class="quotation">FUNCTIONEX( dllname [, Argument0 , Argument1 , ... ] )</p></blockquote>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">引数<a class="anchor_super" id="pb0926da" href="../system_dictionary/yaya_shiori3.dic#pb0926da.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">引数<a class="anchor_super" id="pb0926da" href="../system_dictionary/yaya_shiori3.dic.html#pb0926da" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>dllname</dt>
 <dd>呼び出したいSAORI DLL名。YAYA.DLLからの相対パスで指定。</dd>
 <dt>Argument0,1,...</dt>
 <dd>SAORIに与える引数。省略可能。</dd></dl>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_9">返り値<a class="anchor_super" id="b410f1a9" href="../system_dictionary/yaya_shiori3.dic#b410f1a9.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_9">返り値<a class="anchor_super" id="b410f1a9" href="../system_dictionary/yaya_shiori3.dic.html#b410f1a9" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>FUNCTIONEXの返り値は、SAORIの返り値（Resultの値）になります。</li>
 <li>SAORIがそれ以上の返り値（Value0,1,...）を返した場合、グローバル変数「valueex0,1,...」に格納されます。</li></ul>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_10">配列操作<a class="anchor_super" id="b90fd032" href="../system_dictionary/yaya_shiori3.dic#b90fd032.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_10">配列操作<a class="anchor_super" id="b90fd032" href="../system_dictionary/yaya_shiori3.dic.html#b90fd032" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_11">JOIN<a class="anchor_super" id="d02a9157" href="../system_dictionary/yaya_shiori3.dic#d02a9157.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_11">JOIN<a class="anchor_super" id="d02a9157" href="../system_dictionary/yaya_shiori3.dic.html#d02a9157" style="user-select:none;">&dagger;</a></h3>
 <p>配列を一番最後の要素で区切る。<br /></p>
 <pre class="aya">request {
 _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
@@ -164,34 +164,34 @@ _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
 
 「結果」の内容　&quot;A★B★C★D★E&quot;</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_12">REVERSE<a class="anchor_super" id="lfb7caac" href="../system_dictionary/yaya_shiori3.dic#lfb7caac.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_12">REVERSE<a class="anchor_super" id="lfb7caac" href="../system_dictionary/yaya_shiori3.dic.html#lfb7caac" style="user-select:none;">&dagger;</a></h3>
 <p>配列を逆順に並べかえる。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">UNIQUE<a class="anchor_super" id="x6a0d2e4" href="../system_dictionary/yaya_shiori3.dic#x6a0d2e4.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_13">UNIQUE<a class="anchor_super" id="x6a0d2e4" href="../system_dictionary/yaya_shiori3.dic.html#x6a0d2e4" style="user-select:none;">&dagger;</a></h3>
 <p>配列から重複する要素を取り除く。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">SPLITEX<a class="anchor_super" id="u195cded" href="../system_dictionary/yaya_shiori3.dic#u195cded.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_14">SPLITEX<a class="anchor_super" id="u195cded" href="../system_dictionary/yaya_shiori3.dic.html#u195cded" style="user-select:none;">&dagger;</a></h3>
 <p>YAYAの関数「<a href="../manual/function/SPLIT.html" title="Manual/Function/SPLIT" class="link_page_passage">SPLIT</a>」と同じだが、SPLITと違い中身が空白の要素は配列化しない。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_15">MAX<a class="anchor_super" id="a1f71571" href="../system_dictionary/yaya_shiori3.dic#a1f71571.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_15">MAX<a class="anchor_super" id="a1f71571" href="../system_dictionary/yaya_shiori3.dic.html#a1f71571" style="user-select:none;">&dagger;</a></h3>
 <p>配列の最大値を求める。文字列が入っている場合辞書順で最後の物が返る。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_16">MIN<a class="anchor_super" id="z8108ba5" href="../system_dictionary/yaya_shiori3.dic#z8108ba5.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_16">MIN<a class="anchor_super" id="z8108ba5" href="../system_dictionary/yaya_shiori3.dic.html#z8108ba5" style="user-select:none;">&dagger;</a></h3>
 <p>配列の最小値を求める。文字列が入っている場合辞書順で最初の物が返る。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">AVERAGE<a class="anchor_super" id="hb7168e4" href="../system_dictionary/yaya_shiori3.dic#hb7168e4.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">AVERAGE<a class="anchor_super" id="hb7168e4" href="../system_dictionary/yaya_shiori3.dic.html#hb7168e4" style="user-select:none;">&dagger;</a></h3>
 <p>配列の平均値を求める。文字列が入っている場合空文字が返る。</p>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_18">「遅れて喋る」イベント<a class="anchor_super" id="pe13c64e" href="../system_dictionary/yaya_shiori3.dic#pe13c64e.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_18">「遅れて喋る」イベント<a class="anchor_super" id="pe13c64e" href="../system_dictionary/yaya_shiori3.dic.html#pe13c64e" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">SHIORI3FW.<span class="noexists"><a href="../cmd=edit&amp;page=SetDelayEvent&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">SetDelayEvent</a></span>( '発生させるイベント名' , 遅れる秒数 )</p></blockquote>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_19">その他の変数<a class="anchor_super" id="v1f77b82" href="../system_dictionary/yaya_shiori3.dic#v1f77b82.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_19">その他の変数<a class="anchor_super" id="v1f77b82" href="../system_dictionary/yaya_shiori3.dic.html#v1f77b82" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>そのままでは利用が面倒な関数を簡単に利用するため、以下の変数を提供しています。
 システム情報を取得するために使用可能です。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_20">時刻系変数<a class="anchor_super" id="ta7752a4" href="../system_dictionary/yaya_shiori3.dic#ta7752a4.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_20">時刻系変数<a class="anchor_super" id="ta7752a4" href="../system_dictionary/yaya_shiori3.dic.html#ta7752a4" style="user-select:none;">&dagger;</a></h3>
 <div class="ie5"><table class="style_table" cellspacing="1" border="0"><thead><tr><td class="style_td">関数名</td><td class="style_td">返り値</td></tr>
 </thead><tbody><tr><td class="style_td">year</td><td class="style_td">現在日時の年の数値</td></tr>
 <tr><td class="style_td">month</td><td class="style_td">現在日時の月の数値</td></tr>
@@ -214,7 +214,7 @@ _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
 <tr><td class="style_td">ghostupmin_total</td><td class="style_td">ゴーストの累計起動時間（単位：分）</td></tr>
 </tbody></table></div>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_21">メモリ系変数<a class="anchor_super" id="j493f763" href="../system_dictionary/yaya_shiori3.dic#j493f763.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_21">メモリ系変数<a class="anchor_super" id="j493f763" href="../system_dictionary/yaya_shiori3.dic.html#j493f763" style="user-select:none;">&dagger;</a></h3>
 <div class="ie5"><table class="style_table" cellspacing="1" border="0"><thead><tr><td class="style_td">関数名</td><td class="style_td">返り値</td></tr>
 </thead><tbody><tr><td class="style_td">memoryload</td><td class="style_td">物理メモリの使用率</td></tr>
 <tr><td class="style_td">memorytotalphys</td><td class="style_td">物理メモリ量</td></tr>
@@ -223,7 +223,7 @@ _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
 <tr><td class="style_td">memoryavailvirtual</td><td class="style_td">仮想＋物理空きメモリ量</td></tr>
 </tbody></table></div>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_22">センダーヘッダ系変数<a class="anchor_super" id="caf4f99b" href="../system_dictionary/yaya_shiori3.dic#caf4f99b.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_22">センダーヘッダ系変数<a class="anchor_super" id="caf4f99b" href="../system_dictionary/yaya_shiori3.dic.html#caf4f99b" style="user-select:none;">&dagger;</a></h3>
 <div class="ie5"><table class="style_table" cellspacing="1" border="0"><thead><tr><td class="style_td">関数名</td><td class="style_td">返り値</td></tr>
 </thead><tbody><tr><td class="style_td">basewarenameex</td><td class="style_td">ゴーストが起動しているベースウェア名(MATERIAは「embryo」、CROWは「crow」、SSPは「SSP」)</td></tr>
 <tr><td class="style_td">basewarename</td><td class="style_td">センダーヘッダ名(ベースウェア名以外のものが入っている事もある)</td></tr>
@@ -231,7 +231,7 @@ _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
 </tbody></table></div>
 <p><br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_23">関連ページ<a class="anchor_super" id="xd9814bd" href="../system_dictionary/yaya_shiori3.dic#xd9814bd.html" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_23">関連ページ<a class="anchor_super" id="xd9814bd" href="../system_dictionary/yaya_shiori3.dic.html#xd9814bd" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li><a href="../system_dictionary/yaya_optional.dic.html" class="link_page_passage">システム辞書/yaya_optional.dic</a></li></ul>
    
    	 	

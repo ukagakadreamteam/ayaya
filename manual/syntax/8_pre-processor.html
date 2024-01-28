@@ -47,17 +47,17 @@
 <li><a href="#f5bed5b7">__AYA_SYSTEM_LINE__</a></li></ul></li></ul>
 </div>
 
-<h2 id="content_1_0">プリプロセス<a class="anchor_super" id="m573754f" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9#m573754f.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">プリプロセス<a class="anchor_super" id="m573754f" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9.html#m573754f" style="user-select:none;">&dagger;</a></h2>
 <p>プリプロセスは辞書ファイルを読み込んでいる段階で実行される命令です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_1">#define<a class="anchor_super" id="y197e4c0" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9#y197e4c0.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_1">#define<a class="anchor_super" id="y197e4c0" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9.html#y197e4c0" style="user-select:none;">&dagger;</a></h4>
 <p>辞書ファイルから読み込んだ（パース前の）生の文字列に対して、直接文字列置換を実行します。</p>
 <pre class="aya">#define before after</pre>
 <p>とすると、これを記述した行より後ろにbeforeが見つかるたびに、それがafterへ置きかえられます。<br /></p>
 <p>#define の有効範囲は、宣言した次の行から、そのファイルの終端までです。
 置換は記述順に行われますので、先に変換しておきたいものを先に書いてください。<br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">#globaldefine<a class="anchor_super" id="r4820e57" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9#r4820e57.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">#globaldefine<a class="anchor_super" id="r4820e57" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9.html#r4820e57" style="user-select:none;">&dagger;</a></h4>
 <pre class="aya">#globaldefine before after</pre>
 <p>機能は #define ディレクティブと同じです。ただし、有効範囲が異なります。<br /></p>
 <p>#globaldefine を宣言すると、次の行以降の全ての範囲（その後に読み込まれる辞書ファイルも含む）で有効になります。
@@ -69,14 +69,14 @@
 &quot;teacup&quot;</pre>
 <p>置換結果は&quot;milkcup&quot;となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">__AYA_SYSTEM_FILE__<a class="anchor_super" id="p78b43cf" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9#p78b43cf.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">__AYA_SYSTEM_FILE__<a class="anchor_super" id="p78b43cf" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9.html#p78b43cf" style="user-select:none;">&dagger;</a></h4>
 <p>[YAYA Tc543-1より]</p>
 <p>現在実行中のファイルの(DLLからの)相対パスを調べることができます。<br />
 動きは #define __AYA_SYSTEM_FILE__ された時と同じになります。</p>
 <pre class="aya">&quot;__AYA_SYSTEM_FILE__&quot;</pre>
 <p>置換結果は、たとえば&quot;aya_aitalk.txt&quot;となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">__AYA_SYSTEM_LINE__<a class="anchor_super" id="f5bed5b7" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9#f5bed5b7.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">__AYA_SYSTEM_LINE__<a class="anchor_super" id="f5bed5b7" href="../../manual/%E6%96%87%E6%B3%95/8.%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9.html#f5bed5b7" style="user-select:none;">&dagger;</a></h4>
 <p>[YAYA Tc543-1より]</p>
 <p>現在実行中のファイルの何行目かを調べることができます。__AYA_SYSTEM_FILE__ と仕組みは同じです。</p>
 <hr class="full_hr" />

@@ -170,25 +170,25 @@ document.getElementById('interface_header').outerHTML = `
 <li><a href="http://ukadev.shillest.net/" rel="nofollow">Development information search</a>
 <br />
 <br /></li></ul></li>
-<li>YAYA for other than SHIORI
+<li>YAYA for things other than SHIORI
 <ul class="list2 list-indent1"><li><a href="${localpath}YAYA+as+SAORI" class="link_page_passage">YAYA as SAORI</a></li>
-<li><a href="${localpath}YAYA+as+MAKOTO" class="link_page_passage">YAYA as MAKOTO</a></li>
-<li><a href="${localpath}YAYA+as+PLUGIN" class="link_page_passage">YAYA as PLUGIN</a>
+<li><a href="${localpath}yaya_as_makoto.html" class="link_page_passage">YAYA as MAKOTO</a></li>
+<li><a href="${localpath}yaya_as_plugin.html" class="link_page_passage">YAYA as PLUGIN</a>
 <br />
 <br /></li></ul></li>
 <li>Contact & Bulletin board
 <ul class="list2 list-indent1"><li><a href="http://ssp.shillest.net/bts/my_view_page.php" rel="nofollow">Maintenance Team BTS</a></li>
-<li><a href="${localpath}%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
-<li><a href="${localpath}wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage">Wiki message board</a>
+<li><a href="https://emily.shillest.net/ayaya/index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
+<li><a href="https://emily.shillest.net/ayaya/index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" title="wikiについての伝言板" class="link_page_passage">Wiki message board</a>
 <br />
 <br /></li></ul></li>
 <li>Links
-<ul class="list2 list-indent1"><li><a href="${localpath}%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E9%96%A2%E9%80%A3%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">Ghost-related links</a></li>
-<li><a href="${localpath}%E6%96%87%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AF" class="link_page_passage">AYA ghost link</a>
+<ul class="list2 list-indent1"><li><a href="${localpath}ghost_related_links.html" class="link_page_passage">Ghost related links</a></li>
+<li><a href="${localpath}links_to_aya_ghosts.html" class="link_page_passage">Links to AYA ghosts</a>
 <br />
 <br /></li></ul></li>
 <li>Others
-<ul class="list2 list-indent1"><li><a href="Help" title="Help" class="link_page_passage">Wiki help</a></li></ul></li></ul>
+<ul class="list2 list-indent1"><li><a href="https://emily.shillest.net/ayaya/index.php?Help" title="Help" class="link_page_passage">Wiki help</a></li></ul></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">Recently updated pages</h5>
 <h5>10 most recent</h5>
@@ -201,7 +201,7 @@ document.getElementById('interface_header').outerHTML = `
  <li><a href="${localpath}manual/function/GETTYPE.html" class="link_page_passage">Manual/Function/GETTYPE</a></li>
  <li><a href="${localpath}manual/function/GETTYPEEX.html" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
  <li><a href="${localpath}manual/basic.html.html" class="link_page_passage">Manual/Basic</a></li>
- <li><a href="${localpath}wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF.html" class="link_page_passage">wikiについての伝言板</a></li>
+ <li><a href="https://emily.shillest.net/ayaya/index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" class="link_page_passage">Wiki message board</a></li>
  <li><a href="${localpath}manual/list_of_functions_by_purpose.html.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
  <li><a href="${localpath}manual/function/HAN2ZEN.html" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
 </ul>

@@ -32,45 +32,45 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">文のウソ・ホント<a class="anchor_super" id="tdc1aa22" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#tdc1aa22.html" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">文のウソ・ホント<a class="anchor_super" id="tdc1aa22" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#tdc1aa22" style="user-select:none;">&dagger;</a></h2>
 <p>文を使っていく上で、誤解しやすいものやこまごましたTipsを集めました。<br />
 ウソ・ホントなんて書いてますが全部ウソになっちゃってますが（汗</p>
 <p>なお、一部は文自体が改良されるにつれて変わっていくものもあると思います。<br />
 あくまで<strong>現状の</strong>文についてだということを忘れないでください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_1">ローカル変数もグローバル変数もどっちを使おうがたいした差はない<a class="anchor_super" id="rd8bfff1" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#rd8bfff1.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_1">ローカル変数もグローバル変数もどっちを使おうがたいした差はない<a class="anchor_super" id="rd8bfff1" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#rd8bfff1" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - ウソ</p>
 <p>この2つは積極的に使い分けましょう。<br />
 グローバル変数を放置するとそのまま保存されて、セーブファイルのサイズを大きくしてしまうだけでなく、むやみに延々保持される変数の個数を増やしてしまうとどんどん処理が遅くなっていってしまいます。</p>
 <p>ローカル変数を積極的に活用しましょう。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">こまめにERASEVARしたほうがメモリの使用量が少なくなる<a class="anchor_super" id="x42914eb" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#x42914eb.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">こまめにERASEVARしたほうがメモリの使用量が少なくなる<a class="anchor_super" id="x42914eb" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#x42914eb" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - ウソ</p>
 <p>現在の実装では、ERASEVARしても「削除マーク」がつけられるだけで、依然としてメモリを食ったままになっています。<br />
 特に理由がない限り、こまめにERASEVARしてもあまり効果はありません。それどころか、一々削除対象の変数を検索するハメになるので、かなり動作が遅くなります。<br />
 積極的にローカル変数を使ってそもそも削除する必要がないようにするのが良いでしょう。</p>
 <p>なお、グローバル変数を対象に終了直前にERASEVARするのは、セーブファイルの肥大化（???_variable.cfg）を防ぐ意味で有効です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">配列を使うと遅くなる<a class="anchor_super" id="he3b34f7" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#he3b34f7.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">配列を使うと遅くなる<a class="anchor_super" id="he3b34f7" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#he3b34f7" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - ウソ</p>
 <p><strong>汎用配列は</strong>十分に高速です。<br />
 下手をすると変数を大量に作るより汎用配列の参照で済ますほうが場合によっては高速な場合まであるくらいです。</p>
 <p>ただし、簡易配列は逆に遅くなります。<br />
 確実に汎用配列を使うために、IARRAYなどを活用しましょう。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">関数に値を渡す時はフィードバック演算子を使ったほうが高速<a class="anchor_super" id="qf2ea7e5" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#qf2ea7e5.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">関数に値を渡す時はフィードバック演算子を使ったほうが高速<a class="anchor_super" id="qf2ea7e5" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#qf2ea7e5" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - だいたいウソ</p>
 <p>C++などの参照渡しと異なり、今の所、計算結果を再代入することで実現していますので、フィードバック演算子を使う方が遅くなる可能性もあります。</p>
 <p>どうしても必要だという場合を除き、あまりむずかしいことは考えず、普通に渡してください。</p>
 <p>――<a href="http://emily.shillest.net/specwiki/?%E3%81%BD%E3%81%AA%40%E3%81%B0%E3%81%90%E3%81%A8%E3%82%89" title="ひと:ぽな@ばぐとら" rel="nofollow">ひと:ぽな@ばぐとら</a></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">if文の条件を&quot;()&quot;で囲むと遅くなる<a class="anchor_super" id="p6a7ee68" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#p6a7ee68.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">if文の条件を&quot;()&quot;で囲むと遅くなる<a class="anchor_super" id="p6a7ee68" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#p6a7ee68" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - ウソ</p>
 <p>辞書読み込みが終わった時に&quot;()&quot;は捨てられているので、あってもなくても変わりません。また&quot;()&quot;のあるなしにかかわらず、内部メモリの使用量も変わりません。</p>
 <p>慣れや見た目のよさで決めてもよいでしょう。</p>
 <p>――<a href="http://emily.shillest.net/specwiki/?yukaya" title="ひと:yukaya" rel="nofollow">ひと:yukaya</a></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">日本語の関数名を使えない<a class="anchor_super" id="m1a5962d" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88#m1a5962d.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">日本語の関数名を使えない<a class="anchor_super" id="m1a5962d" href="../Tips/%E6%96%87%E3%81%AE%E3%82%A6%E3%82%BD%E3%83%BB%E3%83%9B%E3%83%B3%E3%83%88.html#m1a5962d" style="user-select:none;">&dagger;</a></h4>
 <p><span style="font-size:24px;display:inline-block;line-height:130%;text-indent:0"><span style="color:#cc0000">×</span></span> - ウソ</p>
 <p>使えます。単に癖で使っていない人が多いだけです。<br />
 関数名・変数名ともに日本語（漢字・ひらがななど2バイト文字）を使って構いません。<br />

@@ -32,10 +32,10 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">直前の会話をもう一度再生する<a class="anchor_super" id="g6105700" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B#g6105700.html" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">直前の会話をもう一度再生する<a class="anchor_super" id="g6105700" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html#g6105700" style="user-select:none;">&dagger;</a></h2>
 <p>『文』には直前の会話を再生する機能がありません。これをスクリプト側で実現するのが本稿の趣旨です。会話の再生時には、ベースウェアからAIの『<span class="noexists"><a href="../cmd=edit&amp;page=OnAiTalk&amp;refer=Tips%2F%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html">OnAiTalk</a></span>』が呼ばれますが、主にこのOnAiTalk関数に細工します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">OnAiTalkを改造する<a class="anchor_super" id="qe5689c2" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B#qe5689c2.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">OnAiTalkを改造する<a class="anchor_super" id="qe5689c2" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html#qe5689c2" style="user-select:none;">&dagger;</a></h3>
 <p>初期状態のOnAiTalk関数は、だいたい以下のような構造をしています。</p>
 <p><strong>aya_aitalk.dic</strong></p>
 <pre class="aya">//---- OnAiTalkイベント --------------------------------
@@ -96,7 +96,7 @@ OnAiTalk
 }</pre>
 <p>「//ここ！」が変更した場所です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">メニュー周りの改造<a class="anchor_super" id="oe025437" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B#oe025437.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">メニュー周りの改造<a class="anchor_super" id="oe025437" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html#oe025437" style="user-select:none;">&dagger;</a></h3>
 <p>変数を保存するだけでは再生機能が実現できないので、次にメニューを改造します。</p>
 #include(): No such page: 選択肢注意<br />
 
@@ -141,7 +141,7 @@ OpenMenu
    \q[なんでもない,CANCEL]\e&quot;
 }</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">『<span class="noexists"><a href="../cmd=edit&amp;page=OnLastTalk&amp;refer=Tips%2F%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html">OnLastTalk</a></span>』関数を作る<a class="anchor_super" id="ieea34bf" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B#ieea34bf.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">『<span class="noexists"><a href="../cmd=edit&amp;page=OnLastTalk&amp;refer=Tips%2F%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html">OnLastTalk</a></span>』関数を作る<a class="anchor_super" id="ieea34bf" href="../Tips/%E7%9B%B4%E5%89%8D%E3%81%AE%E4%BC%9A%E8%A9%B1%E3%82%92%E3%82%82%E3%81%86%E4%B8%80%E5%BA%A6%E5%86%8D%E7%94%9F%E3%81%99%E3%82%8B.html#ieea34bf" style="user-select:none;">&dagger;</a></h3>
 <p>新たに作るOnLastTalk関数は以下のようにします。</p>
 <pre class="aya">OnLastTalk {
   &quot;\0\s[0]えっと\w2‥\w2‥\w2‥\w9\w9\w9\c/

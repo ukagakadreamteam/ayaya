@@ -33,13 +33,13 @@
 
 <div id="interface_content">
    <div id="body">
-<h2 id="content_1_0">既存のAYA5ゴーストをYAYAへ移行<a class="anchor_super" id="z0aa60ef" href="../startup/migrate_from_aya.html#z0aa60ef.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">既存のAYA5ゴーストをYAYAへ移行<a class="anchor_super" id="z0aa60ef" href="../startup/migrate_from_aya.html.html#z0aa60ef" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">注意点<a class="anchor_super" id="y058eb8b" href="../startup/migrate_from_aya.html#y058eb8b.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">注意点<a class="anchor_super" id="y058eb8b" href="../startup/migrate_from_aya.html.html#y058eb8b" style="user-select:none;">&dagger;</a></h3>
 <p>既存のAYA5ゴーストをYAYAに移行する際の注意点は以下の通りです。
 <br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">DLL名称変更<a class="anchor_super" id="y38df773" href="../startup/migrate_from_aya.html#y38df773.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">DLL名称変更<a class="anchor_super" id="y38df773" href="../startup/migrate_from_aya.html.html#y38df773" style="user-select:none;">&dagger;</a></h4>
 <p>DLL名称が <strong>aya5.dll</strong> から <strong>yaya.dll</strong> に変更になります。</p>
 <ul class="list1 list-indent1"><li>そのため、<strong>aya5.txt</strong> は <strong>yaya.txt</strong> に名前を変える必要があります。</li>
 <li>セーブファイル名が <strong>yaya_variable.cfg</strong> となり、セーブデータがそのままでは移行されません。</li>
@@ -55,14 +55,14 @@
 <p><br />
 <br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">システム辞書変更<a class="anchor_super" id="r2d07bc7" href="../startup/migrate_from_aya.html#r2d07bc7.html" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">システム辞書変更<a class="anchor_super" id="r2d07bc7" href="../startup/migrate_from_aya.html.html#r2d07bc7" style="user-select:none;">&dagger;</a></h4>
 <p>システム辞書が変更になります（置き換えることを推奨します）</p>
 <ul class="list1 list-indent1"><li>SAORIの戻り値などは、AYA5のシステム辞書ではバイト値1をカンマに置き換え、数字は文字列ではなく数値に変換されましたが、YAYA用のシステム辞書では、デフォルトではこの作業が行われません。</li>
 <li>一部の関数（NAMETOVALUEなど）がシステム辞書に含まれません。</li></ul>
 <p><br />
 <br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">移行手順<a class="anchor_super" id="b3a77477" href="../startup/migrate_from_aya.html#b3a77477.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">移行手順<a class="anchor_super" id="b3a77477" href="../startup/migrate_from_aya.html.html#b3a77477" style="user-select:none;">&dagger;</a></h3>
 <p>以下に、<span style="color:Red">AYA5でaya_shiori3.dicをいじっていない場合</span>の移行手順を示します。<br />
 なお、以下の作業はすべてゴーストの辞書フォルダ（ghost/master/）での作業です。</p>
 <ul class="list1 list-indent1"><li><strong>descript.txt</strong> の <strong>shiori,aya5.dll</strong> を <strong>shiori,yaya.dll</strong> に書き換えてください。</li>
