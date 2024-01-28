@@ -32,7 +32,7 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">この記事は何？<a class="anchor_super" id="k095082b" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#k095082b" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">この記事は何？<a class="anchor_super" id="k095082b" href="#k095082b" style="user-select:none;">&dagger;</a></h2>
 <p>AYAは、C like で整理された文法、単純な（レイヤーの薄い）仕様、<br />
 強力なプログラミング能力という特徴から、C系の言語習得者にとっては<br />
 マニュアルを殆ど見ずとも使えてしまうSHIORIです。</p>
@@ -42,13 +42,13 @@
 <p>（文責：<a href="http://emily.shillest.net/specwiki/?%E6%B5%AE%E5%AD%90%E5%B1%8B" title="ひと:浮子屋" rel="nofollow">ひと:浮子屋</a>）</p>
 <p><span style="color:Red">※以下の文章はAYA5について書かれたものです。YAYAには当てはまらない項目があるかもしれません。</span></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">基本の基本<a class="anchor_super" id="h2a99a72" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#h2a99a72" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">基本の基本<a class="anchor_super" id="h2a99a72" href="#h2a99a72" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>C と違って、関数で戻り値を返す際に return を使わない。</li>
 <li>関数の戻り値はそれまでに出力された候補から選ばれる。</li>
 <li>従って、何かの間違いで空文字が候補に入っていたりすると、たまに何も喋らない、等の見つけにくいバグになる。<span style="color:Red">注意せよ。</span></li>
 <li>それを防ぐには、 void や出力確定子 -- を有効利用できる。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">文字列展開<a class="anchor_super" id="c182b4f6" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#c182b4f6" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">文字列展開<a class="anchor_super" id="c182b4f6" href="#c182b4f6" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>&quot;&quot; は文字列中の変数や関数を展開する。</li>
 <li>Cに慣れているとつい文字列リテラルは &quot; で書きたくなるが、' が文字列だと覚えておいたほうがよい。<span style="color:Red">注意せよ。</span></li>
 <li>但し、内部的には%を含まない文字列は、中間コード生成時に ' と同等にリテラルとして扱われるようだ。</li>
@@ -58,7 +58,7 @@
 <li>特別な理由が無い限り%()で範囲を明示すべきである。%だけの名称最長一致展開は重い。</li>
 <li>&quot;abc%hemoefg&quot; はたぶん中間コード生成時に 'abc'+&quot;%hemoefg&quot;となり、実行時に &quot;%hemoefg&quot; を解決しなくてはならない。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">変数、演算<a class="anchor_super" id="c7c211bb" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#c7c211bb" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">変数、演算<a class="anchor_super" id="c7c211bb" href="#c7c211bb" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>変数はグローバルとローカルがある。ローカル変数は _で始まる変数である。</li>
 <li>グローバル変数は、SHIORIロード・アンロード時にファイルに保存・ファイルから読み込みされる。</li>
 <li>従って、保存する必要のないグローバル変数は ERASEVAR で消しておいたほうがよい。</li>
@@ -80,13 +80,13 @@
 <ul class="list1 list-indent1"><li>比較演算 == で数値と文字列を比較した場合、結果は偽になる。</li>
 <li>比較演算 == で未定義変数と '' を比較した場合、結果は真になる。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">フロー制御<a class="anchor_super" id="h5fa73df" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#h5fa73df" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">フロー制御<a class="anchor_super" id="h5fa73df" href="#h5fa73df" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>C言語の else if に近いのは elseif である。</li>
 <li>C言語の switch に近いのは、switchではなく case ～ when である。</li>
 <li>for _i = 1; _i &lt; 11; _i++ というような表記で、_i ではなく i と書くと大抵無限ループになり凍る。</li>
 <li>よって、ループで凍ったら _ を注意して探せ。忘れがちなので<span style="color:Red">注意せよ。</span></li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">ゴーストテンプレート（aya_shiori3.dic）<a class="anchor_super" id="f6034599" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#f6034599" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">ゴーストテンプレート（aya_shiori3.dic）<a class="anchor_super" id="f6034599" href="#f6034599" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li><span class="noexists"><a href="../cmd=edit&amp;page=OnAiTalk&amp;refer=Tips%2FC%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html">OnAiTalk</a></span> は AYAの独自イベント。OnSecondChangeを契機に aya_shiori3.dic から aitalkinterval 秒毎に通知される。</li>
 <li>チェインはゴースト側の辞書の、OnAiTalk内の条件分岐と、テンプレート側のChainTalkによってなされる。</li>
 <li>よって、ゴースト側の辞書のOnAiTalkを無闇に書き換えるとチェインの仕組みを壊す</li>
@@ -98,7 +98,7 @@
 <li>SAORIの戻り値は適切な型に型変換されて返る。文字列中のバイト値1はカンマになる。</li>
 <li>その際の優先順位は CVINT→CVREAL→文字列 である。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">その他<a class="anchor_super" id="sac398bf" href="../Tips/C%E8%A8%80%E8%AA%9E%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88.html#sac398bf" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">その他<a class="anchor_super" id="sac398bf" href="#sac398bf" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>SAORIのロードは初回に使う際、アンロードはSHIORIのアンロードの際に行われる。</li>
 <li>つまり、SSPでゴーストキャッシュが有効な場合、SHIORIがキャッシュされるため、ゴーストが終了してもSAORIのアンロードが行われない場合があることに<span style="color:Red">注意せよ。</span><a href="../Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B.html" class="link_page_passage">Tips/ゴーストの起動と終了に確実に何かする</a></li>
 <li>ゴーストが終了した際に終らせる必要のあるSAORIは、UNLOADLIBで明示的に終らせる必要がある(SHIORI3FW.SaoriUnloadAllもつかえる)</li>
