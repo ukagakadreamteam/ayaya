@@ -159,7 +159,7 @@ document.getElementById('interface_header').outerHTML = `
 <ul class="list2 list-indent1"><li><a href="manual/basic.html" class="link_page_passage">Basic</a></li>
 <li><a href="${localpath}manual/syntax.html"class="link_page_passage">Syntax</a></li>
 <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
-<li><a href="${localpath}manual/function/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by purpose</a></li>
+<li><a href="${localpath}manual/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by purpose</a></li>
 <li><a href="${localpath}manual/function.html" title="Manual/Function" class="link_page_passage">List of functions by name</a></li>
 <li><a href="${localpath}manual/error_handling_function.html" title="Manual/Error Handling Function" class="link_page_passage">Error handling function</a>
 <br />
@@ -202,7 +202,7 @@ document.getElementById('interface_header').outerHTML = `
  <li><a href="${localpath}manual/function/GETTYPEEX.html" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
  <li><a href="${localpath}manual/basic.html.html" class="link_page_passage">Manual/Basic</a></li>
  <li><a href="${localpath}wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF.html" class="link_page_passage">wikiについての伝言板</a></li>
- <li><a href="${localpath}manual/function/list_of_functions_by_purpose.html.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
+ <li><a href="${localpath}manual/list_of_functions_by_purpose.html.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
  <li><a href="${localpath}manual/function/HAN2ZEN.html" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
 </ul>
 </div>
