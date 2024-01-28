@@ -53,8 +53,8 @@ document.getElementById('interface_header').outerHTML = `
 <br />
 <br /></li></ul></li>
 <li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" class="link_page_passage">Manual</a>
-<ul class="list2 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC" title="マニュアル/基本" class="link_page_passage">Basic</a></li>
-<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95" title="マニュアル/文法" class="link_page_passage">Grammar</a></li>
+<ul class="list2 list-indent1"><li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E5%9F%BA%E6%9C%AC"class="link_page_passage">Basic</a></li>
+<li><a href="index.php?%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E6%96%87%E6%B3%95"class="link_page_passage">Grammar</a></li>
 <li><a href="index.php?%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E8%BE%9E%E6%9B%B8" class="link_page_passage">System dictionary</a></li>
 <li><a href="index.php?manual/function/list_of_functions_by_purpose" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by application</a></li>
 <li><a href="index.php?manual/function" title="Manual/Function" class="link_page_passage">List of functions by name</a></li>
@@ -128,9 +128,9 @@ document.getElementById('interface_header').outerHTML = `
 document.getElementById('interface_footer').innerHTML = `
 
 
-<div id="footer">
- Powered by <strong><a href="http://pukiwiki.sourceforge.jp/">PukiWiki</a> 1.5.4</strong> / <strong><a href="http://pukiwiki.cafelounge.net/plus/">PukiWiki Plus!</a></strong>
-</div>
+<div id="interface_footer"></div>
+
+<script src="interface.js"></script>
 
 
 `;
