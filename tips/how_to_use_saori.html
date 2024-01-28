@@ -13,7 +13,7 @@
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="/svgd/table.css" type="text/css" />-->
- <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" />--> 
+ <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="../cmd=mixirss&amp;ver=0.91.html" />--> 
  <script type="text/javascript">
  <!--
  // -->
@@ -32,7 +32,7 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">SAORI(SAORI-universal)の使い方<a class="anchor_super" id="cedba8b9" href="index.php?Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#cedba8b9" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">SAORI(SAORI-universal)の使い方<a class="anchor_super" id="cedba8b9" href="../Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#cedba8b9.html" style="user-select:none;">&dagger;</a></h2>
 <p>SAORI-universal(dll形式のSAORI)は2種類の返り値(ResultとValue0,Value1...)を持つ。
 FUNCTIONEX()自身の返り値はこのResultで、FUNCTIONEX実行後にValue0,Value1...はvalueex0,valueex1...に格納される。
 なお、このvalueex*は同名の汎用配列にも格納される。つまりvalueex[0],valueex[1]...としてもよい。</p>
@@ -45,7 +45,7 @@ FUNCTIONEX()自身の返り値はこのResultで、FUNCTIONEX実行後にValue0,
 Argument0,Argument1...はsaori.dllの引数。</p>
 <p>これにより_Resultにsaori.dllのResultが格納され、Testはvalueex0に格納されている値、つまりValue0を返す。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">サンプル<a class="anchor_super" id="t01cb992" href="index.php?Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#t01cb992" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">サンプル<a class="anchor_super" id="t01cb992" href="../Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#t01cb992.html" style="user-select:none;">&dagger;</a></h3>
 <p>mecabを使って形態素解析を行うSAORI-universalである<a href="https://drive.google.com/drive/folders/0B0yCcgxQctDAblpzWXg1bC1fUGM" rel="nofollow">kisaragi.dll</a>を使って解説します。</p>
 <p>まず解凍後にkisaragiフォルダをghost\master以下に配置してください。複数のSAORIを使う場合はSAORIフォルダを作成し、その中に入れておくと管理し易くなります。以下ではghost\master\SAORIに配置されているとして説明します。</p>
 <p>形態素解析を行う関数は</p>
@@ -59,7 +59,7 @@ Argument0,Argument1...はsaori.dllの引数。</p>
 <p>のように書けます。FUNCTIONEXの第一引数はyaya.dllからの相対パスであることに注意してください。kisaragi.dllの場合、前述した&quot;Result&quot;の返り値は形態素の数、valueexに自動的に格納される&quot;Value&quot;の返り値は解析結果の配列となります。
 この関数の場合、実行すると形態素解析結果が改行されて出力されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">SAORI-basicの使い方および解説<a class="anchor_super" id="u037e531" href="index.php?Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#u037e531" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">SAORI-basicの使い方および解説<a class="anchor_super" id="u037e531" href="../Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#u037e531.html" style="user-select:none;">&dagger;</a></h2>
 <p>SAORI-basicはコマンドライン引数(main関数がとる引数)を引数とし、標準出力を返す.exeのことを指します。
 例えばC++で</p>
 <pre class="c">#include &lt;iostream&gt;
@@ -75,9 +75,9 @@ SAORI-basicの場合、FUNCTIONEXの返り値はmain関数の標準出力のみ�
 <p>このようになりますが、第二引数はyaya.dllではなくproxy_ex.dllからの相対パスであることに注意してください。この例では両者が同じ階層に置かれていることを想定しています。</p>
 <p>※注：ここでのArgument*は、(プログラム名).exeのコマンドライン引数(すなわち前述のC++の例ではargv)を指します</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">サクラスクリプト再生中にSAORIを使う<a class="anchor_super" id="u2e80cc9" href="index.php?Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#u2e80cc9" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">サクラスクリプト再生中にSAORIを使う<a class="anchor_super" id="u2e80cc9" href="../Tips/SAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#u2e80cc9.html" style="user-select:none;">&dagger;</a></h2>
 <p>こちらのページに解説があります。<br />
-<span class="noexists"><a href="index.php?cmd=edit&amp;page=%E9%9F%B3%E3%82%92%E9%B3%B4%E3%82%89%E3%81%99&amp;refer=Tips%2FSAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9">音を鳴らす</a></span></p>
+<span class="noexists"><a href="../cmd=edit&amp;page=%E9%9F%B3%E3%82%92%E9%B3%B4%E3%82%89%E3%81%99&amp;refer=Tips%2FSAORI%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.html">音を鳴らす</a></span></p>
    
    	 	
 	</div>
@@ -95,7 +95,7 @@ SAORI-basicの場合、FUNCTIONEXの返り値はmain関数の標準出力のみ�
 
 
 <div id="related">
- Related pages: <a href="index.php?StartUp/%E9%87%8C%E3%80%85%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C">StartUp/里々からの移行</a><span class="page_passage"></span></div>
+ Related pages: <a href="../StartUp/%E9%87%8C%E3%80%85%E3%81%8B%E3%82%89%E3%81%AE%E7%A7%BB%E8%A1%8C.html">StartUp/里々からの移行</a><span class="page_passage"></span></div>
 
 
 </td></tr>

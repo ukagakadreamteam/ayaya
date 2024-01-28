@@ -13,7 +13,7 @@
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="/svgd/table.css" type="text/css" />-->
- <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" />--> 
+ <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="../cmd=mixirss&amp;ver=0.91.html" />--> 
  <script type="text/javascript">
  <!--
  // -->
@@ -33,17 +33,17 @@
 
 <div id="interface_content">
    <div id="body">
-<h2 id="content_1_0">中身の残っているディレクトリを削除する方法<a class="anchor_super" id="fc865601" href="index.php?Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#fc865601" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">中身の残っているディレクトリを削除する方法<a class="anchor_super" id="fc865601" href="../Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#fc865601.html" style="user-select:none;">&dagger;</a></h2>
 <p>AYA/YAYAに標準で用意されているディレクトリ削除関数、RMDIRでは空のディレクトリしか削除できません。<br />
 なので、中身が残っていても削除が可能な関数を作ってみました(deltreeコマンドのようなもの)。</p>
 <p>なお、この関数では読み取り専用のファイルやディレクトリなども強制的に削除されます。<br />
 また、Windowsの削除コマンドを使っているわけではないので、削除したファイルやディレクトリがゴミ箱など、一時的なディレクトリに入ると言うこともありません。<br />
 したがって、ディレクトリ指定を間違うと、場合によっては取り返しが付かない事態になることがありますので、使用する場合は十分ご注意ください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">使い方<a class="anchor_super" id="a12933fb" href="index.php?Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#a12933fb" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">使い方<a class="anchor_super" id="a12933fb" href="../Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#a12933fb.html" style="user-select:none;">&dagger;</a></h3>
 <pre>DELTREE(削除したいディレクトリ・ファイル名)</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">DELTREE関数<a class="anchor_super" id="y08cb248" href="index.php?Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#y08cb248" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">DELTREE関数<a class="anchor_super" id="y08cb248" href="../Tips/%E4%B8%AD%E8%BA%AB%E3%81%AE%E6%AE%8B%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B#y08cb248.html" style="user-select:none;">&dagger;</a></h3>
 <pre>//ディレクトリ削除関数(再帰あり)
 DELTREE
 {

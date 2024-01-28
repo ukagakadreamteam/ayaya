@@ -13,7 +13,7 @@
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="/svgd/table.css" type="text/css" />-->
- <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="index.php?cmd=mixirss&amp;ver=0.91" />--> 
+ <!--<link rel="alternate" type="application/rss+xml" title="RSS" href="../cmd=mixirss&amp;ver=0.91.html" />--> 
  <script type="text/javascript">
  <!--
  // -->
@@ -35,7 +35,7 @@
    <div id="body"><p>Windowsにおいて、マウスポインタの下に適宜表示される小さな説明窓のこと。（<a href="http://f.hatena.ne.jp/ponapalt/20090127221447" rel="nofollow">参考画像</a>）<br />
 改行は「\n」で行う。<br />
 ちなみにシェルの辺り判定ツールチップは<a href="http://ghost-dev.g.hatena.ne.jp/ponapalt/20090101" rel="nofollow">surfaces.txtで指定する</a>。</p>
-<h2 id="content_1_0">ツールチップ<a class="anchor_super" id="f9f5d226" href="index.php?Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#f9f5d226" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">ツールチップ<a class="anchor_super" id="f9f5d226" href="../Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#f9f5d226.html" style="user-select:none;">&dagger;</a></h2>
 <p>シェルの上に表示されます。<br />
 SSP2.1.58以降のみ対応。</p>
 <pre class="aya">// YAYA/Tc533-2 + yaya_shiori3.dic
@@ -73,12 +73,12 @@ AYATEMPLATE.MouseEventExec
 }</pre>
 <p>※<a href="http://home.384.jp/evidence/cgi-bin/archives/15.html" rel="nofollow">にこらとてすらの反省会</a>より転載させていただきました。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">バルーンツールチップ<a class="anchor_super" id="gaa19867" href="index.php?Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#gaa19867" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">バルーンツールチップ<a class="anchor_super" id="gaa19867" href="../Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#gaa19867.html" style="user-select:none;">&dagger;</a></h2>
 <p>バルーンの選択肢の上に表示されます。<br />
 SSP2.1.62以降のみ対応。<br />
 こちらもAYA5系テンプレート、またはSHIORI3FW.REF_ACCEL設定が1の場合はreference[*]をreference*に。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">選択肢IDで判別する場合<a class="anchor_super" id="p9567df0" href="index.php?Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#p9567df0" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">選択肢IDで判別する場合<a class="anchor_super" id="p9567df0" href="../Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#p9567df0.html" style="user-select:none;">&dagger;</a></h3>
 <pre class="aya">menu {
 　&quot;\1\s[10]\0\s[0]/
 　\q[何か話して,Talking]\n/
@@ -98,7 +98,7 @@ BalloonTooltip_Talking { &quot;お話します&quot; }
 BalloonTooltip_Profile { &quot;わたしのこと&quot; }
 BalloonTooltip_CloseBalloon { &quot;バルーンを閉じます\n（放置しても閉じます）&quot; }</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">選択肢ラベルで判別する場合<a class="anchor_super" id="b40dcbd7" href="index.php?Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#b40dcbd7" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">選択肢ラベルで判別する場合<a class="anchor_super" id="b40dcbd7" href="../Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#b40dcbd7.html" style="user-select:none;">&dagger;</a></h3>
 <pre class="aya">menu {
 　&quot;\1\s[10]\0\s[0]/
 　\q[何か話して,Talking]\n/
@@ -120,9 +120,9 @@ BalloonTooltip_閉じる { &quot;バルーンを閉じます\n（放置しても
 <p>（注：選択肢ID（下の例ではラベル）に関数名に使えない記号（空白　!　&quot;　#　$　%　&amp;　(　)　*　+　,　-　/　:　;　&lt;　=　&gt;　?　@　[　]　`　{　|　}　~ ）が混じっているとこの方法は使えません。<br />
 どうしても使わないといけない場合はreference内該当記号を削除する、全角に変換するなどして対処してください）</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">ジャンプ先URLを表示<a class="anchor_super" id="e953170c" href="index.php?Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#e953170c" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">ジャンプ先URLを表示<a class="anchor_super" id="e953170c" href="../Tips/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97#e953170c.html" style="user-select:none;">&dagger;</a></h3>
 <p>どのURLに飛ぶのか事前にわかりやすくする。<br />
-<span class="noexists"><a href="index.php?cmd=edit&amp;page=%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%82%BF%E3%82%B0%E3%81%8B%E3%82%89URL%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97&amp;refer=Tips%2F%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97">アンカータグからURLジャンプ</a></span>と併用して使ってください。</p>
+<span class="noexists"><a href="../cmd=edit&amp;page=%E3%82%A2%E3%83%B3%E3%82%AB%E3%83%BC%E3%82%BF%E3%82%B0%E3%81%8B%E3%82%89URL%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97&amp;refer=Tips%2F%E3%83%84%E3%83%BC%E3%83%AB%E3%83%81%E3%83%83%E3%83%97.html">アンカータグからURLジャンプ</a></span>と併用して使ってください。</p>
 <pre class="aya">On_balloon_tooltip {
 　if ISFUNC( &quot;BalloonTooltip_%(reference[0])&quot; ) {
 　	EVAL( &quot;BalloonTooltip_%(reference[0])&quot; )
