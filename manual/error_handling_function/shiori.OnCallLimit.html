@@ -8,7 +8,7 @@
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
  <meta http-equiv="content-style-type" content="text/css" />
 
- <title>マニュアル/エラー処理関数/shiori.OnCallLimit - AYAYA/03</title>
+ <title>Manual/Error Handling Function/shiori.OnCallLimit - AYAYA/03</title>
  <link rel="stylesheet" href="../../style.css" type="text/css" media="screen" charset="UTF-8" />
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
@@ -33,23 +33,23 @@
 
 <div id="interface_content">
    <div id="body">
-<h2 id="content_1_0">shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnCallLimit&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%2F%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0%2Fshiori.OnCallLimit.html">OnCallLimit</a></span><a class="anchor_super" id="ne7ede07" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0/shiori.OnCallLimit#ne7ede07.html" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnCallLimit&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%2F%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0%2Fshiori.OnCallLimit.html">OnCallLimit</a></span><a class="anchor_super" id="ne7ede07" href="../../manual/error_handling_function/shiori.OnCallLimit#ne7ede07.html" style="user-select:none;">&dagger;</a></h2>
 <p>呼び出しの深さが限界に達したときに呼び出されるユーザー定義関数</p>
 <ul class="list1 list-indent1"><li>以下はすべてのエラー処理関数に共通の注意点
 <ul class="list2 list-indent1"><li>エラー処理が不要な場合はこの関数を辞書に書かなくても良い</li>
 <li>戻り値は無視される</li>
 <li>参考：GETCALLSTACK関数を使うと問題が発生した場所を特定できる</li></ul></li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="format" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0/shiori.OnCallLimit#e4fb20a6.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="format" href="../../manual/error_handling_function/shiori.OnCallLimit#e4fb20a6.html" style="user-select:none;">&dagger;</a></h3>
 <blockquote><p class="quotation">shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnCallLimit&amp;refer=%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%2F%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0%2Fshiori.OnCallLimit.html">OnCallLimit</a></span>(<em>filename</em>,<em>linenum</em>)</p></blockquote>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Arguments<a class="anchor_super" id="arguments" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0/shiori.OnCallLimit#p9116e73.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Arguments<a class="anchor_super" id="arguments" href="../../manual/error_handling_function/shiori.OnCallLimit#p9116e73.html" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>filename</dt>
 <dd>エラーが発生した辭書ファイル名</dd>
 <dt>linenum</dt>
 <dd>エラーが発生した行番号</dd></dl>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Version<a class="anchor_super" id="version" href="../../%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E3%82%A8%E3%83%A9%E3%83%BC%E5%87%A6%E7%90%86%E9%96%A2%E6%95%B0/shiori.OnCallLimit#v0d80c10.html" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Version<a class="anchor_super" id="version" href="../../manual/error_handling_function/shiori.OnCallLimit#v0d80c10.html" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>YAYA：Tc564-2</li></ul>
    
    	 	
