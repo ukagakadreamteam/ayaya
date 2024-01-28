@@ -8,7 +8,7 @@
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
  <meta http-equiv="content-style-type" content="text/css" />
 
- <title>マニュアル/文法/2.関数 - AYAYA/03</title>
+ <title>Manual/Syntax/2. Functions - AYAYA/03</title>
  <link rel="stylesheet" href="../../style.css" type="text/css" media="screen" charset="UTF-8" />
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
@@ -34,9 +34,9 @@
 <div id="interface_content">
    <div id="body">
 <ul class="navi">
- <li class="navi_left"><a href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html" title="マニュアル/文法/1.基礎設定" class="link_page_passage">Prev</a></li>
- <li class="navi_right"><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Next</a></li>
- <li class="navi_none"><a href="../../manual/syntax.html" class="link_page_passage">マニュアル/文法</a></li>
+ <li class="navi_left"><a href="../../manual/syntax/1_basic_settings.html" title="Manual/Syntax/1. Basic settings" class="link_page_passage">Prev</a></li>
+ <li class="navi_right"><a href="../../manual/syntax/3_values_and_variables.html" title="Manual/Syntax/3. Values and variables" class="link_page_passage">Next</a></li>
+ <li class="navi_none"><a href="../../manual/syntax.html" class="link_page_passage">Manual/Syntax</a></li>
 </ul>
 <hr class="full_hr" />
 <div class="contents">
@@ -63,9 +63,9 @@
 <li><a href="#bc934c88">出力確定子</a></li></ul></li></ul>
 </div>
 
-<h2 id="content_1_0">関数<a class="anchor_super" id="r29732f5" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#r29732f5" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">関数<a class="anchor_super" id="r29732f5" href="../../manual/syntax/2_functions.html#r29732f5" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">基礎の基礎<a class="anchor_super" id="p8147893" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#p8147893" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">基礎の基礎<a class="anchor_super" id="p8147893" href="../../manual/syntax/2_functions.html#p8147893" style="user-select:none;">&dagger;</a></h3>
 <p>YAYAにおける「関数」とは、</p>
 <ul class="list1 list-indent1"><li>0個以上の引数を取り</li>
 <li>0個以上の「出力候補」から１つの出力を選んで返す</li></ul>
@@ -77,7 +77,7 @@ nは0から始まる引数の番号です。</p>
 <p>また、同名の関数が複数存在するとエラーになります。(特に既存のゴーストをベースに改編する場合に注意)</p>
 <p>次の「基礎」の章は、汎用言語DLLとしてのYAYAにとっての「関数」です。良く分からない場合は読み飛ばしてかまいません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">基礎<a class="anchor_super" id="r94d7456" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#r94d7456" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">基礎<a class="anchor_super" id="r94d7456" href="../../manual/syntax/2_functions.html#r94d7456" style="user-select:none;">&dagger;</a></h3>
 <p>request実行時に&quot;Hello World&quot;という文字列を返すプログラムコードの全体を以下に示します。</p>
 <pre class="aya">request
 {
@@ -95,10 +95,10 @@ requestは空の文字列を返します。</p>
 <p>loadとrequestはひとつの引数を持っています。これは変数で取り出せます。<br />
 変数の名前は_argcと_argvで、これはC言語のmain関数のインタフェースと類似しています。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">_argc<a class="anchor_super" id="f09b1d74" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#f09b1d74" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">_argc<a class="anchor_super" id="f09b1d74" href="../../manual/syntax/2_functions.html#f09b1d74" style="user-select:none;">&dagger;</a></h4>
 <p>引数の数。loadとrequestでは引数はひとつの文字列ですから1となります。unloadは引数を持たないので、この値は0となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">_argv<a class="anchor_super" id="v1dd42c9" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#v1dd42c9" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">_argv<a class="anchor_super" id="v1dd42c9" href="../../manual/syntax/2_functions.html#v1dd42c9" style="user-select:none;">&dagger;</a></h4>
 <p>引数の実体が格納されています。これは_argc個の要素を持つ配列です。各要素へのアクセスは演算子[i]で行います。<br />
 序数iは0オリジン指定です。たとえば_argcが1の場合は_argv[0]が使用可能で、ここに引数が格納されていることになります。</p>
 <p>基礎編のまとめとして、loadでは変数strに&quot;Hello&quot;を格納し、requestで引数として渡された文字列とstrを結合して返すプログラムコードを
@@ -114,7 +114,7 @@ request
 }</pre>
 <p>処理対象文字列を&quot;World&quot;としてrequestを実行すると、結果として&quot;Hello World!&quot;が得られます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">書式<a class="anchor_super" id="s79234f5" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#s79234f5" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">書式<a class="anchor_super" id="s79234f5" href="../../manual/syntax/2_functions.html#s79234f5" style="user-select:none;">&dagger;</a></h3>
 <p>以下の則があります。</p>
 <ul class="list1 list-indent1"><li>空行（改行のみの行）、&quot;//&quot;以降、および&quot;/*&quot;と&quot;*/&quot;で囲まれた領域はコメントと見なされます。</li>
 <li>1行の終わりがスラッシュ（&quot;/&quot;）の場合は、次の行がこの行の後ろに結合されます。</li>
@@ -146,7 +146,7 @@ Hello World&quot;  }</pre>
 <p>セミコロンは過剰に書いても問題ありません。それらは無視され、動作に影響は与えません。<br />
 したがって、あなたがC言語の書式に慣れているなら、各行の終端に必ずセミコロンを書くことができます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">ユーザー関数の定義と実行<a class="anchor_super" id="f5f27796" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#f5f27796" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">ユーザー関数の定義と実行<a class="anchor_super" id="f5f27796" href="../../manual/syntax/2_functions.html#f5f27796" style="user-select:none;">&dagger;</a></h3>
 <p>load、unload、request以外に好きな名前の関数を作成できます。<br />
 作成した関数は、その名前を書くだけで実行できます。</p>
 <pre class="aya">request
@@ -199,7 +199,7 @@ factorial
 }</pre>
 <p>requestは120を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">択一<a class="anchor_super" id="vce5bec3" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#vce5bec3" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">択一<a class="anchor_super" id="vce5bec3" href="../../manual/syntax/2_functions.html#vce5bec3" style="user-select:none;">&dagger;</a></h3>
 <pre class="aya">request
 {
     &quot;Hello World&quot;
@@ -209,11 +209,11 @@ factorial
 <p>このように列挙すると、これらは平等な「出力候補」として扱われ、出力はこれらのうちのいずれかひとつになります。
 下記のいずれかを選ぶことができます。ただし、voidとarray / pool_arrayは特殊な用途のみで使用します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_8">指定なし / random<a class="anchor_super" id="c8db39e4" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#c8db39e4" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_8">指定なし / random<a class="anchor_super" id="c8db39e4" href="../../manual/syntax/2_functions.html#c8db39e4" style="user-select:none;">&dagger;</a></h4>
 <p>デフォルトでは無作為に選択します。<br />
 randomと書いても同じ動きになります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_9">nonoverlap<a class="anchor_super" id="y4e0c799" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#y4e0c799" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_9">nonoverlap<a class="anchor_super" id="y4e0c799" href="../../manual/syntax/2_functions.html#y4e0c799" style="user-select:none;">&dagger;</a></h4>
 <p>できるだけ直前と同じ候補を選択しなくなります。</p>
 <pre class="aya">request : nonoverlap
 {
@@ -235,7 +235,7 @@ randomと書いても同じ動きになります。</p>
 <p>候補数が変化した場合、nonoverlapとsequential（後述）の巡回順序は初期化され、最初からやり直しになります。この時に限って、前回と同じ値が重複して
 出力されることはあり得ます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_10">sequential<a class="anchor_super" id="m0d8b091" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#m0d8b091" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_10">sequential<a class="anchor_super" id="m0d8b091" href="../../manual/syntax/2_functions.html#m0d8b091" style="user-select:none;">&dagger;</a></h4>
 <p>記述された順に出力します。最後まで出力したらまた先頭に戻ります。</p>
 <pre class="aya">request : sequential
 {
@@ -245,7 +245,7 @@ randomと書いても同じ動きになります。</p>
 }</pre>
 <p>上のように、関数名の後ろに &quot;: sequential&quot; を付け加えます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_11">array<a class="anchor_super" id="b6965d54" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#b6965d54" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_11">array<a class="anchor_super" id="b6965d54" href="../../manual/syntax/2_functions.html#b6965d54" style="user-select:none;">&dagger;</a></h4>
 <p>出力候補をすべて結合した汎用配列を関数の返値とします。<br /></p>
 <pre class="aya">request : array
 {
@@ -255,7 +255,7 @@ randomと書いても同じ動きになります。</p>
 }</pre>
 <p>出力は汎用配列 (&quot;This is a pen.&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, 3.14) となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_12">void<a class="anchor_super" id="sd2e95a2" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#sd2e95a2" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_12">void<a class="anchor_super" id="sd2e95a2" href="../../manual/syntax/2_functions.html#sd2e95a2" style="user-select:none;">&dagger;</a></h4>
 <p>何も出力しなくなります。<br />
 以下の例の場合、requestは3つの候補のどれも出力しません。</p>
 <pre class="aya">request : void
@@ -274,15 +274,15 @@ randomと書いても同じ動きになります。</p>
 <p>上の関数increment_iはiに1を加算します。voidが無い場合、この関数は加算結果を返しますが、voidを指定すると値を返さず、
 ただ加算を行うのみとなります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_13">all<a class="anchor_super" id="z4948755" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#z4948755" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_13">all<a class="anchor_super" id="z4948755" href="../../manual/syntax/2_functions.html#z4948755" style="user-select:none;">&dagger;</a></h4>
 <p>Tc567-1で実装</p>
 <p>選択候補すべてを1つの文字列に結合します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_14">last<a class="anchor_super" id="k507b16b" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#k507b16b" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_14">last<a class="anchor_super" id="k507b16b" href="../../manual/syntax/2_functions.html#k507b16b" style="user-select:none;">&dagger;</a></h4>
 <p>Tc567-1で実装</p>
 <p>選択候補の中から、一番最後の候補を出力として選択します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_15">_pool 修飾子<a class="anchor_super" id="v7563922" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#v7563922" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_15">_pool 修飾子<a class="anchor_super" id="v7563922" href="../../manual/syntax/2_functions.html#v7563922" style="user-select:none;">&dagger;</a></h4>
 <p>Tc563-1で実装</p>
 <p>択一指定の後ろに_poolを加えると、下記のようなコードにおいて…</p>
 <pre class="aya">request : random //または random_pool (poolと書くだけでも可)
@@ -305,13 +305,13 @@ randomと書いても同じ動きになります。</p>
 <li>Hallo Welt 33.3%</li></ul></li></ul>
 <p>nonoverlap_pool、sequential_pool、array_poolなどのようにも書けます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_16">melt_ 修飾子<a class="anchor_super" id="jb7be704" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#jb7be704" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_16">melt_ 修飾子<a class="anchor_super" id="jb7be704" href="../../manual/syntax/2_functions.html#jb7be704" style="user-select:none;">&dagger;</a></h4>
 <p>Tc567-1で実装</p>
-<p>択一指定の前に melt_ を加えると、<a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html#j8feade9" title="マニュアル/文法/5.配列" class="link_page_passage">汎用配列のパラレル出力</a>と同じ効果になります。</p>
+<p>択一指定の前に melt_ を加えると、<a href="../../manual/syntax/5_arrays.html#j8feade9" title="Manual/Syntax/5. Arrays" class="link_page_passage">汎用配列のパラレル出力</a>と同じ効果になります。</p>
 <p>例：melt_array</p>
 <p>主に下記の「入れ子」で使います。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">入れ子<a class="anchor_super" id="icb3830b" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#icb3830b" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_17">入れ子<a class="anchor_super" id="icb3830b" href="../../manual/syntax/2_functions.html#icb3830b" style="user-select:none;">&dagger;</a></h3>
 <pre class="aya">request
 {
     {
@@ -326,7 +326,7 @@ randomと書いても同じ動きになります。</p>
 上の例では、{ }の有無にかかわらず結果は同じであるように思われるかもしれませんが、実はそうではありません。<br />
 { }が無い場合、それぞれが出力される確率は平等に1/3です。しかし上の例の場合、まず&quot;Hello World&quot;と&quot;こんにちは世界&quot;からひとつが選ばれ、次いでその結果と残った&quot;Hallo Welt&quot;から出力が抽出されます。すなわち、出現率は&quot;Hello World&quot;と&quot;こんにちは世界&quot;が1/4、&quot;Hallo Welt&quot;は1/2となるのです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_18">入れ子内の択一指定 (Tc564-1)<a class="anchor_super" id="d84d9a46" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#d84d9a46" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_18">入れ子内の択一指定 (Tc564-1)<a class="anchor_super" id="d84d9a46" href="../../manual/syntax/2_functions.html#d84d9a46" style="user-select:none;">&dagger;</a></h4>
 <pre class="aya">request
 {
     nonoverlap : {
@@ -358,7 +358,7 @@ randomと書いても同じ動きになります。</p>
     &quot;Hallo Welt&quot;
 }</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_19">出力確定子<a class="anchor_super" id="bc934c88" href="../../manual/%E6%96%87%E6%B3%95/2.%E9%96%A2%E6%95%B0.html#bc934c88" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_19">出力確定子<a class="anchor_super" id="bc934c88" href="../../manual/syntax/2_functions.html#bc934c88" style="user-select:none;">&dagger;</a></h3>
 <pre class="aya">request
 {
     &quot;Hello&quot;
@@ -405,9 +405,9 @@ randomと書いても同じ動きになります。</p>
 <p>文は文字列のほかに数値なども扱えますが、出力確定子は結合する際にそれらをすべて文字列に変換し、文字列として結合します。</p>
 <hr class="full_hr" />
 <ul class="navi">
- <li class="navi_left"><a href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html" title="マニュアル/文法/1.基礎設定" class="link_page_passage">Prev</a><br /><a href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html" class="link_page_passage">マニュアル/文法/1.基礎設定</a></li>
- <li class="navi_right"><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" title="マニュアル/文法/3.値と変数" class="link_page_passage">Next</a><br /><a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html" class="link_page_passage">マニュアル/文法/3.値と変数</a></li>
- <li class="navi_none"><a href="../../manual/syntax.html" title="マニュアル/文法" class="link_page_passage">Home</a><br /><a href="../../manual/syntax.html" title="マニュアル/文法" class="link_page_passage">Up</a></li>
+ <li class="navi_left"><a href="../../manual/syntax/1_basic_settings.html" title="Manual/Syntax/1. Basic settings" class="link_page_passage">Prev</a><br /><a href="../../manual/syntax/1_basic_settings.html" class="link_page_passage">Manual/Syntax/1. Basic settings</a></li>
+ <li class="navi_right"><a href="../../manual/syntax/3_values_and_variables.html" title="Manual/Syntax/3. Values and variables" class="link_page_passage">Next</a><br /><a href="../../manual/syntax/3_values_and_variables.html" class="link_page_passage">Manual/Syntax/3. Values and variables</a></li>
+ <li class="navi_none"><a href="../../manual/syntax.html" title="Manual/Syntax" class="link_page_passage">Home</a><br /><a href="../../manual/syntax.html" title="Manual/Syntax" class="link_page_passage">Up</a></li>
 </ul>
    
    	 	
@@ -426,12 +426,12 @@ randomと書いても同じ動きになります。</p>
 
 
 <div id="related">
- Related pages: <a href="../../manual/%E6%96%87%E6%B3%95/1.%E5%9F%BA%E7%A4%8E%E8%A8%AD%E5%AE%9A.html">マニュアル/文法/1.基礎設定</a><span class="page_passage"></span>
- <a href="../../manual/%E6%96%87%E6%B3%95/3.%E5%80%A4%E3%81%A8%E5%A4%89%E6%95%B0.html">マニュアル/文法/3.値と変数</a><span class="page_passage"></span>
+ Related pages: <a href="../../manual/syntax/1_basic_settings.html">Manual/Syntax/1. Basic settings</a><span class="page_passage"></span>
+ <a href="../../manual/syntax/3_values_and_variables.html">Manual/Syntax/3. Values and variables</a><span class="page_passage"></span>
  <a href="../../manual/function/OUTPUTNUM.html">Manual/Function/OUTPUTNUM</a><span class="page_passage"></span>
- <a href="../../manual/%E6%96%87%E6%B3%95/5.%E9%85%8D%E5%88%97.html">マニュアル/文法/5.配列</a><span class="page_passage"></span>
+ <a href="../../manual/syntax/5_arrays.html">Manual/Syntax/5. Arrays</a><span class="page_passage"></span>
  <a href="../../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/2.%E3%83%88%E3%83%BC%E3%82%AF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B.html">チュートリアル/2.トークを書いてみる</a><span class="page_passage"></span>
- <a href="../../manual/syntax.html">マニュアル/文法</a><span class="page_passage"></span></div>
+ <a href="../../manual/syntax.html">Manual/Syntax</a><span class="page_passage"></span></div>
 
 
 </td></tr>
