@@ -124,6 +124,9 @@ function makePathDisplay()
 	return output;
 }
 
+let original_doc_link = document.getElementById('original_doc_link').innerHTML;
+document.getElementById('original_doc_link').outerHTML = "";
+console.log(original_doc_link);
 
 let page_content = document.getElementById('interface_content').innerHTML;
 
@@ -146,7 +149,7 @@ document.getElementById('interface_header').outerHTML = `
 
  [ <a href="cmd=list" rel="nofollow" >List of pages</a> | <a href="RecentChanges" rel="nofollow" >Recent changes</a> ]
  &nbsp;
- [This page has been translated by members of the Ukagaka Dream Team. To see the original document, click <a href="">here</a>.]
+ [This page has been translated by members of the Ukagaka Dream Team. To see the original document, click <a href="${original_doc_link}">here</a>.]
  
 
 	</td>
