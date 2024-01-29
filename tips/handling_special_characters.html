@@ -35,13 +35,13 @@
    <div id="body"><h2 id="content_1_0">特殊文字を扱いたい<a class="anchor_super" id="b9277e9f" href="#b9277e9f" style="user-select:none;">&dagger;</a></h2>
 <p>Unicodeで特殊な？文字コードが割り当てられている文字を使いたいのにエディタがShift JISのみ対応とか、いろいろ悩ましいときの解法。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">内部では処理を行わない場合<a class="anchor_super" id="o364150d" href="../tips/handling_special_characters.html#o364150d" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">内部では処理を行わない場合<a class="anchor_super" id="o364150d" href="#o364150d" style="user-select:none;">&dagger;</a></h3>
 <p>とにかく表示したいだけなら、</p>
 <pre>\_u[0x2122]</pre>
 <p>とかやるとバルーン内に表示されます。
 カッコ内は0x + 16進コード（あるいは単に10進コードを入れてもOK）</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">内部で処理を行う場合<a class="anchor_super" id="ue78afdf" href="../tips/handling_special_characters.html#ue78afdf" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">内部で処理を行う場合<a class="anchor_super" id="ue78afdf" href="#ue78afdf" style="user-select:none;">&dagger;</a></h3>
 <p>この場合、とっとと辞書の文字コードをUTF-8にしてしまえば一撃解決なのですが、手になじんだエディタ等の制限でそうもいかない場合があるでしょう。その場合…</p>
 <pre>CHR(0x2122)</pre>
 <p>要はCHRシステム関数を呼ぶだけなので、たとえば文字内に埋め込みたい場合は</p>

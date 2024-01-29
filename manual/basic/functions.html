@@ -40,7 +40,7 @@
  <li class="navi_none"><a href="../../manual/basic.html" class="link_page_passage">Manual/Basic</a></li>
 </ul>
 <hr class="full_hr" />
-<h2 id="content_1_0">関数<a class="anchor_super" id="n5a1e946" href="../../manual/basic/functions.html#n5a1e946" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">関数<a class="anchor_super" id="n5a1e946" href="#n5a1e946" style="user-select:none;">&dagger;</a></h2>
 <div class="contents">
 <a id="contents_1"></a>
 <ul class="list1 list-indent1"><li><a href="#n5a1e946">関数</a></li>
@@ -56,7 +56,7 @@
 <p>関数名は全角文字も使えます。</p>
 <p>また、変数の定義はローカル、グローバル問わず関数内でしかできないことに注意してください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">基本<a class="anchor_super" id="taf16c8e" href="../../manual/basic/functions.html#taf16c8e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">基本<a class="anchor_super" id="taf16c8e" href="#taf16c8e" style="user-select:none;">&dagger;</a></h2>
 <pre class="aya">Test{
  &quot;Hello World!&quot;
 }</pre>
@@ -86,7 +86,7 @@ YAYAの特徴として、代入式でないただの変数や文字列(この例
 }</pre>
 <p>のように書いても構いません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">Arguments<a class="anchor_super" id="arguments" href="../../manual/basic/functions.html#n5a1e946" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">Arguments<a class="anchor_super" id="arguments" href="#n5a1e946" style="user-select:none;">&dagger;</a></h2>
 <p>関数には引数を与えることができます。このとき受け取った引数はローカル変数の配列_argvに書格納され、_argcに引数の数(_argvのサイズ)が格納されます。</p>
 <p>例えば</p>
 <pre class="aya">てすと{
@@ -96,17 +96,17 @@ YAYAの特徴として、代入式でないただの変数や文字列(この例
 <pre class="aya">てすと(&quot;うかがか&quot;)</pre>
 <p>のように実行すると、&quot;入力は「うかがか」だよ&quot;が出力されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">自身の関数名<a class="anchor_super" id="o45f5801" href="../../manual/basic/functions.html#o45f5801" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">自身の関数名<a class="anchor_super" id="o45f5801" href="#o45f5801" style="user-select:none;">&dagger;</a></h2>
 <p>ローカル変数 _FUNC_NAME_ には現在実行中の関数名が入ります。<br />
 各種の動的定義命令(<a href="../../manual/function/APPEND_RUNTIME_DIC.html" title="Manual/Function/APPEND_RUNTIME_DIC" class="link_page_passage">APPEND_RUNTIME_DIC</a>など)の拡充に伴い、利便性のために追加されました。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">変数の定義<a class="anchor_super" id="n5a1e946" href="../../manual/basic/functions.html#n5a1e946" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">変数の定義<a class="anchor_super" id="n5a1e946" href="#n5a1e946" style="user-select:none;">&dagger;</a></h2>
 <p>関数内では自由に変数を宣言することができます。このとき変数名が&quot;_&quot;からはじまるものはローカル、そうでないものはグローバル変数として扱われます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">ローカル変数<a class="anchor_super" id="b6493b63" href="../../manual/basic/functions.html#b6493b63" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">ローカル変数<a class="anchor_super" id="b6493b63" href="#b6493b63" style="user-select:none;">&dagger;</a></h4>
 <p>その変数が定義された中括弧内でしか使えない変数です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">グローバル変数<a class="anchor_super" id="d08d255a" href="../../manual/basic/functions.html#d08d255a" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">グローバル変数<a class="anchor_super" id="d08d255a" href="#d08d255a" style="user-select:none;">&dagger;</a></h4>
 <p>関数が実行されて一度定義されてしまうと、どこでも使える変数になります。<br />
 なお、グローバル変数はゴーストを終了しても保持されます。消去したい場合は<a href="../../manual/function/ERASEVAR.html" title="Manual/Function/ERASEVAR" class="link_page_passage">ERASEVAR</a>関数を使う必要があります。</p>
 <pre class="aya">テスト2{
@@ -121,7 +121,7 @@ YAYAの特徴として、代入式でないただの変数や文字列(この例
 }</pre>
 <p>のようにローカル変数(_i)を使ってください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_7">呼び出し回数制限<a class="anchor_super" id="v79f5ca7" href="../../manual/basic/functions.html#v79f5ca7" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_7">呼び出し回数制限<a class="anchor_super" id="v79f5ca7" href="#v79f5ca7" style="user-select:none;">&dagger;</a></h2>
 <p><a href="../../manual/syntax/1_basic_settings.html#p6bb4967" title="Manual/Syntax/1. Basic settings" class="link_page_passage">基礎設定ファイルのfncdepth</a> で関数の呼び出し深さ（回数ではない）の設定ができます。標準は32階層です。<br />
 制限に到達した時は shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnCallLimit&amp;refer=manual%2F%E5%9F%BA%E6%9C%AC%2_functions.html">OnCallLimit</a></span>(関数名,行) が呼ばれます。<br />
 実行中にメモリを使い果たした時は shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnMemoryLimit&amp;refer=manual%2F%E5%9F%BA%E6%9C%AC%2_functions.html">OnMemoryLimit</a></span>() が呼ばれますが、スタックオーバーフローを捉えることはできません。</p>

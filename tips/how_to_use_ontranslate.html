@@ -74,7 +74,7 @@
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">改造メモ<a class="anchor_super" id="ra3b6cf0" href="#ra3b6cf0" style="user-select:none;">&dagger;</a></h2>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">敬称がらみ<a class="anchor_super" id="v20903e2" href="../Tips/OnTranslate%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.html#v20903e2" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">敬称がらみ<a class="anchor_super" id="v20903e2" href="#v20903e2" style="user-select:none;">&dagger;</a></h3>
 <p>ほかにも、たとえば「様殿」もなんとかしたい場合は、</p>
 <pre>(ちゃん|くん|さん|殿)</pre>
 <p>と、括弧でくくって | 区切りにしてある部分に追加して</p>
@@ -83,7 +83,7 @@
 <pre>_text = RE_REPLACE(_text,&quot;(ちゃん|くん|さん|殿|様|さま)さま&quot;,&quot;さま&quot;)</pre>
 <p>と、こんな感じでしょうか。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">自動ウエイトもどきがらみ<a class="anchor_super" id="s3f9e8ff" href="../Tips/OnTranslate%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.html#s3f9e8ff" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">自動ウエイトもどきがらみ<a class="anchor_super" id="s3f9e8ff" href="#s3f9e8ff" style="user-select:none;">&dagger;</a></h3>
 <p>たとえば</p>
 <pre>_text = REPLACE(_text, &quot;！&quot;, &quot;！\w5&quot;)
 _text = REPLACE(_text, &quot;？&quot;, &quot;？\w5&quot;)</pre>
@@ -95,7 +95,7 @@ _text = REPLACE(_text, &quot;？&quot;, &quot;？\w5&quot;)</pre>
 _text = RE_REPLACE(_text ,'？(?=[^？\\])', '？\w5')</pre>
 <p>ちょっとややこしい正規表現なので解説は控えますが、これで解決できます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">自動ウエイト：さらにパーフェクトな方法<a class="anchor_super" id="m6c99fbd" href="../Tips/OnTranslate%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9.html#m6c99fbd" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">自動ウエイト：さらにパーフェクトな方法<a class="anchor_super" id="m6c99fbd" href="#m6c99fbd" style="user-select:none;">&dagger;</a></h3>
 <p>上記方法ですとタグ内部などまで置換されてひどい目に遭います。
 そのへんを解決した関数を以下に用意しました。</p>
 <p>2020/3/29更新 EVAL内部での不要な変数展開を削除</p>
