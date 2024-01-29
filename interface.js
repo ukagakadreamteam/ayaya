@@ -1,5 +1,4 @@
 //Be warned, my js is really really bad!! If you can improve this, please do, and then teach me how you did it <3 -Zi
-
 let islocal = location.protocol != "https:";
 let ishomepage = 1;
 if (!(location.pathname.endsWith("AYAYA/index.html") || location.pathname.endsWith("AYAYA/") || location.pathname == "/" || location.pathname == ""))
@@ -42,7 +41,31 @@ function findDeepness()
 
 findDeepness();
 
-let pathdisplay = ``;
+function FileNameToProperCase(name)
+{
+	let output = name;
+	
+	output = output.replace(/_/g," ");
+	output = output.replace("yaya","YAYA"); //Idk of a better way to handle this
+	output = output.replace("aya","AYA");
+	output = output.replace("satori","Satori");
+	output = output.replace("saori","SAORI");
+	output = output.replace("makoto","MAKOTO");
+	output = output.replace("plugin","PLUGIN"); //I'm sure this will cause a problem. could i grab from the page title instead?
+	
+	output = output.charAt(0).toUpperCase() + output.substr(1);
+	
+	return output;
+}
+
+
+let page_name = "";
+if (document.getElementById('content_1_0') != null)
+{
+	page_name = document.getElementById('content_1_0').innerHTML
+	page_name = page_name.split("<")[0];
+	console.log(page_name);
+}
 
 function makePathDisplay()
 {
@@ -73,39 +96,37 @@ function makePathDisplay()
 			path = path.split("AYAYA/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!!
 			path = path[1];
 		}
-		console.log(path);
 		path = path.split("/");
-		console.log(path);
 		
 		
 		
 		let currentpath = "";
 		for (piece of path.slice(0,-1))
 		{
+			piece = piece.toString().replace('.html','')
 			output += `
 			<a href="${localpath}${currentpath}${piece}.html">
-				${piece.toString().replace('.html','')}
+				${FileNameToProperCase(piece)}
 			</a>
 			<span class="topicpath-slash">/</span>
 			`
 			currentpath += piece + "/";
 		}
 		
-		output += `${path.slice(-1).toString().replace('.html','')}`;
+		let ending = path.slice(-1).toString().replace('.html','')
+		output += `${FileNameToProperCase(ending)}`;
 	}
 
 	
 	output += `
 		</a>
 	</div>`;
-	pathdisplay = output;
+	return output;
 }
-makePathDisplay();
 
 
 let page_content = document.getElementById('interface_content').innerHTML;
 
-document.getElementById('interface_content').innerHTML = "";
 document.getElementById('interface_content').outerHTML = "";
 
 document.getElementById('interface_header').outerHTML = `
@@ -117,7 +138,7 @@ document.getElementById('interface_header').outerHTML = `
   <tr height="80">
     <td width="170" nowrap><a href="${localpath}index.html" alt="Top" title="Top"><img src="${localpath}skin/title.png" width=170 height=80 border=0></a></td>
     <td id="header1"><img src="${localpath}skin/logo.png" width=350 height=40 border=0><br />
-    ${pathdisplay}</td>
+    ${makePathDisplay()}</td>
   </tr>
   <tr>
     <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="${localpath}index.html">Top page</a>
@@ -149,7 +170,7 @@ document.getElementById('interface_header').outerHTML = `
 <br />
 <br /></li></ul></li>
 <li>Getting started
-<ul class="list2 list-indent1"><li><a href="${localpath}startup.html" title="StartUp" class="link_page_passage">What is AYA/YAYA?</a></li>
+<ul class="list2 list-indent1"><li><a href="${localpath}startup.html" title="StartUp" class="link_page_passage">What are YAYA/AYA?</a></li>
 <li><a href="${localpath}startup/making_ghosts_with_yaya.html" title="StartUp/Making ghosts with YAYA" class="link_page_passage">Making ghosts with YAYA</a></li>
 <li><a href="${localpath}startup/migrate_from_aya.html" title="StartUp/Migrate from AYA" class="link_page_passage">Migrate from AYA</a></li>
 <li><a href="${localpath}startup/migrate_from_satori.html" title="StartUp/Migrate from Satori" class="link_page_passage">Migrate from Satori</a>
@@ -165,13 +186,13 @@ document.getElementById('interface_header').outerHTML = `
 <br />
 <br /></li></ul></li>
 <li><a href="${localpath}tips.html" class="link_page_passage">Tips</a>
-<ul class="list2 list-indent1"><li><a href="${localpath}%E5%9B%B0%E3%81%A3%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95" class="link_page_passage">What to do when you need help</a></li>
-<li><a href="${localpath}%E3%83%88%E3%83%BC%E3%82%AF%E3%81%B9%E3%81%9F%E6%9B%B8%E3%81%8D%E6%94%AF%E6%8F%B4%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" class="link_page_passage">Bare talk writing support library</a></li>
+<ul class="list2 list-indent1"><li><a href="${localpath}troubleshooting.html" class="link_page_passage">Troubleshooting</a></li>
+<li><a href="${localpath}colloquial_dialogue_writing_support_library.html" class="link_page_passage">Colloquial dialogue writing support library</a></li>
 <li><a href="http://ukadev.shillest.net/" rel="nofollow">Development information search</a>
 <br />
 <br /></li></ul></li>
 <li>YAYA for things other than SHIORI
-<ul class="list2 list-indent1"><li><a href="${localpath}YAYA+as+SAORI" class="link_page_passage">YAYA as SAORI</a></li>
+<ul class="list2 list-indent1"><li><a href="${localpath}yaya_as_saori.html" class="link_page_passage">YAYA as SAORI</a></li>
 <li><a href="${localpath}yaya_as_makoto.html" class="link_page_passage">YAYA as MAKOTO</a></li>
 <li><a href="${localpath}yaya_as_plugin.html" class="link_page_passage">YAYA as PLUGIN</a>
 <br />
