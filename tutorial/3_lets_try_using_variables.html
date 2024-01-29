@@ -8,7 +8,7 @@
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
  <meta http-equiv="content-style-type" content="text/css" />
 
- <title>チュートリアル/3.変数を使ってみよう - AYAYA/03</title>
+ <title>Tutorial/3. Let's try using variables - AYAYA/03</title>
  <link rel="stylesheet" href="../style.css" type="text/css" media="screen" charset="UTF-8" />
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
@@ -33,7 +33,7 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">チュートリアル3.変数を使ってみよう<a class="anchor_super" id="kab82973" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#kab82973" style="user-select:none;">&dagger;</a></h2>
+   <div id="body"><h2 id="content_1_0">チュートリアル3.変数を使ってみよう<a class="anchor_super" id="kab82973" href="../tutorial/3_lets_try_using_variables.html#kab82973" style="user-select:none;">&dagger;</a></h2>
 <div class="contents">
 <a id="contents_1"></a>
 <ul class="list1 list-indent1"><li><a href="#kab82973">チュートリアル3.変数を使ってみよう</a>
@@ -52,7 +52,7 @@
 ゴーストでいうと「ユーザー名」「起動回数」「起動時間」「好感度」なんかが変数です。<br />
 YAYAの変数はいろんな種類があります。<br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">文字列と数値<a class="anchor_super" id="f03ef3ff" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#f03ef3ff" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">文字列と数値<a class="anchor_super" id="f03ef3ff" href="../tutorial/3_lets_try_using_variables.html#f03ef3ff" style="user-select:none;">&dagger;</a></h3>
 <p>変数には「文字列」と「数値」の二種類があります。（正確には整数、実数、文字列の3種類）<br /></p>
 <pre>変数 = 1</pre>
 <p>こう書くと変数の中身は数値の「1」</p>
@@ -71,7 +71,7 @@ YAYAの変数はいろんな種類があります。<br /></p>
 <p>自動的に整数、実数、文字列どれなのか判断して変換してくれる<span class="noexists"><a href="../cmd=edit&amp;page=TOAUTO&amp;refer=%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html">TOAUTO</a></span>なんてのもあります。<br />
 （システム関数についての詳しい説明はのちほど）</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">グローバルとローカル<a class="anchor_super" id="h613bbda" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#h613bbda" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_2">グローバルとローカル<a class="anchor_super" id="h613bbda" href="../tutorial/3_lets_try_using_variables.html#h613bbda" style="user-select:none;">&dagger;</a></h4>
 <pre>_変数名</pre>
 <p>名前の頭に「_」がついてるとローカル変数</p>
 <pre>変数名</pre>
@@ -80,7 +80,7 @@ YAYAの変数はいろんな種類があります。<br /></p>
 おおざっぱに言うと「すぐ消えてしまう一時的なもの」がローカル変数、「削除しない限りずっと残る」のがグローバル変数です。<br />
 動作やセーブデータを軽くするため「ユーザー名」や「好感度」などずっと残しておかないといけない変数以外はなるべくローカル変数を使うのをお勧めします。<br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">ローカル変数の寿命<a class="anchor_super" id="k56de4c3" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#k56de4c3" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_3">ローカル変数の寿命<a class="anchor_super" id="k56de4c3" href="../tutorial/3_lets_try_using_variables.html#k56de4c3" style="user-select:none;">&dagger;</a></h4>
 <p>（この辺ややこしいので、わかりづらかったら今は飛ばして後で気になった時読んでみてください）<br /></p>
 <p>で、ローカル変数がどれぐらいの期間使えるのかというと、<br />
 「現在の{ }内、およびそれより深い入れ子階層のみで使用できる。寿命は該当する{ }を抜けるところまで。」<br />
@@ -106,9 +106,9 @@ _変数 = &quot;&quot;
 <br />
 つまりローカル変数を長生きさせたい時は最初に一番浅い階層で「_○○=&quot;&quot;」などの一行を書いておけばOK。<br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">実際に変数を使ってみよう<a class="anchor_super" id="y8e6b659" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#y8e6b659" style="user-select:none;">&dagger;</a></h3>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">実際に変数を使ってみよう<a class="anchor_super" id="y8e6b659" href="../tutorial/3_lets_try_using_variables.html#y8e6b659" style="user-select:none;">&dagger;</a></h3>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">準備<a class="anchor_super" id="r2dc790f" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#r2dc790f" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_5">準備<a class="anchor_super" id="r2dc790f" href="../tutorial/3_lets_try_using_variables.html#r2dc790f" style="user-select:none;">&dagger;</a></h4>
 <p>「dic_main.dic」を開き</p>
 <pre class="aya">//クリックされたら「MouseDoubleClick_(キャラ番号)(当たり判定識別子)」イベントにジャンプ
 OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&quot;)}</pre>
@@ -120,7 +120,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 <p>このイベントは「ゴーストが左ダブルクリックされた」時に起こるイベントです。<br />
 一般的なゴーストだとつつかれ反応をしたり、メニューが出てくるときが事が多いですね。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">SHIORI Eventから生まれてくる変数を使ってみよう<a class="anchor_super" id="b8be2da0" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#b8be2da0" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">SHIORI Eventから生まれてくる変数を使ってみよう<a class="anchor_super" id="b8be2da0" href="../tutorial/3_lets_try_using_variables.html#b8be2da0" style="user-select:none;">&dagger;</a></h4>
 <p>「<span class="noexists"><a href="../cmd=edit&amp;page=OnMouseDoubleClick&amp;refer=%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html">OnMouseDoubleClick</a></span>」イベントが起きると「reference[0]」「reference[1]」…といった変数が自動的に生まれてきます。<br />
 どの変数がどんな意味なのかは以前にも紹介した<a href="http://crow.aqrs.jp/reference/all/Shiori/index.html" rel="nofollow">CROW・SSPリファレンス - Shiori</a>に書いてあります。
 （ここで「Reference0」と書いてある変数はYAYAでは「reference[0]」と書きます）<br />
@@ -145,7 +145,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 <strong>「&quot;　&quot;」で囲まれた中で変数を使うときは「&amp;(変数名)」と書きましょう。</strong><br />
 ちなみに「&quot;　&quot;」ではなく「'　'」で囲むと変数が展開されず、そのまま表示されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_7">オリジナル変数を作ってみよう<a class="anchor_super" id="cebbd6ed" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#cebbd6ed" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_7">オリジナル変数を作ってみよう<a class="anchor_super" id="cebbd6ed" href="../tutorial/3_lets_try_using_variables.html#cebbd6ed" style="user-select:none;">&dagger;</a></h4>
 <p>ゴーストにプレゼントをあげてみましょう。<br />
 「プレゼント」という変数に「花束」という文字を入れる時は、最初に説明した「変数 = 変数に代入したいもの」を「{　}」の中に書きます。</p>
 <pre class="aya">OnMouseDoubleClick
@@ -171,7 +171,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 そのため「『プレゼント』という変数に『花束』という変数の中身を入れましたよ～」、という意味に誤解され、<br />
 「花束」という変数は存在してないため中身は空っぽになってしまう、という訳です。<br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_8">変数の計算をしてみよう<a class="anchor_super" id="j7856679" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#j7856679" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_8">変数の計算をしてみよう<a class="anchor_super" id="j7856679" href="../tutorial/3_lets_try_using_variables.html#j7856679" style="user-select:none;">&dagger;</a></h4>
 <p>数値型の変数の場合、計算もできます。</p>
 <pre class="aya">OnMouseDoubleClick
  {
@@ -198,7 +198,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 <p>と書くと変数「プレゼント」の中身は「&quot;花束&quot;」となります。<br />
 <br /></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_9">変数をちゃんと保存されているかどうか確認<a class="anchor_super" id="p75443f3" href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html#p75443f3" style="user-select:none;">&dagger;</a></h4>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_9">変数をちゃんと保存されているかどうか確認<a class="anchor_super" id="p75443f3" href="../tutorial/3_lets_try_using_variables.html#p75443f3" style="user-select:none;">&dagger;</a></h4>
 <p>ゴーストを一旦終了し、セーブデータファイル（yaya_variable.cfg）をテキストエディタで開いてみてください。<br />
 上の例だったら<br /></p>
 <pre>プレゼント,&quot;花束&quot;,,</pre>
@@ -223,7 +223,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 
 
 <div id="related">
- Related pages: <a href="../%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB/2.%E3%83%88%E3%83%BC%E3%82%AF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%8B.html">チュートリアル/2.トークを書いてみる</a><span class="page_passage"></span></div>
+ Related pages: <a href="../tutorial/2_try_writing_some_dialogue.html">Tutorial/2. Try writing some dialogue</a><span class="page_passage"></span></div>
 
 
 </td></tr>
