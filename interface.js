@@ -224,9 +224,9 @@ document.getElementById('interface_header').outerHTML = `
  <li><a href="${localpath}manual/function/FOPEN.html" class="link_page_passage">Manual/Function/FOPEN</a></li>
  <li><a href="${localpath}manual/function/GETTYPE.html" class="link_page_passage">Manual/Function/GETTYPE</a></li>
  <li><a href="${localpath}manual/function/GETTYPEEX.html" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
- <li><a href="${localpath}manual/basic.html.html" class="link_page_passage">Manual/Basic</a></li>
+ <li><a href="${localpath}manual/basic.html" class="link_page_passage">Manual/Basic</a></li>
  <li><a href="https://emily.shillest.net/ayaya/index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" class="link_page_passage">Wiki message board</a></li>
- <li><a href="${localpath}manual/list_of_functions_by_purpose.html.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
+ <li><a href="${localpath}manual/list_of_functions_by_purpose.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
  <li><a href="${localpath}manual/function/HAN2ZEN.html" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
 </ul>
 </div>
