@@ -79,7 +79,7 @@ Reference2: 0
 Reference3: 1
 Reference4: 0</pre>
 <ul class="list1 list-indent1"><li>yaya_shiori3.dic は上記文字列を解釈し、以下の動作を行います。</li></ul>
-<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">ID: <span class="noexists"><a href="../cmd=edit&amp;page=OnSecondChange&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">OnSecondChange</a></span></td><td class="style_td">イベント名として解釈し、OnSecondChange関数を呼び出します。<a id="notetext_1" href="#notefoot_1" class="note_super" title="先頭に「On」がつかないIDは、「On_」をつけた関数を呼び出します。（例：hwnd→On_hwnd）">*1</a></td></tr>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">ID: OnSecondChange</td><td class="style_td">イベント名として解釈し、OnSecondChange関数を呼び出します。<a id="notetext_1" href="#notefoot_1" class="note_super" title="先頭に「On」がつかないIDは、「On_」をつけた関数を呼び出します。（例：hwnd→On_hwnd）">*1</a></td></tr>
 <tr><td class="style_td">Sender: SSP</td><td class="style_td">グローバル変数「basewarename」「sender」に値(&quot;SSP&quot;)を格納します。</td></tr>
 <tr><td class="style_td">Charset: UTF-8</td><td class="style_td">文字コードです。適切に解釈し出力時にその文字コードへの変換を行います。</td></tr>
 <tr><td class="style_td">Status: talking</td><td class="style_td">グローバル変数「status」に値（&quot;talking&quot;）を格納します。</td></tr>
@@ -100,7 +100,7 @@ Reference0: Emily</pre>
 <p><br /></p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">ランダムトーク<a class="anchor_super" id="f8d1f793" href="#f8d1f793" style="user-select:none;">&dagger;</a></h2>
-<ul class="list1 list-indent1"><li>ランダムトークを簡単に行えるようにするために、「<span class="noexists"><a href="../cmd=edit&amp;page=OnAiTalk&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">OnAiTalk</a></span>」関数を「aitalkinterval」秒毎に呼び出す機能を持ちます。<a id="notetext_3" href="#notefoot_3" class="note_super" title="本来OnAiTalkはベースウェアには存在しない機能であり、yaya_shiori3.dicがその機能を追加しています">*3</a></li></ul>
+<ul class="list1 list-indent1"><li>ランダムトークを簡単に行えるようにするために、「OnAiTalk」関数を「aitalkinterval」秒毎に呼び出す機能を持ちます。<a id="notetext_3" href="#notefoot_3" class="note_super" title="本来OnAiTalkはベースウェアには存在しない機能であり、yaya_shiori3.dicがその機能を追加しています">*3</a></li></ul>
 <p><br /></p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">内部トランスレート<a class="anchor_super" id="w081d044" href="#w081d044" style="user-select:none;">&dagger;</a></h2>
@@ -185,7 +185,7 @@ _配列=(&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;)
 <p><br /></p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_18">「遅れて喋る」イベント<a class="anchor_super" id="pe13c64e" href="#pe13c64e" style="user-select:none;">&dagger;</a></h2>
-<blockquote><p class="quotation">SHIORI3FW.<span class="noexists"><a href="../cmd=edit&amp;page=SetDelayEvent&amp;refer=system_dictionary%2Fyaya_shiori3.dic.html">SetDelayEvent</a></span>( '発生させるイベント名' , 遅れる秒数 )</p></blockquote>
+<blockquote><p class="quotation">SHIORI3FW.SetDelayEvent( '発生させるイベント名' , 遅れる秒数 )</p></blockquote>
 <p><br /></p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_19">その他の変数<a class="anchor_super" id="v1f77b82" href="#v1f77b82" style="user-select:none;">&dagger;</a></h2>

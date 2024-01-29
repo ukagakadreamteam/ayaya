@@ -123,8 +123,8 @@ YAYAの特徴として、代入式でないただの変数や文字列(この例
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_7">呼び出し回数制限<a class="anchor_super" id="v79f5ca7" href="#v79f5ca7" style="user-select:none;">&dagger;</a></h2>
 <p><a href="../../manual/syntax/1_basic_settings.html#p6bb4967" title="Manual/Syntax/1. Basic settings" class="link_page_passage">基礎設定ファイルのfncdepth</a> で関数の呼び出し深さ（回数ではない）の設定ができます。標準は32階層です。<br />
-制限に到達した時は shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnCallLimit&amp;refer=manual%2F%E5%9F%BA%E6%9C%AC%2_functions.html">OnCallLimit</a></span>(関数名,行) が呼ばれます。<br />
-実行中にメモリを使い果たした時は shiori.<span class="noexists"><a href="../../cmd=edit&amp;page=OnMemoryLimit&amp;refer=manual%2F%E5%9F%BA%E6%9C%AC%2_functions.html">OnMemoryLimit</a></span>() が呼ばれますが、スタックオーバーフローを捉えることはできません。</p>
+制限に到達した時は shiori.OnCallLimit(関数名,行) が呼ばれます。<br />
+実行中にメモリを使い果たした時は shiori.OnMemoryLimit() が呼ばれますが、スタックオーバーフローを捉えることはできません。</p>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/basic/arrays.html" title="Manual/Basic/Arrays" class="link_page_passage">Prev</a><br /><a href="../../manual/basic/arrays.html" class="link_page_passage">Manual/Basic/Arrays</a></li>

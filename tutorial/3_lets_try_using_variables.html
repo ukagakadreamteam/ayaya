@@ -112,7 +112,7 @@ _変数 = &quot;&quot;
 <p>「dic_main.dic」を開き</p>
 <pre class="aya">//クリックされたら「MouseDoubleClick_(キャラ番号)(当たり判定識別子)」イベントにジャンプ
 OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&quot;)}</pre>
-<p>この「<span class="noexists"><a href="../cmd=edit&amp;page=OnMouseDouble&amp;refer=%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html">OnMouseDouble</a></span>～」の行の左端に「//」を入れ、コメントアウトしてください。<br />
+<p>この「OnMouseDouble～」の行の左端に「//」を入れ、コメントアウトしてください。<br />
 そして、代わりに以下の3行をどこかに書きましょう。</p>
 <pre class="aya">OnMouseDoubleClick {
 	&quot;\0\s[0]変数の実験をやるよー！\e&quot;
@@ -121,7 +121,7 @@ OnMouseDoubleClick{EVAL(&quot;MouseDoubleClick_%(reference[3])%(reference[4])&qu
 一般的なゴーストだとつつかれ反応をしたり、メニューが出てくるときが事が多いですね。</p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_6">SHIORI Eventから生まれてくる変数を使ってみよう<a class="anchor_super" id="b8be2da0" href="../tutorial/3_lets_try_using_variables.html#b8be2da0" style="user-select:none;">&dagger;</a></h4>
-<p>「<span class="noexists"><a href="../cmd=edit&amp;page=OnMouseDoubleClick&amp;refer=%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%2F3.%E5%A4%89%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86.html">OnMouseDoubleClick</a></span>」イベントが起きると「reference[0]」「reference[1]」…といった変数が自動的に生まれてきます。<br />
+<p>「OnMouseDoubleClick」イベントが起きると「reference[0]」「reference[1]」…といった変数が自動的に生まれてきます。<br />
 どの変数がどんな意味なのかは以前にも紹介した<a href="http://crow.aqrs.jp/reference/all/Shiori/index.html" rel="nofollow">CROW・SSPリファレンス - Shiori</a>に書いてあります。
 （ここで「Reference0」と書いてある変数はYAYAでは「reference[0]」と書きます）<br />
 <br />
