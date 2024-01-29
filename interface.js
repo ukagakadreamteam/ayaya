@@ -41,32 +41,12 @@ function findDeepness()
 
 findDeepness();
 
-function FileNameToProperCase(name)
-{
-	let output = name;
-	
-	output = output.replace(/_/g," ");
-	output = output.replace("yaya","YAYA"); //Idk of a better way to handle this
-	output = output.replace("aya","AYA");
-	output = output.replace("satori","Satori");
-	output = output.replace("saori","SAORI");
-	output = output.replace("makoto","MAKOTO");
-	output = output.replace("plugin","PLUGIN"); //I'm sure this will cause a problem. could i grab from the page title instead?
-	
-	output = output.charAt(0).toUpperCase() + output.substr(1);
-	
-	return output;
-}
-
-
 let page_name = "";
-if (document.getElementById('content_1_0') != null)
-{
-	page_name = document.getElementById('content_1_0').innerHTML
-	page_name = page_name.split("<")[0];
-	console.log(page_name);
-}
 
+page_name = document.getElementsByTagName('title')[0].innerHTML;
+page_name = page_name.replace(" - AYAYA/03","");
+
+//TODO: I should use the page title for this! if I process the page title, then everything will already be the right case, and it should cover pages that don't have the title as a heading
 function makePathDisplay()
 {
 	let output = ``;
@@ -90,13 +70,7 @@ function makePathDisplay()
 			<span class="topicpath-slash">/</span>
 		</span>`;
 		
-		let path = location.pathname;
-		if (islocal)
-		{
-			path = path.split("AYAYA/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!!
-			path = path[1];
-		}
-		path = path.split("/");
+		let path = page_name.split("/");
 		
 		
 		
@@ -106,15 +80,14 @@ function makePathDisplay()
 			piece = piece.toString().replace('.html','')
 			output += `
 			<a href="${localpath}${currentpath}${piece}.html">
-				${FileNameToProperCase(piece)}
+				${piece}
 			</a>
 			<span class="topicpath-slash">/</span>
 			`
 			currentpath += piece + "/";
 		}
 		
-		let ending = path.slice(-1).toString().replace('.html','')
-		output += `${FileNameToProperCase(ending)}`;
+		output += `${path.slice(-1).toString().replace('.html','')}`;
 	}
 
 	
@@ -147,9 +120,9 @@ document.getElementById('interface_header').outerHTML = `
     <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="${localpath}index.html">Top page</a>
     <td id="headerbar">&nbsp;
 
- [ <a href="cmd=list" rel="nofollow" >List of pages</a> | <a href="RecentChanges" rel="nofollow" >Recent changes</a> ]
- &nbsp;
- [This page has been translated by members of the Ukagaka Dream Team. To see the original document, click <a href="${original_doc_link}">here</a>.]
+ 
+
+ [ This document has been translated from Japanese | <a href="${original_doc_link}">Original document</a> | <a href="${localpath}translation_info.html">Translation info</a> ]
  
 
 	</td>
