@@ -54,7 +54,7 @@
 <li>但し、内部的には%を含まない文字列は、中間コード生成時に ' と同等にリテラルとして扱われるようだ。</li>
 <li>&quot;abc%(hemo)efg&quot; は、'abc'+EVAL('hemo')+'efg' と書くのと（たぶん）ほぼ同じである。</li>
 <li>従って、「たくさんの候補から択一する」ような関数の場合、全ての候補を展開するのは無駄である。</li>
-<li>候補が決まってから EVAL で埋め込みの展開を行えばよい。<a href="../Tips/%E9%AB%98%E9%80%9F%E5%8C%96.html" class="link_page_passage">Tips/高速化</a></li>
+<li>候補が決まってから EVAL で埋め込みの展開を行えばよい。<a href="../tips/increase_speed.html" class="link_page_passage">Tips/Increase speed</a></li>
 <li>特別な理由が無い限り%()で範囲を明示すべきである。%だけの名称最長一致展開は重い。</li>
 <li>&quot;abc%hemoefg&quot; はたぶん中間コード生成時に 'abc'+&quot;%hemoefg&quot;となり、実行時に &quot;%hemoefg&quot; を解決しなくてはならない。</li></ul>
 
@@ -100,11 +100,11 @@
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">その他<a class="anchor_super" id="sac398bf" href="#sac398bf" style="user-select:none;">&dagger;</a></h2>
 <ul class="list1 list-indent1"><li>SAORIのロードは初回に使う際、アンロードはSHIORIのアンロードの際に行われる。</li>
-<li>つまり、SSPでゴーストキャッシュが有効な場合、SHIORIがキャッシュされるため、ゴーストが終了してもSAORIのアンロードが行われない場合があることに<span style="color:Red">注意せよ。</span><a href="../Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B.html" class="link_page_passage">Tips/ゴーストの起動と終了に確実に何かする</a></li>
+<li>つまり、SSPでゴーストキャッシュが有効な場合、SHIORIがキャッシュされるため、ゴーストが終了してもSAORIのアンロードが行われない場合があることに<span style="color:Red">注意せよ。</span><a href="../tips/ensure_something_happens_upon_ghost_boot_and_close.html" class="link_page_passage">Tips/Ensure something happens upon ghost boot and close</a></li>
 <li>ゴーストが終了した際に終らせる必要のあるSAORIは、UNLOADLIBで明示的に終らせる必要がある(SHIORI3FW.SaoriUnloadAllもつかえる)</li>
 <li>C言語の頭になっていると、関数名や変数名を、実行時にEVALで動的に組み立て可能ということになかなか気付かない。</li>
 <li>ある変数の値に応じて、対応する関数を呼びたいのであれば、EVAL(&quot;func_%(_var)&quot;) という構文が有効。<a href="../tips/directly_write_choices_as_independent_functions.html" class="link_page_passage">Tips/Directly write choices as independent functions</a></li>
-<li>ある変数が %() を含む文字列である場合、それを後で展開したければ EVAL(CHR(0x22)+_var+CHR(0x22)) という構文が有効。<a href="../Tips/%E9%AB%98%E9%80%9F%E5%8C%96.html" class="link_page_passage">Tips/高速化</a></li></ul>
+<li>ある変数が %() を含む文字列である場合、それを後で展開したければ EVAL(CHR(0x22)+_var+CHR(0x22)) という構文が有効。<a href="../tips/increase_speed.html" class="link_page_passage">Tips/Increase speed</a></li></ul>
    
    	 	
 	</div>
@@ -123,8 +123,8 @@
 
 <div id="related">
  Related pages: <a href="../tips/directly_write_choices_as_independent_functions.html">Tips/Directly write choices as independent functions</a><span class="page_passage"></span>
- <a href="../Tips/%E9%AB%98%E9%80%9F%E5%8C%96.html">Tips/高速化</a><span class="page_passage"></span>
- <a href="../Tips/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%81%AE%E8%B5%B7%E5%8B%95%E3%81%A8%E7%B5%82%E4%BA%86%E3%81%AB%E7%A2%BA%E5%AE%9F%E3%81%AB%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B.html">Tips/ゴーストの起動と終了に確実に何かする</a><span class="page_passage"></span></div>
+ <a href="../tips/increase_speed.html">Tips/Increase speed</a><span class="page_passage"></span>
+ <a href="../tips/ensure_something_happens_upon_ghost_boot_and_close.html">Tips/Ensure something happens upon ghost boot and close</a><span class="page_passage"></span></div>
 
 
 </td></tr>
