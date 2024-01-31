@@ -34,8 +34,8 @@
 <div id="interface_header"></div>
 
 <div id="interface_content">
-   <div id="body"><h2 id="content_1_0">AYA Version5 システム関数<a class="anchor_super" id="m63a3c64" href="index.php?old/AYA/document/v5/system_dictionary#m63a3c64" style="user-select:none;">&dagger;</a></h2>
-<p><a href="index.php?old/AYA/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/V5/%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB" title="old/AYA/ドキュメント/V5/マニュアル" class="link_page_passage">AYA Version5 マニュアル</a>も参照してください。</p>
+   <div id="body"><h2 id="content_1_0">AYA Version5 システム関数<a class="anchor_super" id="m63a3c64" href=""#m63a3c64" style="user-select:none;">&dagger;</a></h2>
+<p><a href="index.php?old/AYA/document/V5/manual.html" title="old/AYA/ドキュメント/V5/マニュアル" class="link_page_passage">AYA Version5 マニュアル</a>も参照してください。</p>
 <div class="contents">
 <a id="contents_1"></a>
 <ul class="list1 list-indent1"><li><a href="#m63a3c64">AYA Version5 システム関数</a></li>
@@ -131,20 +131,20 @@
 </div>
 
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">ACOS<a class="anchor_super" id="k2c437f8" href="index.php?old/AYA/document/v5/system_dictionary#k2c437f8" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_1">ACOS<a class="anchor_super" id="k2c437f8" href=""#k2c437f8" style="user-select:none;">&dagger;</a></h2>
 <p>アーク・コサインを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">ANY<a class="anchor_super" id="hba1ed73" href="index.php?old/AYA/document/v5/system_dictionary#hba1ed73" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_2">ANY<a class="anchor_super" id="hba1ed73" href=""#hba1ed73" style="user-select:none;">&dagger;</a></h2>
 <p>文字列を与えた場合、それを簡易配列と見なして要素のうちの一つを無作為に選び返します。変数で与えた場合はそのデリミタが考慮されます。
 汎用配列を与えた場合はその要素のうちの一つを無作為に選び返します。
 整数もしくは実数を与えた場合はそれがそのまま返ります。引数が無いときは空の文字列を返します。
 選択した序数はLSOで取得できます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">ARRAYSIZE<a class="anchor_super" id="e974114d" href="index.php?old/AYA/document/v5/system_dictionary#e974114d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_3">ARRAYSIZE<a class="anchor_super" id="e974114d" href=""#e974114d" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:簡易配列部のみ互換性あり、引数2つのバージョンは廃止]</p></blockquote>
 <p>簡易配列、もしくは汎用配列の要素数を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">ASEARCH<a class="anchor_super" id="m5f36486" href="index.php?old/AYA/document/v5/system_dictionary#m5f36486" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_4">ASEARCH<a class="anchor_super" id="m5f36486" href=""#m5f36486" style="user-select:none;">&dagger;</a></h2>
 <p>汎用配列から値をひとつ検索します。第一引数にキー値を、第二引数以降に汎用配列を指定（簡易配列は不可）。
 最初に見つかった要素の序数が返ります。見つからなかった場合は-1。</p>
 <pre class="aya">_tea = (&quot;鉄観音&quot;, &quot;烏龍&quot;, &quot;やぶきた&quot;, &quot;ジャスミン&quot;)
@@ -154,28 +154,28 @@ ipod = ASEARCH(&quot;烏龍&quot;, _tea)</pre>
 <p>nyaohには 3 が格納されます。
 アルゴリズムは先頭から逐次比較する単純な線形探索ですので、処理に要する時間は配列サイズに比例して増大します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">ASEARCHEX<a class="anchor_super" id="g961f56c" href="index.php?old/AYA/document/v5/system_dictionary#g961f56c" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_5">ASEARCHEX<a class="anchor_super" id="g961f56c" href=""#g961f56c" style="user-select:none;">&dagger;</a></h2>
 <p>汎用配列から値を検索します。第一引数にキー値を、第二引数以降に汎用配列を指定（簡易配列は不可）。
 発見された要素の序数が列挙された汎用配列が返ります。見つからなかった場合はIARRAY。</p>
 <pre class="aya">_tea = (&quot;鉄観音&quot;, &quot;烏龍&quot;, &quot;やぶきた&quot;, &quot;烏龍&quot;, &quot;ジャスミン&quot;)
 ipod = ASEARCHEX(&quot;烏龍&quot;, _tea)</pre>
 <p>ipodには汎用配列 (1,3) が格納されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">ASIN<a class="anchor_super" id="zc4d3302" href="index.php?old/AYA/document/v5/system_dictionary#zc4d3302" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_6">ASIN<a class="anchor_super" id="zc4d3302" href=""#zc4d3302" style="user-select:none;">&dagger;</a></h2>
 <p>アーク・サインを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_7">ATAN<a class="anchor_super" id="pcca52e6" href="index.php?old/AYA/document/v5/system_dictionary#pcca52e6" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_7">ATAN<a class="anchor_super" id="pcca52e6" href=""#pcca52e6" style="user-select:none;">&dagger;</a></h2>
 <p>アーク・タンジェントを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_8">BINSTRTOI<a class="anchor_super" id="gd420362" href="index.php?old/AYA/document/v5/system_dictionary#gd420362" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_8">BINSTRTOI<a class="anchor_super" id="gd420362" href=""#gd420362" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:BINSTRTONUMを改名]</p></blockquote>
 <p>2進数値文字列を整数へ変換します。引数が異常の場合は0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_9">CEIL<a class="anchor_super" id="s3ed194f" href="index.php?old/AYA/document/v5/system_dictionary#s3ed194f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_9">CEIL<a class="anchor_super" id="s3ed194f" href=""#s3ed194f" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>実数の小数点以下を切り上げます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_10">CHARSETLIB<a class="anchor_super" id="aa2cb70f" href="index.php?old/AYA/document/v5/system_dictionary#aa2cb70f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_10">CHARSETLIB<a class="anchor_super" id="aa2cb70f" href=""#aa2cb70f" style="user-select:none;">&dagger;</a></h2>
 <p>外部ライブラリとの通信部で使用する文字コードを指定します。以下のうちひとつを選択します。</p>
 <ul class="list1 list-indent1"><li>0<br />
 Shift_JISを指定します。</li>
@@ -188,47 +188,47 @@ LOADLIB単位に異なる文字コードを設定可能です。
 デフォルトの文字コードは基礎設定ファイルのcharsetエントリで設定した値です。
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_11">CHR<a class="anchor_super" id="p4fc6b6e" href="index.php?old/AYA/document/v5/system_dictionary#p4fc6b6e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_11">CHR<a class="anchor_super" id="p4fc6b6e" href=""#p4fc6b6e" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:ASCの拡張。ASCII範囲では互換性あり]</p></blockquote>
 <p>UCS-2コードから1文字を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_12">CHRCODE<a class="anchor_super" id="i2f3158f" href="index.php?old/AYA/document/v5/system_dictionary#i2f3158f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_12">CHRCODE<a class="anchor_super" id="i2f3158f" href=""#i2f3158f" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:IASCの拡張。ASCII範囲では互換性あり]</p></blockquote>
 <p>指定された文字列先頭の1文字についてUCS-2文字コードを返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_13">COS<a class="anchor_super" id="v62bb5c6" href="index.php?old/AYA/document/v5/system_dictionary#v62bb5c6" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_13">COS<a class="anchor_super" id="v62bb5c6" href=""#v62bb5c6" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>コサインを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_14">CUTSPACE<a class="anchor_super" id="ta9e1097" href="index.php?old/AYA/document/v5/system_dictionary#ta9e1097" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_14">CUTSPACE<a class="anchor_super" id="ta9e1097" href=""#ta9e1097" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>文字列左右端に空白文字およびタブ文字がある場合、それらを取り除きます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_15">CVINT<a class="anchor_super" id="z7d5cef5" href="index.php?old/AYA/document/v5/system_dictionary#z7d5cef5" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_15">CVINT<a class="anchor_super" id="z7d5cef5" href=""#z7d5cef5" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:TONUMBERを改名]</p></blockquote>
 <p>引数に整数値の形式を持つ文字列が格納された変数を指定すると、整数に変換して格納しなおします。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_16">CVREAL<a class="anchor_super" id="z6a71c1f" href="index.php?old/AYA/document/v5/system_dictionary#z6a71c1f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_16">CVREAL<a class="anchor_super" id="z6a71c1f" href=""#z6a71c1f" style="user-select:none;">&dagger;</a></h2>
 <p>引数に実数値の形式を持つ文字列が格納された変数を指定すると、実数に変換して格納しなおします。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_17">CVSTR<a class="anchor_super" id="d37c140a" href="index.php?old/AYA/document/v5/system_dictionary#d37c140a" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_17">CVSTR<a class="anchor_super" id="d37c140a" href=""#d37c140a" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:TOSTRINGを改名]</p></blockquote>
 <p>引数に変数を指定すると、内容を文字列に変換して格納しなおします。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_18">ERASE<a class="anchor_super" id="bcd2b170" href="index.php?old/AYA/document/v5/system_dictionary#bcd2b170" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_18">ERASE<a class="anchor_super" id="bcd2b170" href=""#bcd2b170" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更]</p></blockquote>
 <p>文字列の指定部分を削除します。<br />
 第一引数が対象文字列、第二引数が削除を開始する文字位置、第三引数が削除する文字数です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_19">ERASEVAR<a class="anchor_super" id="oe218412" href="index.php?old/AYA/document/v5/system_dictionary#oe218412" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_19">ERASEVAR<a class="anchor_super" id="oe218412" href=""#oe218412" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:ERASEVARIABLEを改名]</p></blockquote>
 <p>指定された変数を削除します。引数には変数そのものでなく変数名の文字列を与えてください。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_20">EVAL<a class="anchor_super" id="g2041fc9" href="index.php?old/AYA/document/v5/system_dictionary#g2041fc9" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_20">EVAL<a class="anchor_super" id="g2041fc9" href=""#g2041fc9" style="user-select:none;">&dagger;</a></h2>
 <p>与えられた文字列を単一の文スクリプトとして実行します。<br />
 単一の、という点に注意してください。マルチステートメントは渡せません。したがって、現状ではEVALは数式の展開程度しかできません。if、forなどの制御構造を含むスクリプトを実行したり、新たに関数を定義したりするパフォーマンスは持っていません。</p>
 <p>たとえば以下のコードは変数iに1を代入します。</p>
@@ -240,7 +240,7 @@ LOADLIB単位に異なる文字コードを設定可能です。
 <pre class="aya">EVAL(&quot;%(CHR(34))%(CHR(37))(foo)%(CHR(34))&quot;)</pre>
 <p>EVAL結果を文字列に変換する TOSTR(EVAL(&lt;i&gt;&quot;formula&quot;&lt;/i&gt;)) と埋め込み展開 &amp;quot%(&lt;i&gt;formula&lt;/i&gt;)&quot; は同じ結果をもたらします。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_21">FCHARSET<a class="anchor_super" id="p9c5e3ce" href="index.php?old/AYA/document/v5/system_dictionary#p9c5e3ce" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_21">FCHARSET<a class="anchor_super" id="p9c5e3ce" href=""#p9c5e3ce" style="user-select:none;">&dagger;</a></h2>
 <p>ファイル書込み/読み取りで使用する文字コードを指定します。以下のうちひとつを選択します。</p>
 <ul class="list1 list-indent1"><li>0<br />
 Shift_JISを指定します。</li>
@@ -254,42 +254,42 @@ OSのデフォルトの文字コードを指定します。</li></ul>
 デフォルトの文字コードは基礎設定ファイルのcharsetエントリで設定した値です。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_22">FCLOSE<a class="anchor_super" id="lfd143e4" href="index.php?old/AYA/document/v5/system_dictionary#lfd143e4" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_22">FCLOSE<a class="anchor_super" id="lfd143e4" href=""#lfd143e4" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>FOPENで開いたファイルを閉じます。<br />
 引数にはFOPENで指定したものと同じファイル名を指定します。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_23">FCOPY<a class="anchor_super" id="d520fede" href="index.php?old/AYA/document/v5/system_dictionary#d520fede" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_23">FCOPY<a class="anchor_super" id="d520fede" href=""#d520fede" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ファイルをコピーします。<br />
 第一引数がコピー元ファイル名、第二引数がコピー先のディレクトリ名です。フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。</p>
 <p>戻値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_24">FDEL<a class="anchor_super" id="t2195b21" href="index.php?old/AYA/document/v5/system_dictionary#t2195b21" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_24">FDEL<a class="anchor_super" id="t2195b21" href=""#t2195b21" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>指定したファイルを削除します。<br />
 フルパス指定可能。相対パスの場合はaya5.dll loadで渡された位置が基準となります。</p>
 <p>戻値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_25">FENUM<a class="anchor_super" id="pa80c5d7" href="index.php?old/AYA/document/v5/system_dictionary#pa80c5d7" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_25">FENUM<a class="anchor_super" id="pa80c5d7" href=""#pa80c5d7" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>指定位置に存在するファイル名/ディレクトリ名を列挙し、カンマ区切り文字列として返します。<br />
 フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。<br />
 ディレクトリ名は先頭に&quot;\&quot;が付されます。</p>
 <p>第二引数にデリミタを指定できます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_26">FLOOR<a class="anchor_super" id="u983f18f" href="index.php?old/AYA/document/v5/system_dictionary#u983f18f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_26">FLOOR<a class="anchor_super" id="u983f18f" href=""#u983f18f" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>実数の小数点以下を切り捨てます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_27">FMOVE<a class="anchor_super" id="k15fcb73" href="index.php?old/AYA/document/v5/system_dictionary#k15fcb73" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_27">FMOVE<a class="anchor_super" id="k15fcb73" href=""#k15fcb73" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ファイルを移動します。
 第一引数が移動対象ファイル名、第二引数が移動先のディレクトリ名です。フルパス指定可能。~相対パスの場合はDLL loadで渡された位置が基準となります。
 戻値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_28">FOPEN<a class="anchor_super" id="g8447174" href="index.php?old/AYA/document/v5/system_dictionary#g8447174" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_28">FOPEN<a class="anchor_super" id="g8447174" href=""#g8447174" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ファイルをオープンします。<br />
 第一引数がファイル名です。フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。<br />
@@ -302,43 +302,43 @@ OSのデフォルトの文字コードを指定します。</li></ul>
 追加モードで開きます。</li></ul>
 <p>戻値0/1/2=失敗/成功/既にオープンしている。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_29">FREAD<a class="anchor_super" id="oa6599a2" href="index.php?old/AYA/document/v5/system_dictionary#oa6599a2" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_29">FREAD<a class="anchor_super" id="oa6599a2" href=""#oa6599a2" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>読取りモードで開いているファイルから1行読み取ります。<br />
 引数にはFOPENで指定したものと同じファイル名を指定します。<br />
 改行文字は取り除かれます。</p>
 <p>ファイル終端に達した際は-1を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_30">FRENAME<a class="anchor_super" id="v5df36d0" href="index.php?old/AYA/document/v5/system_dictionary#v5df36d0" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_30">FRENAME<a class="anchor_super" id="v5df36d0" href=""#v5df36d0" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ファイル名を変更します。<br />
 第一引数が対象ファイル名、第二引数が新しいファイル名です。フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。
 戻値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_31">FSIZE<a class="anchor_super" id="l2ed2658" href="index.php?old/AYA/document/v5/system_dictionary#l2ed2658" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_31">FSIZE<a class="anchor_super" id="l2ed2658" href=""#l2ed2658" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>指定されたファイルのサイズ（バイト数）を取得します。<br />
 フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。
 失敗した場合-1を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_32">FWRITE<a class="anchor_super" id="r9b6e025" href="index.php?old/AYA/document/v5/system_dictionary#r9b6e025" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_32">FWRITE<a class="anchor_super" id="r9b6e025" href=""#r9b6e025" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>書き込みモードで開いているファイルに文字列を書き込みます。<br />
 引数にはFOPENで指定したものと同じファイル名を指定します。</p>
 <p>戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_33">FWRITE2<a class="anchor_super" id="i2eab795" href="index.php?old/AYA/document/v5/system_dictionary#i2eab795" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_33">FWRITE2<a class="anchor_super" id="i2eab795" href=""#i2eab795" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>書き込みモードで開いているファイルに文字列を書き込みます。<br />
 引数にはFOPENで指定したものと同じファイル名を指定します。<br />
 戻値はありません。
 FWRITEは改行コードを自動的に書き込みます。FWRITE2は書き込みません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_34">GETDELIM<a class="anchor_super" id="r374c918" href="index.php?old/AYA/document/v5/system_dictionary#r374c918" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_34">GETDELIM<a class="anchor_super" id="r374c918" href=""#r374c918" style="user-select:none;">&dagger;</a></h2>
 <p>変数に設定されているデリミタ（簡易配列字の区切り文字）を返します。デフォルトのデリミタはカンマです。<br />
 第一引数に対象の変数を指定してください。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_35">GETLASTERROR<a class="anchor_super" id="ldeaf091" href="index.php?old/AYA/document/v5/system_dictionary#ldeaf091" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_35">GETLASTERROR<a class="anchor_super" id="ldeaf091" href=""#ldeaf091" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:戻値の体系変更]</p></blockquote>
 <p>直前に発生したシステム関数エラーのコードを返します。コードは以下の通りです。</p>
 <div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">コード</td><td class="style_td">意味</td></tr>
@@ -362,12 +362,12 @@ if !GETLASTERROR {
     &quot;エラーが発生しました。&quot;
 }</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_36">GETMEMINFO<a class="anchor_super" id="f48f6cf6" href="index.php?old/AYA/document/v5/system_dictionary#f48f6cf6" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_36">GETMEMINFO<a class="anchor_super" id="f48f6cf6" href=""#f48f6cf6" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:memory系システム変数相当]</p></blockquote>
 <p>動作環境のメモリ情報を取得します。結果は以下の汎用配列で返されます。</p>
 <blockquote><p class="quotation">物理メモリの使用率,物理メモリ量,空き物理メモリ量,仮想＋物理メモリ量,仮想＋物理空きメモリ量</p></blockquote>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_37">GETSETTING<a class="anchor_super" id="ab52ee2d" href="index.php?old/AYA/document/v5/system_dictionary#ab52ee2d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_37">GETSETTING<a class="anchor_super" id="ab52ee2d" href=""#ab52ee2d" style="user-select:none;">&dagger;</a></h2>
 <p>動作中の文に設定されている情報を返します。
 第一引数に取得したい情報を示す番号を指定します。</p>
 <ul class="list1 list-indent1"><li>0<br />
@@ -383,7 +383,7 @@ OSのデフォルトの文字コード。</li></ul></li>
 <li>2<br />
 文がカレントとして認識するディレクトリ絶対パス。</li></ul>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_38">GETSTRBYTES<a class="anchor_super" id="o506fa78" href="index.php?old/AYA/document/v5/system_dictionary#o506fa78" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_38">GETSTRBYTES<a class="anchor_super" id="o506fa78" href=""#o506fa78" style="user-select:none;">&dagger;</a></h2>
 <p>文字列を格納するために必要なバイト数を返します。<br />
 第一引数が対象文字列、第二引数は解釈する文字コードです。以下のうちひとつを選択します。</p>
 <ul class="list1 list-indent1"><li>0<br />
@@ -394,18 +394,18 @@ UTF-8を指定します。</li>
 OSのデフォルトの文字コードを指定します。</li></ul>
 <p>第二引数は省略可能で、省略時は0（Shift_JIS）となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_39">GETTICKCOUNT<a class="anchor_super" id="z991eb4d" href="index.php?old/AYA/document/v5/system_dictionary#z991eb4d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_39">GETTICKCOUNT<a class="anchor_super" id="z991eb4d" href=""#z991eb4d" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:システム変数systemuptickcount相当]</p></blockquote>
 <p>OSが起動してからの経過時間を返します。単位ms。<br />
 24日と20時間あまりで0に戻ります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_40">GETTIME<a class="anchor_super" id="t322edee" href="index.php?old/AYA/document/v5/system_dictionary#t322edee" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_40">GETTIME<a class="anchor_super" id="t322edee" href=""#t322edee" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:時刻取得系システム変数相当]</p></blockquote>
 <p>現在の日時情報を取得します。結果は以下の汎用配列で返されます。<br /></p>
 <blockquote><p class="quotation">西暦年,月,日,曜日,時,分,秒
 曜日は0～6で、0が日曜日です。</p></blockquote>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_41">GETTYPE<a class="anchor_super" id="s20af904" href="index.php?old/AYA/document/v5/system_dictionary#s20af904" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_41">GETTYPE<a class="anchor_super" id="s20af904" href=""#s20af904" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:ISINTEGER、ISREAL相当]</p></blockquote>
 <p>値の型を得ます。</p>
 <div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">0</td><td class="style_td">内部エラー</td></tr>
@@ -415,58 +415,58 @@ OSのデフォルトの文字コードを指定します。</li></ul>
 <tr><td class="style_td">4</td><td class="style_td">汎用配列</td></tr>
 </tbody></table></div>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_42">HEXSTRTOI<a class="anchor_super" id="p427437d" href="index.php?old/AYA/document/v5/system_dictionary#p427437d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_42">HEXSTRTOI<a class="anchor_super" id="p427437d" href=""#p427437d" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:HEXSTRTONUMを改名]</p></blockquote>
 <p>16進数値文字列を整数へ変換します。引数が異常の場合は0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_43">IARRAY<a class="anchor_super" id="xe734e7a" href="index.php?old/AYA/document/v5/system_dictionary#xe734e7a" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_43">IARRAY<a class="anchor_super" id="xe734e7a" href=""#xe734e7a" style="user-select:none;">&dagger;</a></h2>
 <p>空の汎用配列を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_44">INSERT<a class="anchor_super" id="a4d277b9" href="index.php?old/AYA/document/v5/system_dictionary#a4d277b9" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_44">INSERT<a class="anchor_super" id="a4d277b9" href=""#a4d277b9" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更]</p></blockquote>
 <p>文字列を挿入します。<br />
 第一引数が対象文字列、第二引数が挿入する文字位置、第三引数が挿入する文字列です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_45">ISFUNC<a class="anchor_super" id="sc195f8a" href="index.php?old/AYA/document/v5/system_dictionary#sc195f8a" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_45">ISFUNC<a class="anchor_super" id="sc195f8a" href=""#sc195f8a" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:ISFUNCTIONから改名]</p></blockquote>
 <p>指定した名前の関数が存在するかを返します。</p>
 <p>0/1/2=なし/関数/システム関数</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_46">ISINTSTR<a class="anchor_super" id="s16754f8" href="index.php?old/AYA/document/v5/system_dictionary#s16754f8" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_46">ISINTSTR<a class="anchor_super" id="s16754f8" href=""#s16754f8" style="user-select:none;">&dagger;</a></h2>
 <p>与えられた文字列を整数として解釈可能なら1を、それ以外で0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_47">ISREALSTR<a class="anchor_super" id="g99b487c" href="index.php?old/AYA/document/v5/system_dictionary#g99b487c" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_47">ISREALSTR<a class="anchor_super" id="g99b487c" href=""#g99b487c" style="user-select:none;">&dagger;</a></h2>
 <p>与えられた文字列を実数として解釈可能なら1を、それ以外で0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_48">ISVAR<a class="anchor_super" id="r3fcec7d" href="index.php?old/AYA/document/v5/system_dictionary#r3fcec7d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_48">ISVAR<a class="anchor_super" id="r3fcec7d" href=""#r3fcec7d" style="user-select:none;">&dagger;</a></h2>
 <p>指定した名前の変数が存在するかを返します。
 0/1/2=なし/グローバル変数/ローカル変数</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_49">LETTONAME<a class="anchor_super" id="aff6621b" href="index.php?old/AYA/document/v5/system_dictionary#aff6621b" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_49">LETTONAME<a class="anchor_super" id="aff6621b" href=""#aff6621b" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>第一引数の文字列を変数名と見なし、第二引数の値を代入します。|
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_50">LOADLIB<a class="anchor_super" id="xde58f53" href="index.php?old/AYA/document/v5/system_dictionary#xde58f53" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_50">LOADLIB<a class="anchor_super" id="xde58f53" href=""#xde58f53" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>外部ライブラリをロードします。LoadLibraryして、loadを実行します。<br />
 外部ライブラリはインタフェース用として文と同じ公開されたload/unload/request関数を持っている必要があります。</p>
 <p>戻値0/1/2=失敗/成功/既にロードしている。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_51">LOG<a class="anchor_super" id="we35b479" href="index.php?old/AYA/document/v5/system_dictionary#we35b479" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_51">LOG<a class="anchor_super" id="we35b479" href=""#we35b479" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>自然対数を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_52">LOG10<a class="anchor_super" id="u26ea0ac" href="index.php?old/AYA/document/v5/system_dictionary#u26ea0ac" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_52">LOG10<a class="anchor_super" id="u26ea0ac" href=""#u26ea0ac" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>常用対数を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_53">LOGGING<a class="anchor_super" id="vd79a5c3" href="index.php?old/AYA/document/v5/system_dictionary#vd79a5c3" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_53">LOGGING<a class="anchor_super" id="vd79a5c3" href=""#vd79a5c3" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:指定文字列のみ書き込むように変更]</p></blockquote>
 <p>ログファイルへ指定された値を書き込みます。値の型は問いません。簡易配列は各値をカンマで結合して表現されます。<br />
 戻値はありません。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_54">LSO<a class="anchor_super" id="k94f2e2e" href="index.php?old/AYA/document/v5/system_dictionary#k94f2e2e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_54">LSO<a class="anchor_super" id="k94f2e2e" href=""#k94f2e2e" style="user-select:none;">&dagger;</a></h2>
 <p>Last Selection Order. 最後に行われた選択の結果を、位置を表す数値で返します。</p>
 <pre class="aya">request
 {
@@ -515,37 +515,37 @@ foo
 <pre class="aya">&quot;1A&quot; &quot;2A&quot; &quot;3A&quot; &quot;1B&quot; &quot;2B&quot; &quot;3B&quot;</pre>
 <p>LSOの値の範囲もこれと一致し、0～5を取ります。各値は上の並びと一致します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_55">MKDIR<a class="anchor_super" id="yd02cd67" href="index.php?old/AYA/document/v5/system_dictionary#yd02cd67" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_55">MKDIR<a class="anchor_super" id="yd02cd67" href=""#yd02cd67" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ディレクトリを作成します。フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。<br />
 一階層づつしか作成できません。</p>
 <p>戻値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_56">POW<a class="anchor_super" id="z51a8423" href="index.php?old/AYA/document/v5/system_dictionary#z51a8423" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_56">POW<a class="anchor_super" id="z51a8423" href=""#z51a8423" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>第一引数の第二引数乗を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_57">RAND<a class="anchor_super" id="j9985219" href="index.php?old/AYA/document/v5/system_dictionary#j9985219" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_57">RAND<a class="anchor_super" id="j9985219" href=""#j9985219" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>乱数を得ます。第一引数で範囲を指定します。0～(第一引数-1)の範囲で発生します。<br />
 引数が無い場合は0～99を発生します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_58">RE_GETLEN<a class="anchor_super" id="u91c74cf" href="index.php?old/AYA/document/v5/system_dictionary#u91c74cf" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_58">RE_GETLEN<a class="anchor_super" id="u91c74cf" href=""#u91c74cf" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現系関数の実行結果を取得します。</p>
 <p>戻値は汎用配列で、( )にマッチした部分文字列の長さが列挙されています。要素0が正規表現全体にマッチした文字列の長さ、<br />
 要素iはi番目の( )にマッチした部分文字列の長さです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_59">RE_GETPOS<a class="anchor_super" id="vbfc6877" href="index.php?old/AYA/document/v5/system_dictionary#vbfc6877" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_59">RE_GETPOS<a class="anchor_super" id="vbfc6877" href=""#vbfc6877" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現系関数の実行結果を取得します。</p>
 <p>戻値は汎用配列で、( )にマッチした部分文字列の位置が列挙されています。要素0が正規表現全体にマッチした文字列の位置、<br />
 要素iはi番目の( )にマッチした部分文字列の位置です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_60">RE_GETSTR<a class="anchor_super" id="z794743b" href="index.php?old/AYA/document/v5/system_dictionary#z794743b" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_60">RE_GETSTR<a class="anchor_super" id="z794743b" href=""#z794743b" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現系関数の実行結果を取得します。
 戻値は汎用配列で、( )にマッチした部分文字列が列挙されています。要素0が正規表現全体にマッチした文字列、<br />
 要素iはi番目の( )にマッチした部分文字列です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_61">RE_GREP<a class="anchor_super" id="zd400d31" href="index.php?old/AYA/document/v5/system_dictionary#zd400d31" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_61">RE_GREP<a class="anchor_super" id="zd400d31" href=""#zd400d31" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現で文字列を検索し、結果を列挙します。<br />
 第一引数が処理対象文字列、第二引数が正規表現です。<br />
 見つかった数を返します。</p>
@@ -553,52 +553,52 @@ foo
 使用可能な正規表現文法については以下をご覧下さい。
 <a href="http://boost.cppll.jp/HEAD/libs/regex/syntax.htm" rel="nofollow">boost::Regex++ Regular expression syntax（日本語訳）</a></p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_62">RE_MATCH<a class="anchor_super" id="oca460c0" href="index.php?old/AYA/document/v5/system_dictionary#oca460c0" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_62">RE_MATCH<a class="anchor_super" id="oca460c0" href=""#oca460c0" style="user-select:none;">&dagger;</a></h2>
 <p>処理対象文字列全体が与えられた正規表現と完全にマッチしたとき1を返します。それ以外では0を返します。<br />
 第一引数が処理対象文字列、第二引数が正規表現です。</p>
 <p>結果の詳細はRE_GETSTR、RE_GETPOS、RE_GETLENで取得します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_63">RE_REPLACE<a class="anchor_super" id="nc0f7f4e" href="index.php?old/AYA/document/v5/system_dictionary#nc0f7f4e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_63">RE_REPLACE<a class="anchor_super" id="nc0f7f4e" href=""#nc0f7f4e" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現で文字列を検索し、発見された部分をすべて別の文字列へ置換します。<br />
 第一引数が処理対象文字列、第二引数が正規表現、第三引数が置換後文字列です。</p>
 <p>結果の詳細はRE_GETSTR、RE_GETPOS、RE_GETLENで取得します。</p>
 <p>RE_REPLACEとRE_SPLITに限り、RE_GETSTR、RE_GETPOS、RE_GETLENの意味が他と異なります。<br />
 これらにはマッチしたi番目の( )の内容ではなく、対象文字列において正規表現全体にマッチしたi番目の内容を表します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_64">RE_SEARCH<a class="anchor_super" id="yd77ff54" href="index.php?old/AYA/document/v5/system_dictionary#yd77ff54" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_64">RE_SEARCH<a class="anchor_super" id="yd77ff54" href=""#yd77ff54" style="user-select:none;">&dagger;</a></h2>
 <p>処理対象文字列内に与えられた正規表現とマッチする箇所があれば1を返します。それ以外では0を返します。<br />
 第一引数が処理対象文字列、第二引数が正規表現です。
 結果の詳細はRE_GETSTR、RE_GETPOS、RE_GETLENで取得します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_65">RE_SPLIT<a class="anchor_super" id="a89ed09e" href="index.php?old/AYA/document/v5/system_dictionary#a89ed09e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_65">RE_SPLIT<a class="anchor_super" id="a89ed09e" href=""#a89ed09e" style="user-select:none;">&dagger;</a></h2>
 <p>正規表現で文字列を分割します。分割した結果を汎用配列で返します。
 結果の詳細はRE_GETSTR、RE_GETPOS、RE_GETLENで取得します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_66">REPLACE<a class="anchor_super" id="z5e3fc2e" href="index.php?old/AYA/document/v5/system_dictionary#z5e3fc2e" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_66">REPLACE<a class="anchor_super" id="z5e3fc2e" href=""#z5e3fc2e" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更]</p></blockquote>
 <p>文字列を置換します。
 第一引数が対象文字列、第二引数が変換前文字列、第三引数が変換後文字列です。該当するすべてが置換されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_67">REQUESTLIB<a class="anchor_super" id="s0717e0d" href="index.php?old/AYA/document/v5/system_dictionary#s0717e0d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_67">REQUESTLIB<a class="anchor_super" id="s0717e0d" href=""#s0717e0d" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:戻値追加]</p></blockquote>
 <p>ロード済の外部ライブラリへrequestによって文字列を送出し、結果を受け取ります。
 第一引数はロードした時に指定したライブラリファイル名、第二引数は送出するリクエスト文字列です。
 戻値は結果文字列です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_68">RMDIR<a class="anchor_super" id="h79e7569" href="index.php?old/AYA/document/v5/system_dictionary#h79e7569" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_68">RMDIR<a class="anchor_super" id="h79e7569" href=""#h79e7569" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>ディレクトリを削除します。フルパス指定可能。相対パスの場合はDLL loadで渡された位置が基準となります。<br />
 空のディレクトリしか削除できません。
 返値0/1=失敗/成功。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_69">ROUND<a class="anchor_super" id="v8d0458c" href="index.php?old/AYA/document/v5/system_dictionary#v8d0458c" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_69">ROUND<a class="anchor_super" id="v8d0458c" href=""#v8d0458c" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>実数の小数点以下桁を四捨五入します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_70">SAVEVAR<a class="anchor_super" id="g9afef58" href="index.php?old/AYA/document/v5/system_dictionary#g9afef58" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_70">SAVEVAR<a class="anchor_super" id="g9afef58" href=""#g9afef58" style="user-select:none;">&dagger;</a></h2>
 <p>変数を保存します。unload時に行なわれる処理と同じものです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_71">SETDELIM<a class="anchor_super" id="s359ccba" href="index.php?old/AYA/document/v5/system_dictionary#s359ccba" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_71">SETDELIM<a class="anchor_super" id="s359ccba" href=""#s359ccba" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:SETSEPARATORを改名]</p></blockquote>
 <p>変数の標準のデリミタ（簡易配列字の区切り文字）を設定します。デフォルトのデリミタはカンマです。<br />
 第一引数に対象の変数、第二引数にデリミタ文字列を指定してください。<br />
@@ -611,14 +611,14 @@ SETDELIM(_i)</pre>
 下のように、第一引数に対象の変数、第二引数にデリミタを直接指定してください。</p>
 <pre class="aya">SETDELIM(var, &quot;/&quot;)</pre>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_72">SETLASTERROR<a class="anchor_super" id="dd521ac7" href="index.php?old/AYA/document/v5/system_dictionary#dd521ac7" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_72">SETLASTERROR<a class="anchor_super" id="dd521ac7" href=""#dd521ac7" style="user-select:none;">&dagger;</a></h2>
 <p>GETLASTERROR関数が返す値を整数で設定します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_73">SIN<a class="anchor_super" id="a620f5fd" href="index.php?old/AYA/document/v5/system_dictionary#a620f5fd" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_73">SIN<a class="anchor_super" id="a620f5fd" href=""#a620f5fd" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>サインを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_74">SPLIT<a class="anchor_super" id="t51d5ffb" href="index.php?old/AYA/document/v5/system_dictionary#t51d5ffb" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_74">SPLIT<a class="anchor_super" id="t51d5ffb" href=""#t51d5ffb" style="user-select:none;">&dagger;</a></h2>
 <p>文字列を分割して汎用配列として返します。RE_SPLITで代用可能ですが、正規表現を使わない分だけ高速です。<br />
 第一引数が対象文字列、第二引数が分割文字列です。<br />
 第三引数に最大分割数を指定できます。</p>
@@ -626,17 +626,17 @@ SETDELIM(_i)</pre>
 <p>_arrayは (&quot;A&quot;, &quot;B&quot;, &quot;C//D//E&quot;) です。
 分割数0ですべて分割（省略でも同じ）。1とすると分割しないのでただの文字列代入となります。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_75">SPLITPATH<a class="anchor_super" id="c5a6498c" href="index.php?old/AYA/document/v5/system_dictionary#c5a6498c" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_75">SPLITPATH<a class="anchor_super" id="c5a6498c" href=""#c5a6498c" style="user-select:none;">&dagger;</a></h2>
 <p>与えられたパス文字列を要素に分解し、汎用配列として返します。<br />
 要素は「ドライブ名」「パス」「主ファイル名」「拡張子」の4つです。</p>
 <pre class="aya">_i = SPLITPATH(&quot;C:\umeici\sample\readme.txt&quot;)</pre>
 <p>_i には &quot;C:&quot;,&quot;\umeici\sample\&quot;,&quot;readme&quot;,&quot;.txt&quot; が代入されます。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_76">SQRT<a class="anchor_super" id="n186185d" href="index.php?old/AYA/document/v5/system_dictionary#n186185d" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_76">SQRT<a class="anchor_super" id="n186185d" href=""#n186185d" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>平方根を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_77">STRFORM<a class="anchor_super" id="ub9aa1f6" href="index.php?old/AYA/document/v5/system_dictionary#ub9aa1f6" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_77">STRFORM<a class="anchor_super" id="ub9aa1f6" href=""#ub9aa1f6" style="user-select:none;">&dagger;</a></h2>
 <p>書式化された文字列を返します。C言語のsprintf相当の機能です。
 以下はsprintfとの比較です。結果を戻値で得る点と、書式指定のプレフィックス文字が$である点を除けば、まったく同様に使用できます。</p>
 <pre class="c">// C言語
@@ -649,53 +649,53 @@ warname = &quot;太平洋&quot;
 str = STRFORM(&quot;$04d年　$s戦争勃発。&quot;, year, warname)</pre>
 <p>書式指定一つあたりで展開できる文字列の長さは1024文字までに制限されています。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_78">STRLEN<a class="anchor_super" id="zacd5ffc" href="index.php?old/AYA/document/v5/system_dictionary#zacd5ffc" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_78">STRLEN<a class="anchor_super" id="zacd5ffc" href=""#zacd5ffc" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更、引数2つのバージョンは廃止]</p></blockquote>
 <p>文字列の文字数を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_79">STRSTR<a class="anchor_super" id="x1c97c8a" href="index.php?old/AYA/document/v5/system_dictionary#x1c97c8a" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_79">STRSTR<a class="anchor_super" id="x1c97c8a" href=""#x1c97c8a" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更。引数4つのバージョンは廃止]</p></blockquote>
 <p>文字列内の部分文字列を検索し、見つかった文字位置を返します。<br />
 第一引数は対象文字列、第二引数は検索する部分文字列、第三引数は検索を開始する文字位置です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_80">SUBSTR<a class="anchor_super" id="se754b81" href="index.php?old/AYA/document/v5/system_dictionary#se754b81" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_80">SUBSTR<a class="anchor_super" id="se754b81" href=""#se754b81" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:バイト単位から文字単位へ変更]</p></blockquote>
 <p>文字列から部分文字列を抜き出します。<br />
 第一引数は対象文字列、第二引数は取得を開始する文字位置、第三引数は取得する文字数です。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_81">TAN<a class="anchor_super" id="jaf28cfa" href="index.php?old/AYA/document/v5/system_dictionary#jaf28cfa" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_81">TAN<a class="anchor_super" id="jaf28cfa" href=""#jaf28cfa" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>タンジェントを返します。引数の単位はradianです。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_82">TOBINSTR<a class="anchor_super" id="n6994961" href="index.php?old/AYA/document/v5/system_dictionary#n6994961" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_82">TOBINSTR<a class="anchor_super" id="n6994961" href=""#n6994961" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>整数を2進数値文字列へ変換します。引数が異常の場合は空の文字列を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_83">TOHEXSTR<a class="anchor_super" id="s31e3a1a" href="index.php?old/AYA/document/v5/system_dictionary#s31e3a1a" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_83">TOHEXSTR<a class="anchor_super" id="s31e3a1a" href=""#s31e3a1a" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>整数を16進数値文字列へ変換します。引数が異常の場合は空の文字列を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_84">TOINT<a class="anchor_super" id="kf8ab8a0" href="index.php?old/AYA/document/v5/system_dictionary#kf8ab8a0" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_84">TOINT<a class="anchor_super" id="kf8ab8a0" href=""#kf8ab8a0" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:TONUMBER2を改名]</p></blockquote>
 <p>文字列を整数へ変換します。引数が異常の場合は0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_85">TOLOWER<a class="anchor_super" id="d5486a9f" href="index.php?old/AYA/document/v5/system_dictionary#d5486a9f" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_85">TOLOWER<a class="anchor_super" id="d5486a9f" href=""#d5486a9f" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>文字列中に含まれる英大文字をすべて小文字へ変換します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_86">TOREAL<a class="anchor_super" id="c7a13993" href="index.php?old/AYA/document/v5/system_dictionary#c7a13993" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_86">TOREAL<a class="anchor_super" id="c7a13993" href=""#c7a13993" style="user-select:none;">&dagger;</a></h2>
 <p>文字列を実数へ変換します。引数が異常の場合は0.0を返します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_87">TOSTR<a class="anchor_super" id="v77e0ce1" href="index.php?old/AYA/document/v5/system_dictionary#v77e0ce1" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_87">TOSTR<a class="anchor_super" id="v77e0ce1" href=""#v77e0ce1" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4:TOSTRING2を改名]</p></blockquote>
 <p>整数、実数、汎用配列を文字列へ変換します。<br />
 汎用配列が与えられた場合は、カンマで結合した文字列を返します。つまり、汎用配列をカンマ区切りの簡易配列へ変換します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_88">TOUPPER<a class="anchor_super" id="te803de1" href="index.php?old/AYA/document/v5/system_dictionary#te803de1" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_88">TOUPPER<a class="anchor_super" id="te803de1" href=""#te803de1" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>文字列中に含まれる英小文字をすべて大文字へ変換します。</p>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_89">UNLOADLIB<a class="anchor_super" id="ye6031a1" href="index.php?old/AYA/document/v5/system_dictionary#ye6031a1" style="user-select:none;">&dagger;</a></h2>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_89">UNLOADLIB<a class="anchor_super" id="ye6031a1" href=""#ye6031a1" style="user-select:none;">&dagger;</a></h2>
 <blockquote><p class="quotation">[v4]</p></blockquote>
 <p>LOADLIBでロードした外部ライブラリのunloadを実行した後、FreeLibraryします。<br />
 引数はロードした時に指定したライブラリファイル名です。
