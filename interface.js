@@ -105,9 +105,9 @@ let page_content = document.getElementById('interface_content').innerHTML;
 
 document.getElementById('interface_content').outerHTML = "";
 
-document.getElementById('interface_header').outerHTML = `
+let pageheader = ``;
 
-
+pageheader += `
 <div id="popUpContainer"></div>
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -119,12 +119,15 @@ document.getElementById('interface_header').outerHTML = `
   <tr>
     <td id="headerbar" width="170" nowrap>&nbsp;&nbsp;<a href="${localpath}index.html">Top page</a>
     <td id="headerbar">&nbsp;
-
+`
  
-
- [ This document has been translated from Japanese | <a href="${original_doc_link}">Original document</a> | <a href="${localpath}translation_info.html">Translation info</a> ]
- 
-
+if (page_name != "Translation info")
+{
+	pageheader += `
+	[ This document has been translated from Japanese | <a href="${original_doc_link}">Original document</a> | <a href="${localpath}translation_info.html">Translation info</a> ]
+	`
+}
+pageheader += `
 	</td>
   </tr>
 </table>
@@ -217,7 +220,7 @@ document.getElementById('interface_header').outerHTML = `
 
 `;
 
-
+document.getElementById('interface_header').outerHTML = pageheader;
 
 
 
