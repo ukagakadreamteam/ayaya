@@ -30,7 +30,7 @@ td#headerbar{border-top:1px solid #dcdcdc;border-right:1px solid #dcdcdc;border-
 td#menubar{width:170px;border-right:1px solid #dcdcdc;border-left:1px solid #dcdcdc;background:#F4F4F4;padding:0px;}
 td#body{padding:0px 0px 0px 10px;margin:0px;}
 td#footer{background:#DDDDDD;padding:5px;}
-div#menubar{width:100%;padding:0px;margin:0px;word-break:break-all;overflow:hidden;font-size:90%;}
+div#menubar{width:100%;padding:0px;margin:0px;word-break:break-word;overflow:hidden;font-size:90%;}
 div#menubar ul{margin:0px 0px 0px .5em;padding:0px 0px 0px .5em;}
 div#menubar ul li{line-height:110%;}
 div#body{margin:0px;padding:0px;}
