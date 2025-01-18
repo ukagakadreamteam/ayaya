@@ -17,6 +17,7 @@ img{border:none;vertical-align:middle;}
 ul{margin-top:.5em;margin-bottom:.5em;line-height:130%;}
 em{font-style:italic;}
 strong{font-weight:bold;}
+span.noexists{color:inherit;background-color:#FFFACC;}
 thead td.style_td{color:inherit;background-color:#D0D8E0;}
 .style_table{padding:0px;border:0px;margin:auto;text-align:left;color:inherit;background-color:#ccd5dd;}
 .style_td{padding:5px;margin:1px;color:inherit;background-color:#EEF5FF;}
