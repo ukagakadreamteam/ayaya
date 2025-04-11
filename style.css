@@ -49,6 +49,8 @@
 		li.navi_right{display:inline;float:right;text-align:right;}
 		blockquote{border:1px solid #FFCC99;margin-top:0.5em;margin-bottom:0.5em;}
 		blockquote p{margin:0.5em 1em;}
+		div.img_margin {margin-left: 32px;margin-right: 32px;} /* Added manually */
+		h4 {border-left:18px solid #DDDDDD;color: inherit;background-color: #FFFFFF;padding:.3em;margin:0px 0px .5em 0px;} /* Added manually */
 }
 /*! CSS Used from: https://emily.shillest.net/ayaya/skin/print.css ; media=print */
 @media print{
@@ -103,6 +105,8 @@
 		li.navi_right{display:inline;float:right;text-align:right;}
 		blockquote{border:1px solid #FFCC99;margin-top:0.5em;margin-bottom:0.5em;}
 		blockquote p{margin:0.5em 1em;}
+		div.img_margin {margin-left: 32px;margin-right: 32px;} /* Added manually */
+		h4 {border-left:18px solid #DDDDDD;color: inherit;background-color: #FFFFFF;padding:.3em;margin:0px 0px .5em 0px;} /* Added manually */
 	}
 	/*! end @import */
 	a:link{text-decoration:underline;}
