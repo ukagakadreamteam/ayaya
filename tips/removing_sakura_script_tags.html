@@ -55,6 +55,13 @@
 \\を\に直す必要のない場合（後でまたSakuraScriptの中に挿入して使う場合）は</p>
 <pre>  _text = REPLACE(_text,'\\','\')</pre>
 <p>を抜いてください。</p>
+<p>エスケープされたタグに反応しないようにする場合は以下のようにします。</p>
+<pre>RemoveSakuraScript
+{
+  _text = RE_REPLACE(_argv[0],'(?&lt;!\\)\\_{0,2}[a-zA-Z0-9*!&amp;-](\d|\[(&quot;([^&quot;]|\\&quot;)+?&quot;|([^\]]|\\\])+?)+?\])?','')
+  _text = REPLACE(_text,'\\','\')
+  _text
+}</pre>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">取り除くのではなくそのままバルーンに表示させたい<a class="anchor_super" id="h8465fa6" href="#h8465fa6" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../tips/escaping_sakura_script_tags.html" class="link_page_passage">Tips/Escaping SAKURA Script tags</a></li></ul>

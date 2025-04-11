@@ -192,18 +192,45 @@ pageheader += `
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">Recently updated pages</h5>
 <h5>10 most recent</h5>
-<div><strong>2023-04-11</strong>
+<div><strong>2025-04-12</strong>
 <ul class="recent_list">
- <li><a href="${localpath}manual/function/GETSETTING.html" class="link_page_passage">Manual/Function/GETSETTING</a></li>
- <li><a href="${localpath}manual/function/GETLASTERROR.html" class="link_page_passage">Manual/Function/GETLASTERROR</a></li>
- <li><a href="${localpath}manual/function/FSEEK.html" class="link_page_passage">Manual/Function/FSEEK</a></li>
- <li><a href="${localpath}manual/function/FOPEN.html" class="link_page_passage">Manual/Function/FOPEN</a></li>
- <li><a href="${localpath}manual/function/GETTYPE.html" class="link_page_passage">Manual/Function/GETTYPE</a></li>
- <li><a href="${localpath}manual/function/GETTYPEEX.html" class="link_page_passage">Manual/Function/GETTYPEEX</a></li>
- <li><a href="${localpath}manual/basic.html" class="link_page_passage">Manual/Basic</a></li>
- <li><a href="https://emily.shillest.net/ayaya/index.php?wiki%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E4%BC%9D%E8%A8%80%E6%9D%BF" class="link_page_passage">Wiki message board</a></li>
- <li><a href="${localpath}manual/list_of_functions_by_purpose.html" class="link_page_passage">Manual/List of functions by purpose</a></li>
- <li><a href="${localpath}manual/function/HAN2ZEN.html" class="link_page_passage">Manual/Function/HAN2ZEN</a></li>
+ <li><a href="${localpath}tips/discard_the_return_value_of_a_function.html" class="link_page_passage">Tips/Discard the return value of a function</a></li>
+</ul>
+<div><strong>2025-02-09</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}yaya.html" class="link_page_passage">YAYA</a></li>
+</ul>
+<div><strong>2025-01-13</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}yaya_as_makoto.html" class="link_page_passage">YAYA as MAKOTO</a></li>
+</ul>
+<div><strong>2024-12-28</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}tips/removing_sakura_script_tags.html" class="link_page_passage">Tips/Removing SAKURA Script tags</a></li>
+</ul>
+<div><strong>2024-12-23</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/ISFUNC.html" class="link_page_passage">Manual/Function/ISFUNC</a></li>
+</ul>
+<div><strong>2024-10-02</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/RAND.html" class="link_page_passage">Manual/Function/RAND</a></li>
+</ul>
+<div><strong>2024-04-28</strong>
+<ul class="recent_list">
+ <li><a href="https://emily.shillest.net/ayaya/index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
+</ul>
+<div><strong>2024-04-03</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/CHARSETTEXTTOID.html" class="link_page_passage">Manual/Function/CHARSETTEXTTOID</a></li>
+</ul>
+<div><strong>2024-02-07</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
+</ul>
+<div><strong>2024-02-03</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}ghost_related_links.html" class="link_page_passage">Ghost related links</a></li>
 </ul>
 </div>
 		<br>
