@@ -166,7 +166,7 @@ pageheader += `
 <br /></li></ul></li>
 <li><a href="${localpath}tips.html" class="link_page_passage">Tips</a>
 <ul class="list2 list-indent1"><li><a href="${localpath}troubleshooting.html" class="link_page_passage">Troubleshooting</a></li>
-<li><a href="${localpath}colloquial_dialogue_writing_support_library.html" class="link_page_passage">Colloquial dialogue writing support library</a></li>
+<li><a href="${localpath}simple_dialogue_support_library.html" class="link_page_passage">Simple dialogue support library</a></li>
 <li><a href="http://ukadev.shillest.net/" rel="nofollow">Development information search</a>
 <br />
 <br /></li></ul></li>
