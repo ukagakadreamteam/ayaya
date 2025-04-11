@@ -8,7 +8,7 @@
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
  <meta http-equiv="content-style-type" content="text/css" />
 
- <title>Manual/Function/RESTOREVAR - AYAYA/03</title>
+ <title>Manual/Function/RE_ASEARCH - AYAYA/03</title>
  <link rel="stylesheet" href="../../style.css" type="text/css" media="screen" charset="UTF-8" />
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
@@ -28,45 +28,50 @@
 </head>
 
 <body>
-<p id="original_doc_link">https://emily.shillest.net/ayaya/index.php?マニュアル/関数/RESTOREVAR</p>
+<p id="original_doc_link">https://emily.shillest.net/ayaya/index.php?マニュアル/関数/RE_ASEARCH</p>
 <div id="interface_header"></div>
 
 <div id="interface_content">
    <div id="body"><ul class="navi">
- <li class="navi_left"><a href="../../manual/function/REQUESTLIB.html" title="Manual/Function/REQUESTLIB" class="link_page_passage">Prev</a></li>
- <li class="navi_right"><a href="../../manual/function/RE_ASEARCH.html" title="Manual/Function/RE_ASEARCH" class="link_page_passage">Next</a></li>
+ <li class="navi_left"><a href="../../manual/function/RESTOREVAR.html" title="Manual/Function/RESTOREVAR" class="link_page_passage">Prev</a></li>
+ <li class="navi_right"><a href="../../manual/function/RE_ASEARCHEX.html" title="Manual/Function/RE_ASEARCHEX" class="link_page_passage">Next</a></li>
  <li class="navi_none"><a href="../../manual/function.html" class="link_page_passage">Manual/Function</a></li>
 </ul>
 <hr class="full_hr" />
-<h2 id="content_1_0">RESTOREVAR<a class="anchor_super" id="i9a83851" href="#i9a83851" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">RE_ASEARCH<a class="anchor_super" id="i9a83851" href="#i9a83851" style="user-select:none;">&dagger;</a></h2>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="format" href="#format" style="user-select:none;">&dagger;</a></h3>
-<blockquote><p class="quotation">RESTOREVAR( [ <em>path</em> ] )</p></blockquote>
+<blockquote><p class="quotation">RE_ASEARCH( <em>key</em> , <em>array</em> )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>変数をロード（復元）します。load時に行われる処理と同等です。</li>
-<li>pathに復元元ファイル名を指定することも可能です。</li></ul>
+<ul class="list1 list-indent1"><li>汎用配列から、指定した正規表現に「一部でも」合致する値を<strong>ひとつ</strong>検索します。</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
-<dl class="list1 list-indent1"><dt>path</dt>
-<dd>復元元ファイル名。省略時は主ファイル名（DLL名）+&quot;_variable.cfg&quot;となります。（例：yaya_variable.cfg）</dd></dl>
+<dl class="list1 list-indent1"><dt>key</dt>
+<dd>検索したいキー値（正規表現）。</dd>
+<dt>array</dt>
+<dd>汎用配列（簡易配列は不可）。</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>返り値はありません。（VOID）</li></ul>
+<ul class="list1 list-indent1"><li>最初に見つかった要素の序数（先頭＝0）が返ります。</li>
+<li>見つからなかった場合は-1が返ります。</li>
+<li>RE_GETSTR・POS・LENは使えません。</li>
+<li>すべて検索したいなら <a href="../../manual/function/RE_ASEARCHEX" class="link_page_passage">マニュアル/関数/RE_ASEARCHEX</a> を使うこと。</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li><a href="../../manual/function/SAVEVAR.html" class="link_page_passage">Manual/Function/SAVEVAR</a></li></ul>
+<ul class="list1 list-indent1"><li><a href="../../manual/function/ASEARCH.html" class="link_page_passage">Manual/Function/ASEARCH</a></li>
+<li><a href="../../manual/function/RE_ASEARCHEX.html" class="link_page_passage">Manual/Function/RE_ASEARCHEX</a></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="version" href="#version" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>YAYA: Available from the start</li></ul>
+<ul class="list1 list-indent1"><li>YAYA: Tc539-1</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>No example yet.</li>
-<li>Someone please provide one!</li></ul>
+<pre class="aya">_array = ('さくら','まゆら','ねここ') // 汎用配列を代入
+RE_ASEARCH('^ま', _array) // 「1」が出力される</pre>
 <hr class="full_hr" />
 <ul class="navi">
- <li class="navi_left"><a href="../../manual/function/REQUESTLIB.html" title="Manual/Function/REQUESTLIB" class="link_page_passage">Prev</a><br /><a href="../../manual/function/REQUESTLIB.html" class="link_page_passage">Manual/Function/REQUESTLIB</a></li>
- <li class="navi_right"><a href="../../manual/function/RE_ASEARCH.html" title="Manual/Function/RE_ASEARCH" class="link_page_passage">Next</a><br /><a href="../../manual/function/RE_ASEARCH.html" class="link_page_passage">Manual/Function/RE_ASEARCH</a></li>
+ <li class="navi_left"><a href="../../manual/function/RESTOREVAR.html" title="Manual/Function/RESTOREVAR" class="link_page_passage">Prev</a><br /><a href="../../manual/function/RESTOREVAR.html" class="link_page_passage">Manual/Function/RESTOREVAR</a></li>
+ <li class="navi_right"><a href="../../manual/function/RE_ASEARCHEX.html" title="Manual/Function/RE_ASEARCHEX" class="link_page_passage">Next</a><br /><a href="../../manual/function/RE_ASEARCHEX.html" class="link_page_passage">Manual/Function/RE_ASEARCHEX</a></li>
  <li class="navi_none"><a href="../../manual/function.html" title="Manual/Function" class="link_page_passage">Home</a><br /><a href="../../manual/function.html" title="Manual/Function" class="link_page_passage">Up</a></li>
 </ul>
    
@@ -82,15 +87,15 @@
 
 
 <div id="lastmodified">
- Last modified on: 2008-04-05 (Saturday) 21:06:52<span class="page_passage"></span></div>
+ Last modified on: 2015-06-20 (Saturday) 18:13:19<span class="page_passage"></span></div>
 
 
 <div id="related">
  Related pages: <a href="../../manual/list_of_functions_by_purpose.html">Manual/List of functions by purpose</a><span class="page_passage"></span>
- <a href="../../manual/function/RE_ASEARCH.html">Manual/Function/RE_ASEARCH</a><span class="page_passage"></span>
+ <a href="../../manual/function/RE_ASEARCHEX.html">Manual/Function/RE_ASEARCHEX</a><span class="page_passage"></span>
+ <a href="../../manual/function/ASEARCH.html">Manual/Function/ASEARCH</a><span class="page_passage"></span>
  <a href="../../manual/function.html">Manual/Function</a><span class="page_passage"></span>
- <a href="../../manual/function/SAVEVAR.html">Manual/Function/SAVEVAR</a><span class="page_passage"></span>
- <a href="../../manual/function/REQUESTLIB.html">Manual/Function/REQUESTLIB</a><span class="page_passage"></span></div>
+ <a href="../../manual/function/RESTOREVAR.html">Manual/Function/RESTOREVAR</a><span class="page_passage"></span></div>
 
 
 </td></tr>
