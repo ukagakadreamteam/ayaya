@@ -1,7 +1,7 @@
 //Be warned, my js is really really bad!! If you can improve this, please do, and then teach me how you did it <3 -Zi
 let islocal = location.protocol != "https:";
 let ishomepage = 1;
-if (!(location.pathname.endsWith("AYAYA/index.html") || location.pathname.endsWith("AYAYA/") || location.pathname == "/" || location.pathname == ""))
+if (!(location.pathname.endsWith("ayaya/index.html") || location.pathname.endsWith("ayaya/") || location.pathname == "/" || location.pathname == ""))
 {
 	ishomepage = 0;
 }
@@ -22,7 +22,7 @@ function findDeepness()
 	{
 		if (islocal)
 		{
-			path = path.split("AYAYA/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!! I guess maybe it was because it doesn't translate to other sites? It's kinda dirty
+			path = path.split("ayaya/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!! I guess maybe it was because it doesn't translate to other sites? It's kinda dirty
 			path = path[1];
 		}
 		else
@@ -276,7 +276,7 @@ function fixLocalLinks()
 	let a_links = document.getElementsByTagName("a");
 	for (let a_link of a_links)
 	{
-		if (a_link.href.startsWith("https://ukagakadreamteam.github.io/AYAYA/"))
+		if (a_link.href.startsWith("https://ukagakadreamteam.github.io/ayaya/"))
 		{
 			a_link.href = a_link.href.replace(".html","");
 		}
