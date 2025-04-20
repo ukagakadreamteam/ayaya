@@ -12,30 +12,23 @@ let localpath = "";
 //Get how many subfolders deep we are
 function findDeepness()
 {
-	//SET TO 1 BECAUSE THIS IS IN A REPO so it 
 	let deepness = 0;
 	let path = location.pathname;
-	console.log(path);
 	if (ishomepage)
 	{
-		console.log("IS HOME PAGE");
 		deepness = 0;
 	}
 	else
 	{
-		console.log("NOT home page");
 		path = path.split("ayaya/"); //this is bad and i should fix this at some point - this comment is from the implementation in my site and i don't know what it meant!!! I guess maybe it was because it doesn't translate to other sites? It's kinda dirty
 		path = path[1];
 		path = path.split("/");
 		deepness = path.length - 1;
-		console.log(path);
-		console.log(deepness);
 	}
 	
 	for (let i = 0; i < deepness; i++)
 	{
 		localpath += "../";
-		console.log(localpath);
 	}
 }
 
