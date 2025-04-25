@@ -44,16 +44,16 @@
 <blockquote><p class="quotation">ISFUNC(<em>string</em>)</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>指定した名前の関数が存在するかどうかを調べます。</li></ul>
+<ul class="list1 list-indent1"><li>Checks if a function with the specified name exists.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>string</dt>
-<dd>関数名を表す文字列</dd></dl>
+<dd>String representing the function name.</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>0:関数は存在しない</li>
-<li>1:ユーザ関数が存在する</li>
-<li>2:システム関数が存在する</li></ul>
+<ul class="list1 list-indent1"><li>0: Function does not exist.</li>
+<li>1: User function exists.</li>
+<li>2: System function exists.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../../manual/function/ISVAR.html" class="link_page_passage">Manual/Function/ISVAR</a></li></ul>
@@ -63,20 +63,20 @@
 <li>Available in AYA5.8</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>任意のメニューに以下の様に記載すると、該当関数があるときのみ項目を追加できる。デバッグメニューなどを配布ファイルに含めたくない場合に有用。
-<pre class="aya">//デバッグメニュー
+<ul class="list1 list-indent1"><li>If you include the following in any menu, you can add an item only when there is a corresponding function. This is useful when you do not want to include debug menus in the distributed files.
+<pre class="aya">//Debug menu
 if ( ISFUNC(&quot;DebugMenu&quot;) )
 {
-	AYATEMPLATE.MenuItem( &quot;【デバッグメニュー】&quot;,&quot;DebugMenu&quot;)
+	AYATEMPLATE.MenuItem( &quot;【Debug menu】&quot;,&quot;DebugMenu&quot;)
 }</pre></li></ul>
-<ul class="list1 list-indent1"><li>「On_enable_debug」イベントと組み合わせて、開発用パレットの「SHIORIデバッグモード有効」時のみ項目追加する場合は以下のようにすると良い。
-<pre class="aya">//デバッグメニュー
+<ul class="list1 list-indent1"><li>In combination with the "On_enable_debug" event, the following can be used to add an item only when "SHIORI debug mode" is enabled in the dev palette.
+<pre class="aya">//Debug menu
 if ( ISFUNC(&quot;DebugMenu&quot;) &amp;&amp; debug_mode )
 {
-	AYATEMPLATE.MenuItem( &quot;【デバッグメニュー】&quot;,&quot;DebugMenu&quot;)
+	AYATEMPLATE.MenuItem( &quot;【Debug menu】&quot;,&quot;DebugMenu&quot;)
 }
 
-//「SHIORIデバッグモード有効」のチェック状態を控える
+//Note the check status of "SHIORI debug mode enabled"
 On_enable_debug
 {
 	debug_mode = reference[0]
