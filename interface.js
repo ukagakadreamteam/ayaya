@@ -186,45 +186,46 @@ pageheader += `
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">Recently updated pages</h5>
 <h5>10 most recent</h5>
-<div><strong>2025-04-12</strong>
+<div>
+<strong>2025-04-22</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/FCHARSET.html" class="link_page_passage">Manual/Function/FCHARSET</a></li>
+</ul>
+<strong>2025-04-12</strong>
 <ul class="recent_list">
  <li><a href="${localpath}tips/discard_the_return_value_of_a_function.html" class="link_page_passage">Tips/Discard the return value of a function</a></li>
 </ul>
-<div><strong>2025-02-09</strong>
+<strong>2025-02-09</strong>
 <ul class="recent_list">
  <li><a href="${localpath}yaya.html" class="link_page_passage">YAYA</a></li>
 </ul>
-<div><strong>2025-01-13</strong>
+<strong>2025-01-13</strong>
 <ul class="recent_list">
  <li><a href="${localpath}yaya_as_makoto.html" class="link_page_passage">YAYA as MAKOTO</a></li>
 </ul>
-<div><strong>2024-12-28</strong>
+<strong>2024-12-28</strong>
 <ul class="recent_list">
  <li><a href="${localpath}tips/removing_sakura_script_tags.html" class="link_page_passage">Tips/Removing SAKURA Script tags</a></li>
 </ul>
-<div><strong>2024-12-23</strong>
+<strong>2024-12-23</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/ISFUNC.html" class="link_page_passage">Manual/Function/ISFUNC</a></li>
 </ul>
-<div><strong>2024-10-02</strong>
+<strong>2024-10-02</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/RAND.html" class="link_page_passage">Manual/Function/RAND</a></li>
 </ul>
-<div><strong>2024-04-28</strong>
+<strong>2024-04-28</strong>
 <ul class="recent_list">
  <li><a href="https://emily.shillest.net/ayaya/index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
 </ul>
-<div><strong>2024-04-03</strong>
+<strong>2024-04-03</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/CHARSETTEXTTOID.html" class="link_page_passage">Manual/Function/CHARSETTEXTTOID</a></li>
 </ul>
-<div><strong>2024-02-07</strong>
+<strong>2024-02-07</strong>
 <ul class="recent_list">
  <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
-</ul>
-<div><strong>2024-02-03</strong>
-<ul class="recent_list">
- <li><a href="${localpath}ghost_related_links.html" class="link_page_passage">Ghost related links</a></li>
 </ul>
 </div>
 		<br>

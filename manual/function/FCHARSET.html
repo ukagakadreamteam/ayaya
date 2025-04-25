@@ -45,9 +45,12 @@
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>ファイルの読み書きに用いる文字コードを指定します。</li>
-<li>FOPENの前に実行してください。</li>
-<li>ファイル単位で文字コードを変更可能です。（FOPENされた際に、そのファイルの文字コードがFCHARSETで指定している「現在値」に決定されます。）</li></ul>
-<ul class="list1 list-indent1"><li>FCHARSETを用いない場合、ファイルの読み書きに用いられる文字コードは、基礎設定ファイルの charset.file もしくは charset エントリで指定したコードとなります。</li></ul>
+<li>FOPENの前に実行してください。</li></ul>
+<ul class="list1 list-indent1"><li>ファイル単位で文字コードを変更可能です。<br>
+FOPENされた際に、そのファイルの文字コードがFCHARSETで指定している「現在値」に決定されます。<br>
+FCHARSETを変更する前に開いたファイルは、変更前の文字コードが維持されます</li></ul>
+<ul class="list1 list-indent1"><li>文字コードの変更は、ゴーストが起動されている間（DLLが読み込まれ実行されている間）は維持されますが、終了後は維持されません。</li></ul>
+<ul class="list1 list-indent1"><li>FCHARSETを用いない場合、ファイルの読み書きに用いられる文字コードは、<a href="../../manual/syntax/1_basic_settings.html">manual/basic/1. Basic settings</a> charset.file もしくは charset エントリで指定したコードとなります。</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>code</dt>
