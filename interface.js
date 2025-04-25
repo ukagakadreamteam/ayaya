@@ -155,7 +155,7 @@ pageheader += `
 <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
 <li><a href="${localpath}manual/list_of_functions_by_purpose.html" title="Manual/List of functions by purpose" class="link_page_passage">List of functions by purpose</a></li>
 <li><a href="${localpath}manual/function.html" title="Manual/Function" class="link_page_passage">List of functions by name</a></li>
-<li><a href="${localpath}manual/error_handling_function.html" title="Manual/Error Handling Function" class="link_page_passage">Error handling function</a>
+<li><a href="${localpath}manual/error_handling_function.html" title="Manual/Error Handling Function" class="link_page_passage">Error handling functions</a>
 <br />
 <br /></li></ul></li>
 <li><a href="${localpath}tips.html" class="link_page_passage">Tips</a>
