@@ -187,6 +187,10 @@ pageheader += `
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">Recently updated pages</h5>
 <h5>10 most recent</h5>
 <div>
+<strong>2025-04-27</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/ISVAR.html" class="link_page_passage">Manual/Function/ISVAR</a></li>
+</ul>
 <strong>2025-04-22</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/FCHARSET.html" class="link_page_passage">Manual/Function/FCHARSET</a></li>
@@ -222,10 +226,6 @@ pageheader += `
 <strong>2024-04-03</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/CHARSETTEXTTOID.html" class="link_page_passage">Manual/Function/CHARSETTEXTTOID</a></li>
-</ul>
-<strong>2024-02-07</strong>
-<ul class="recent_list">
- <li><a href="${localpath}system_dictionary.html" class="link_page_passage">System dictionary</a></li>
 </ul>
 </div>
 		<br>
