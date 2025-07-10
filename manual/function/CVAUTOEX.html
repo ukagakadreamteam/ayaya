@@ -45,17 +45,17 @@
 <blockquote><p class="quotation">CVAUTOEX(<em>var</em>)</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>引数に文字列の形式を持つ文字列が格納された変数を指定すると、整数として解釈できるなら整数に、実数として解釈できるなら実数に変換し格納しなおします。</li>
-<li>両方とも無理なら文字列のまま変換しません。</li>
-<li>変換結果をさらに文字列変換した結果が、元の文字列と一致する場合のみ変換します。（EXあるなしの違いがここ）</li>
-<li>引数に汎用配列変数を入れた場合の動作は未定義です。</li></ul>
+<ul class="list1 list-indent1"><li>If a variable that stores a string is specified as an argument, it will be converted to an integer if it can be interpreted as an integer, or converted to a real number if it can be interpreted as a real number, and then stored again.</li>
+<li>If neither is possible, the string will not be converted.</li>
+<li>The conversion will only be performed if the result of converting it back to a string matches the original string. (This is the difference between having EX and not.)</li>
+<li>The behavior when a general purpose array variable is used as an argument is undefined.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>var</dt>
-<dd>変換したい変数。</dd></dl>
+<dd>Variable to be converted.</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>戻値はありません。</li></ul>
+<ul class="list1 list-indent1"><li>No return value.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../../manual/function/CVREAL.html" class="link_page_passage">Manual/Function/CVREAL</a></li>
@@ -68,9 +68,12 @@
 <ul class="list1 list-indent1"><li>TC571-3</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<pre class="aya">_val = '3.14' // 文字列として代入
+<pre class="aya">_val = '3.14' // Assign a string
 CVAUTOEX(_val)
-GETTYPE(_val) // 「2」が出力される（実数となっている）</pre>
+GETTYPE(_val) // "3" is output (which is a string)</pre>
+<pre class="aya">_val = '3.140000' // Assign a string
+CVAUTOEX(_val)
+GETTYPE(_val) // "2" is output (which is a real number)</pre>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/function/CVAUTO.html" title="Manual/Function/CVAUTO" class="link_page_passage">Prev</a><br /><a href="../../manual/function/CVAUTO.html" class="link_page_passage">Manual/Function/CVAUTO</a></li>

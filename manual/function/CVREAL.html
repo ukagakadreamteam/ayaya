@@ -8,7 +8,7 @@
  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
  <meta http-equiv="content-style-type" content="text/css" />
 
- <title>Manual/Function/CVAUTOEX - AYAYA/03</title>
+ <title>Manual/Function/CVREAL - AYAYA/03</title>
  <link rel="stylesheet" href="../../style.css" type="text/css" media="screen" charset="UTF-8" />
  <!--<link rel="stylesheet" href="skin/default.css" type="text/css" media="screen" charset="UTF-8" />-->
  <!--<link rel="stylesheet" href="skin/print.css" type="text/css" media="print" charset="UTF-8" />-->
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-<p id="original_doc_link">https://emily.shillest.net/ayaya/index.php?マニュアル/関数/CVAUTOEX</p>
+<p id="original_doc_link">https://emily.shillest.net/ayaya/index.php?マニュアル/関数/CVREAL</p>
 <div id="interface_header"></div>
 
 <div id="interface_content">
@@ -39,42 +39,40 @@
  <li class="navi_none"><a href="../../manual/function.html" class="link_page_passage">Manual/Function</a></li>
 </ul>
 <hr class="full_hr" />
-<h2 id="content_1_0">CVAUTOEX<a class="anchor_super" id="g9a1b790" href="#g9a1b790" style="user-select:none;">&dagger;</a></h2>
+<h2 id="content_1_0">CVREAL<a class="anchor_super" id="g9a1b790" href="#g9a1b790" style="user-select:none;">&dagger;</a></h2>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_1">Format<a class="anchor_super" id="format" href="#format" style="user-select:none;">&dagger;</a></h3>
-<blockquote><p class="quotation">CVAUTOEX(<em>var</em>)</p></blockquote>
+<blockquote><p class="quotation">CVREAL(<em>var</em>)</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>引数に文字列の形式を持つ文字列が格納された変数を指定すると、整数として解釈できるなら整数に、実数として解釈できるなら実数に変換し格納しなおします。</li>
-<li>両方とも無理なら文字列のまま変換しません。</li>
-<li>変換結果をさらに文字列変換した結果が、元の文字列と一致する場合のみ変換します。（EXあるなしの違いがここ）</li>
-<li>引数に汎用配列変数を入れた場合の動作は未定義です。</li></ul>
+<ul class="list1 list-indent1"><li>If a variable that stores a string in real number format is specified as an argument, it will be converted to a real number and stored again.</li>
+<li>If a variable that contains any other string is specified, the type of the variable is set to a real number and "0.000000" is stored.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>var</dt>
-<dd>変換したい変数。</dd></dl>
+<dd>Variable to be converted.</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>戻値はありません。</li></ul>
+<ul class="list1 list-indent1"><li>No return value.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li><a href="../../manual/function/CVREAL.html" class="link_page_passage">Manual/Function/CVREAL</a></li>
+<ul class="list1 list-indent1"><li><a href="../../manual/function/CVINT.html" class="link_page_passage">Manual/Function/CVINT</a></li>
 <li><a href="../../manual/function/CVSTR.html" class="link_page_passage">Manual/Function/CVSTR</a></li>
-<li><a href="../../manual/function/CVINT.html" class="link_page_passage">Manual/Function/CVINT</a></li>
-<li><a href="../../manual/function/CVAUTO.html" class="link_page_passage">Manual/Function/CVAUTO</a></li>
-<li><a href="../../manual/function/TOAUTO.html" class="link_page_passage">Manual/Function/TOAUTO</a></li></ul>
+<li><a href="../../manual/function/CVAUTO.html" class="link_page_passage">Manual/Function/CVAUTO</a></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="version" href="#version" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>TC571-3</li></ul>
+<ul class="list1 list-indent1"><li>YAYA: Available from the start</li>
+<li>Available in AYA5.8</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<pre class="aya">_val = '3.14' // 文字列として代入
-CVAUTOEX(_val)
-GETTYPE(_val) // 「2」が出力される（実数となっている）</pre>
+<pre class="aya">_val = '3.1415' // Assign a string
+CVREAL(_val)
+GETTYPE(_val) // "2" is output (which is a real number)
+_val // "3.141500" is output (as a real number)</pre>
 <hr class="full_hr" />
 <ul class="navi">
- <li class="navi_left"><a href="../../manual/function/CVAUTO.html" title="Manual/Function/CVAUTO" class="link_page_passage">Prev</a><br /><a href="../../manual/function/CVAUTO.html" class="link_page_passage">Manual/Function/CVAUTO</a></li>
- <li class="navi_right"><a href="../../manual/function/CVINT.html" title="Manual/Function/CVINT" class="link_page_passage">Next</a><br /><a href="../../manual/function/CVINT.html" class="link_page_passage">Manual/Function/CVINT</a></li>
+ <li class="navi_left"><a href="../../manual/function/CVINT.html" title="Manual/Function/CVINT" class="link_page_passage">Prev</a><br /><a href="../../manual/function/CVINT.html" class="link_page_passage">Manual/Function/CVINT</a></li>
+ <li class="navi_right"><a href="../../manual/function/CVSTR.html" title="Manual/Function/CVSTR" class="link_page_passage">Next</a><br /><a href="../../manual/function/CVSTR.html" class="link_page_passage">Manual/Function/CVSTR</a></li>
  <li class="navi_none"><a href="../../manual/function.html" title="Manual/Function" class="link_page_passage">Home</a><br /><a href="../../manual/function.html" title="Manual/Function" class="link_page_passage">Up</a></li>
 </ul>
    
@@ -93,13 +91,13 @@ GETTYPE(_val) // 「2」が出力される（実数となっている）</pre>
  Last modified on: 2022-07-10 (Sunday) 18:20:24<span class="page_passage"></span></div>
 
 
-<div id="related">
+ <div id="related">
  Related pages: <a href="../../manual/list_of_functions_by_purpose.html">Manual/List of functions by purpose</a><span class="page_passage"></span>
- <a href="../../manual/function/CVAUTO.html">Manual/Function/CVAUTO</a><span class="page_passage"></span>
- <a href="../../manual/function/TOAUTO.html">Manual/Function/TOAUTO</a><span class="page_passage"></span>
+ <a href="../../manual/function/CVAUTO".html>Manual/Function/CVAUTO</a><span class="page_passage"></span>
+ <a href="../../manual/function/CVAUTOEX.html">Manual/Function/CVAUTOEX</a><span class="page_passage"></span>
+ <a href="https://emily.shillest.net/ayaya/index.php?FrontPage/%E7%B7%B4%E7%BF%92">FrontPage/Practice</a><span class="page_passage"></span>
  <a href="../../manual/function.html">Manual/Function</a><span class="page_passage"></span>
  <a href="../../manual/function/CVINT.html">Manual/Function/CVINT</a><span class="page_passage"></span>
- <a href="../../manual/function/CVREAL.html">Manual/Function/CVREAL</a><span class="page_passage"></span>
  <a href="../../manual/function/CVSTR.html">Manual/Function/CVSTR</a><span class="page_passage"></span></div>
 
 
