@@ -44,51 +44,51 @@
 <blockquote><p class="quotation">ASORT( <em>option</em> , <em>array</em> )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>汎用配列の中のデータを指定の順番に並べ替えます。</li></ul>
+<ul class="list1 list-indent1"><li>Sort data in a general purpose array in the specified order.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>option</dt>
-<dd>並べ替えオプション（文字列）。後述。</dd>
+<dd>Sorting options (string). See below.</dd>
 <dt>array</dt>
-<dd>汎用配列（簡易配列は不可）。</dd></dl>
+<dd>A general purpose array (simple arrays cannot be used).</dd></dl>
 
-<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">optionについて<a class="anchor_super" id="aff416c7" href="#aff416c7" style="user-select:none;">&dagger;</a></h4>
-<p>比較タイプ</p>
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h4 id="content_1_4">About options<a class="anchor_super" id="aff416c7" href="#aff416c7" style="user-select:none;">&dagger;</a></h4>
+<p>Comparison type</p>
 <dl class="list1 list-indent1"><dt>string</dt>
-<dd>データをすべて文字列として扱い、文字コード順に並べます [指定なしの場合これが標準]</dd>
+<dd>Treats all data as strings and arranges them in character code order [default if nothing is specified].</dd>
 <dt>int</dt>
-<dd>データをすべて整数として扱い、数字の大きさ順に並べます</dd>
+<dd>Treats all data as integers and arranges them in numerical order of size.</dd>
 <dt>double</dt>
-<dd>データをすべて自然数として扱い、数字の大きさ順に並べます</dd>
+<dd>Treats all data as real numbers and arranges them in numerical order of size.</dd>
 <dt>length</dt>
-<dd>string指定と一緒に使い、文字の内容ではなくて、文字の長さを対象として並べます</dd></dl>
-<p>順序</p>
+<dd>Used in conjunction with the string specification, the length of the string is used to determine the order, not the content of the string.</dd></dl>
+<p>Order</p>
 <dl class="list1 list-indent1"><dt>ascending</dt>
-<dd>データを昇順（1,2,3...）に並べます [指定なしの場合これが標準]</dd>
+<dd>Sort data in ascending order (1,2,3...) [default if nothing is specified].</dd>
 <dt>descending</dt>
-<dd>データを降順（...3,2,1）に並べます</dd></dl>
-<p>返り値形式</p>
+<dd>Sort data in descending order (...3,2,1).</dd></dl>
+<p>Return format</p>
 <dl class="list1 list-indent1"><dt>index</dt>
-<dd>ソートした結果の配列そのものではなく、「ソート後は順番にソート前配列の何番目になるか」の配列を返します。<br />
-たとえば、'Z','G','A'を文字列昇順ソートすると、順番はA,G,Zになるべきなので、整数型の配列2,1,0が返ります。<br /></dd></dl>
-<p>以上、3種類の指定について、カンマ区切りで並べます。詳しくは例を見て下さい。</p>
+<dd>This does not return the sorted array itself, but rather an array of "what position the sorted items will be after sorting".<br />
+For example, if you sort 'Z','G','A' in ascending string order, the order should be A,G,Z, so the integer array 2,1,0 is returned.<br /></dd></dl>
+<p>The three types of specifications above are separated by commas. See the examples for details.</p>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>並べ替えが完了した汎用配列です。</li>
-<li>エラー時や元々空の汎用配列が渡された場合、空の汎用配列になります。</li></ul>
+<ul class="list1 list-indent1"><li>The general purpose array that has been sorted.</li>
+<li>In the case of an error or if an empty general purpose array is passed in, it will be an empty general purpose array.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../../manual/function/ASEARCH.html" class="link_page_passage">Manual/Function/ASEARCH</a></li>
 <li><a href="../../manual/function/ASEARCHEX.html" class="link_page_passage">Manual/Function/ASEARCHEX</a></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Version<a class="anchor_super" id="version" href="#version" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>YAYA：Tc540-1</li>
-<li>indexオプションは、Tc545-1から</li></ul>
+<ul class="list1 list-indent1"><li>YAYA: Tc540-1</li>
+<li>index option available from Tc545-1 and on</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_8">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<pre class="aya">_array = ('BBBB','CCC','AA') // 汎用配列を代入
-ASORT('string,ascending', _array) // 「AA,BBBB,CCC」が出力される
-ASORT('string,descending,length', _array) // 「BBBB,CCC,AA」が出力される</pre>
+<pre class="aya">_array = ('BBBB','CCC','AA') // Assign a general purpose array
+ASORT('string,ascending', _array) // "AA,BBBB,CCC" is output
+ASORT('string,descending,length', _array) // "BBBB,CCC,AA" is output</pre>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/function/ASIN.html" title="Manual/Function/ASIN" class="link_page_passage">Prev</a><br /><a href="../../manual/function/ASIN.html" class="link_page_passage">Manual/Function/ASIN</a></li>

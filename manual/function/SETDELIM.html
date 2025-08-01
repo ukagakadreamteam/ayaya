@@ -44,26 +44,26 @@
 <blockquote><p class="quotation">SETDELIM( <em>array</em> , <em>delim</em> )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>変数の標準のデリミタ（簡易配列の区切り文字）を設定します。</li>
-<li>デフォルトのデリミタはカンマです。</li></ul>
-<ul class="list1 list-indent1"><li>この関数への引数の与え方には以下の制限があります。注意してください。</li>
-<li>2つの引数は必ず直接与えねばなりません。
+<ul class="list1 list-indent1"><li>Sets the standard delimiter (simple array delimiter) for the variable.</li>
+<li>The default delimiter is a comma.</li></ul>
+<ul class="list1 list-indent1"><li>Please note that there are restrictions on how arguments to this function can be passed.</li>
+<li>The 2 arguments must always be passed directly.
 <pre>	
 _i = (var, &quot;/&quot;)
 SETDELIM(_i)</pre></li></ul>
-<ul class="list1 list-indent1"><li>上の例は変数varのデリミタを&quot;/&quot;へ変更しようとしていますが、これは正常に動きません。</li>
-<li>下のように、第一引数に対象の変数、第二引数にデリミタを直接指定してください。
+<ul class="list1 list-indent1"><li>The example above is trying to change the delimiter of the variable var to &quot;/&quot;, but this will not work correctly.</li>
+<li>As shown below, specify the target variable directly as the first argument and the delimiter directly as the second argument.
 <pre>	
 SETDELIM(var, &quot;/&quot;)</pre></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>array</dt>
-<dd>デリミタを設定したい簡易配列変数。</dd>
+<dd>A simple array variable for which you want to set the delimiter.</dd>
 <dt>delim</dt>
-<dd>デリミタ（文字列）</dd></dl>
+<dd>Delimiter (string)</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>戻値はありません。</li></ul>
+<ul class="list1 list-indent1"><li>There is no return value.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../../manual/function/GETDELIM.html" class="link_page_passage">Manual/Function/GETDELIM</a></li></ul>
