@@ -187,6 +187,10 @@ pageheader += `
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h5 id="content_2_1">Recently updated pages</h5>
 <h5>10 most recent</h5>
 <div>
+<strong>2025-08-02</strong>
+<ul class="recent_list">
+ <li><a href="${localpath}manual/function/RE_ASEARCHEX.html" class="link_page_passage">Manual/Function/RE_ASEARCHEX</a></li>
+</ul>
 <strong>2025-07-11</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/CVAUTOEX.html" class="link_page_passage">Manual/Function/CVAUTOEX</a></li>
@@ -222,10 +226,6 @@ pageheader += `
 <strong>2024-10-02</strong>
 <ul class="recent_list">
  <li><a href="${localpath}manual/function/RAND.html" class="link_page_passage">Manual/Function/RAND</a></li>
-</ul>
-<strong>2024-04-28</strong>
-<ul class="recent_list">
- <li><a href="https://emily.shillest.net/ayaya/index.php?%E3%81%93%E3%81%93%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%93%E3%81%AD%E3%81%88%E3%82%88%E3%83%AD%E3%82%B0" class="link_page_passage">"I don't get this part" log</a></li>
 </ul>
 </div>
 		<br>
