@@ -44,30 +44,30 @@
 <blockquote><p class="quotation">SUBSTR( <em>src</em> , <em>pos</em> , <em>len</em> )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>文字列から部分文字列を抜き出します。</li>
-<li>posを負値にすると、「文字列の最後からＸ番目」を示します。たとえば、以下の結果は&quot;G&quot;です。</li></ul>
+<ul class="list1 list-indent1"><li>Extracts a substring from a string.</li>
+<li>A negative value for the pos indicates the "Xth from the end of the string". For exmaple, the result of the following is &quot;G&quot;.</li></ul>
 <pre>SUBSTR(&quot;HOGE&quot;,-2,1)</pre>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>src</dt>
-<dd>抜き出したい元の文字列。</dd>
+<dd>The original string to extract from.</dd>
 <dt>pos</dt>
-<dd>抜き出しを開始する文字位置（先頭=0）</dd>
+<dd>The character position to start extracting from (start of string = 0)</dd>
 <dt>len</dt>
-<dd>抜き出したい文字数</dd></dl>
+<dd>The number of characters to be extracted</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>成功した場合、抜き出した部分文字列</li>
-<li>posが元の文字列の長さを越えた範囲である場合、空文字列（&quot;&quot;）
-<ul class="list2 list-indent1"><li>pos+lenの結果が元の文字列の長さを越えた場合は終端までを部分文字列として抜き出します。</li></ul></li>
-<li>エラーの場合、何も返しません（VOID）</li></ul>
+<ul class="list1 list-indent1"><li>If successful, the extracted substring</li>
+<li>An empty string (&quot;&quot;) if pos is beyond the length of the original string
+<ul class="list2 list-indent1"><li>If the result of pos+len exceeds the length of the original string, a substring up to the end of the end of the string is extracted.</li></ul></li>
+<li>In the case of an error, nothing is returned (VOID)</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="version" href="#version" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>YAYA: Available from the start</li>
-<li>AYA5.8で利用可能（第二引数posを負値にした利用法は不可）</li></ul>
+<li>Available in AYA5.8 (usage with a negative value for the second argument, pos, is not available)</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li>No example yet.</li>
