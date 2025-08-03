@@ -45,29 +45,29 @@
 <blockquote><p class="quotation">TOUPPER( <em>string</em> [ , <em>locale</em> ] )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>文字列中に含まれる小文字をすべて大文字に変換した文字列を返します。</li></ul>
+<ul class="list1 list-indent1"><li>Returns a string with all lowercase letters converted to uppercase.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>string</dt>
-<dd>変換したい文字列。</dd>
+<dd>The string to be converted.</dd>
 <dt>locale</dt>
-<dd>変換時に使用する、<a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale" rel="nofollow">setlocaleで使用できるロケール文字列</a>。省略時はC(a-zをA-Zにするだけ)。</dd></dl>
+<dd>A <a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/setlocale-wsetlocale" rel="nofollow">locale string that can be used in setlocale</a>, to be used during conversion. Defaults to C when omitted (just changes a-z to A-Z).</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>成功した場合、変換後の文字列</li>
-<li>失敗した場合、何も返しません（VOID）</li></ul>
+<ul class="list1 list-indent1"><li>If successful, the converted string</li>
+<li>If unsuccessful, nothing is returned (VOID)</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 <ul class="list1 list-indent1"><li><a href="../../manual/function/TOLOWER.html" class="link_page_passage">Manual/Function/TOLOWER</a></li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_6">Version<a class="anchor_super" id="version" href="#version" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>YAYA：初期から利用可能 (locale：Tc569-5)</li>
+<ul class="list1 list-indent1"><li>YAYA: Available from the start (locale: Tc569-5)</li>
 <li>Available in AYA5.8</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<pre class="aya">_str = 'sAkuRa' // 文字列を代入
+<pre class="aya">_str = 'sAkuRa' // Assign a string
 _str = TOUPPER( _str )
-_str // 文字列「SAKURA」 が出力される</pre>
+_str // The string "SAKURA" is output</pre>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/function/TOSTR.html" title="Manual/Function/TOSTR" class="link_page_passage">Prev</a><br /><a href="../../manual/function/TOSTR.html" class="link_page_passage">Manual/Function/TOSTR</a></li>
