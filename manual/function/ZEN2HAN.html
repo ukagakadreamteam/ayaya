@@ -45,20 +45,20 @@
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
 
-<ul class="list1 list-indent1"><li>文字列中に含まれる全角英文字・数字・カタカナをすべて半角に変換します。</li></ul>
+<ul class="list1 list-indent1"><li>Converts all full-width English characters, numbers, and katakana in a string to half-width characters.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>src</dt>
-<dd>変換したい文字列。</dd>
+<dd>The string to be converted.</dd>
 <dt>type</dt>
-<dd>変換したい文字種をカンマ区切りで指定した文字列（省略可能）。省略時は全てを指定したことになります。</dd></dl>
-<ul class="list1 list-indent1"><li>number - 数値(0～9)</li>
-<li>alphabet - アルファベット</li>
-<li>symbol - 記号等</li>
-<li>kana - カタカナと句読点</li></ul>
+<dd>A comma-separated string of the character types to be converted (optional). If omitted, all are specified.</dd></dl>
+<ul class="list1 list-indent1"><li>number - numerical values (0–9)</li>
+<li>alphabet - alphabetic</li>
+<li>symbol - symbols, etc.</li>
+<li>kana - katakana and punctuation marks</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>成功した場合、変換後の文字列</li>
+<ul class="list1 list-indent1"><li>If successful, the converted string</li>
 <li>If unsuccessful, nothing is returned (VOID)</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
@@ -70,7 +70,7 @@
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
 <pre>_result=ZEN2HAN('２００７ABCアイウエオ','number,alphabet')</pre>
-<p>_resultは &quot;2007ABCアイウエオ&quot; となります。</p>
+<p>_result will be &quot;2007ABCアイウエオ&quot;.</p>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/function/UNLOADLIB.html" title="Manual/Function/UNLOADLIB" class="link_page_passage">Prev</a><br /><a href="../../manual/function/UNLOADLIB.html" class="link_page_passage">Manual/Function/UNLOADLIB</a></li>

@@ -44,18 +44,18 @@
 <blockquote><p class="quotation">STRFORM( <em>format</em> [ , arg ... ] )</p></blockquote>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_2">Function<a class="anchor_super" id="function" href="#function" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>書式化された文字列を返します。</li>
-<li>C言語のsprintf相当の機能です。</li></ul>
+<ul class="list1 list-indent1"><li>Returns a formatted string.</li>
+<li>It is the equivalent of sprintf in the C language.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_3">Arguments<a class="anchor_super" id="arguments" href="#arguments" style="user-select:none;">&dagger;</a></h3>
 <dl class="list1 list-indent1"><dt>format</dt>
-<dd>書式文字列。</dd>
+<dd>Format string.</dd>
 <dt>arg</dt>
-<dd>書式文字列の引数。</dd></dl>
+<dd>Format string argument.</dd></dl>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_4">Return value<a class="anchor_super" id="return_value" href="#return_value" style="user-select:none;">&dagger;</a></h3>
-<ul class="list1 list-indent1"><li>成功した場合、書式化された文字列</li>
-<li>失敗した場合の動作は未定義です。</li></ul>
+<ul class="list1 list-indent1"><li>If successful, the formatted string</li>
+<li>The behavior if unsuccessful is undefined.</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_5">Related<a class="anchor_super" id="related" href="#related" style="user-select:none;">&dagger;</a></h3>
 
@@ -65,16 +65,16 @@
 <li>Available in AYA5.8</li></ul>
 
 <div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h3 id="content_1_7">Example<a class="anchor_super" id="example" href="#example" style="user-select:none;">&dagger;</a></h3>
-<p>以下はsprintfとの比較です。結果を戻値で得る点と、書式指定のプレフィックス文字が$である点を除けば、まったく同様に使用できます。</p>
-<pre>// C言語
+<p>The following is a comparison with sprintf. It can be used exactly the same way, except that the result is obtained as a return value, and the prefix character for formatting is $.</p>
+<pre>// C language
 int year = 1941;
-char *warname = &quot;太平洋&quot;;
-sprintf(str, &quot;%04d年　%s戦争勃発。&quot;, year, warname);</pre>
-<pre>// 文
+char *warname = &quot;pacific&quot;;
+sprintf(str, &quot;%04d - outbreak of the %s war.&quot;, year, warname);</pre>
+<pre>// AYA
 year = 1941
-warname = &quot;太平洋&quot;
-str = STRFORM(&quot;$04d年　$s戦争勃発。&quot;, year, warname)</pre>
-<p>書式指定一つあたりで展開できる文字列の長さは1024文字までに制限されています。</p>
+warname = &quot;pacific&quot;
+str = STRFORM(&quot;$04d - outbreak of the $s war.&quot;, year, warname)</pre>
+<p>The length of a string that can be expanded per format specification is limited to 1024 characters.</p>
 <hr class="full_hr" />
 <ul class="navi">
  <li class="navi_left"><a href="../../manual/function/STRENCODE.html" title="Manual/Function/STRENCODE" class="link_page_passage">Prev</a><br /><a href="../../manual/function/STRENCODE.html" class="link_page_passage">Manual/Function/STRENCODE</a></li>
